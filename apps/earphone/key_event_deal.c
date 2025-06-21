@@ -32,7 +32,7 @@
 #define LOG_CLI_ENABLE
 #include "debug.h"
 
-#define POWER_OFF_CNT       20
+#define POWER_OFF_CNT       10
 
 static u8 goto_poweroff_cnt = 0;
 static u8 goto_poweroff_flag = 0;
@@ -392,12 +392,8 @@ int app_earphone_key_event_handler(struct sys_event *event)
 #endif/*TCFG_AUDIO_BASS_BOOST_TEST*/
 
 
-        if ((get_call_status() == BT_CALL_OUTGOING) ||
-            (get_call_status() == BT_CALL_ALERT)) {
-            user_send_cmd_prepare(USER_CTRL_HFP_CALL_HANGUP, 0, NULL);
-        } else if (get_call_status() == BT_CALL_INCOMING) {
-            user_send_cmd_prepare(USER_CTRL_HFP_CALL_ANSWER, 0, NULL);
-        } else if (get_call_status() == BT_CALL_ACTIVE) {
+        if ((get_call_status() == BT_CALL_ACTIVE) ||
+            (get_call_status() == BT_CALL_INCOMING)) {
             user_send_cmd_prepare(USER_CTRL_HFP_CALL_HANGUP, 0, NULL);
         } else {
             user_send_cmd_prepare(USER_CTRL_AVCTP_OPID_PLAY, 0, NULL);
@@ -524,28 +520,41 @@ int app_earphone_key_event_handler(struct sys_event *event)
 #endif
         //user_send_cmd_prepare(USER_CTRL_AVCTP_OPID_NEXT, 0, NULL);
 
-        //============ for test ==============//
-#if TCFG_AUDIO_ANC_ENABLE
-        if (get_bt_connect_status() == BT_STATUS_TAKEING_PHONE) {
-            user_send_cmd_prepare(USER_CTRL_HFP_CALL_HANGUP, 0, NULL);
-        } else {
+        if (get_call_status() == BT_CALL_INCOMING) { // 若呼入则保持并接听
+            user_send_cmd_prepare(USER_CTRL_HFP_THREE_WAY_ANSWER2, 0, NULL);
+        } else if (get_call_status() == BT_CALL_ACTIVE) { // 若三方通话则保持并切换
+            user_send_cmd_prepare(USER_CTRL_HFP_THREE_WAY_ANSWER2, 0, NULL);
+        } else { // 根据左右声道 上下首切换
             if (a2dp_get_status() != BT_MUSIC_STATUS_STARTING) {
                 user_send_cmd_prepare(USER_CTRL_AVCTP_OPID_PLAY, 0, NULL);
-            } else {
+            } 
+            char channel = bt_tws_get_local_channel();
+            if (channel == 'R' || channel == 'U') {
                 user_send_cmd_prepare(USER_CTRL_AVCTP_OPID_NEXT, 0, NULL);
+            } else {
+                user_send_cmd_prepare(USER_CTRL_AVCTP_OPID_PREV, 0, NULL);
             }
         }
-#else
-        if (a2dp_get_status() != BT_MUSIC_STATUS_STARTING) {
-            user_send_cmd_prepare(USER_CTRL_AVCTP_OPID_PLAY, 0, NULL);
-        } else {
-            user_send_cmd_prepare(USER_CTRL_AVCTP_OPID_NEXT, 0, NULL);
-        }
-#endif
-        //====================================//
         break;
     case  KEY_VOL_UP:
-        volume_up(1);
+        u8 call_status = get_call_status();
+        log_info("KEY_VOL_UP: call_status = %d\n", call_status);
+        if (call_status == BT_CALL_INCOMING) { // 若呼入则接听
+            user_send_cmd_prepare(USER_CTRL_HFP_CALL_ANSWER, 0, NULL);
+            break;
+        } else if((call_status == BT_CALL_OUTGOING) || 
+                (call_status == BT_CALL_ALERT)) { // 若打出或alert则挂断
+            user_send_cmd_prepare(USER_CTRL_HFP_CALL_HANGUP, 0, NULL);
+            break;
+        } else {
+            char channel = bt_tws_get_local_channel();
+            if (channel == 'R' || channel == 'U') { 
+                volume_up(1);
+            } else {
+                volume_down(1);
+            }
+            break;
+        }
         break;
     case  KEY_VOL_DOWN:
         volume_down(1);

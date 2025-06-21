@@ -86,16 +86,16 @@
 //                                 key 配置                                        //
 //*********************************************************************************//
 #define KEY_NUM_MAX                        	10
-#define KEY_NUM                            	3
+#define KEY_NUM                            	1
 
 #define MULT_KEY_ENABLE						DISABLE 		//是否使能组合按键消息, 使能后需要配置组合按键映射表
 
-#define TCFG_KEY_TONE_EN					1		        // 按键提示音。建议音频输出使用固定采样率
+#define TCFG_KEY_TONE_EN					0		        // 按键提示音。建议音频输出使用固定采样率
 
 //*********************************************************************************//
 //                                 iokey 配置                                      //
 //*********************************************************************************//
-#define TCFG_IOKEY_ENABLE					ENABLE_THIS_MOUDLE //是否使能IO按键
+#define TCFG_IOKEY_ENABLE					DISABLE_THIS_MOUDLE //是否使能IO按键
 
 #define TCFG_IOKEY_POWER_CONNECT_WAY		ONE_PORT_TO_LOW    //按键一端接低电平一端接IO
 #define TCFG_IOKEY_POWER_ONE_PORT			IO_PORTB_01        //IO按键端口
@@ -300,9 +300,9 @@
     DAC_OUTPUT_MONO_R               单右声道差分
     DAC_OUTPUT_LR                   双声道差分
 */
-// #define TCFG_AUDIO_DAC_CONNECT_MODE         DAC_OUTPUT_MONO_L
+#define TCFG_AUDIO_DAC_CONNECT_MODE         DAC_OUTPUT_MONO_L
 // #define TCFG_AUDIO_DAC_CONNECT_MODE         DAC_OUTPUT_MONO_R
-#define TCFG_AUDIO_DAC_CONNECT_MODE         DAC_OUTPUT_LR
+// #define TCFG_AUDIO_DAC_CONNECT_MODE         DAC_OUTPUT_LR
 
 /*PDM数字MIC配置*/
 #define TCFG_AUDIO_PLNK_SCLK_PIN			IO_PORTA_07
@@ -378,7 +378,7 @@
 /*通话降噪模式配置*/
 #define CVP_ANS_MODE	0	/*传统降噪*/
 #define CVP_DNS_MODE	1	/*神经网络降噪*/
-#define TCFG_AUDIO_CVP_NS_MODE				CVP_DNS_MODE
+#define TCFG_AUDIO_CVP_NS_MODE				CVP_ANS_MODE
 
 /*
  * ENC(双mic降噪)配置
@@ -386,7 +386,7 @@
  * 的前提下，根据具体需求，选择对应的DMS模式
  */
 /*ENC(双mic降噪)使能*/
-#define TCFG_AUDIO_DUAL_MIC_ENABLE			DISABLE_THIS_MOUDLE
+#define TCFG_AUDIO_DUAL_MIC_ENABLE			ENABLE_THIS_MOUDLE
 
 /*DMS模式选择*/
 #define DMS_NORMAL		1	//普通双mic降噪(mic距离固定)
@@ -434,8 +434,8 @@
 
 //使用普通IO输出供电:不用的port配置成NO_CONFIG_PORT
 #if (TCFG_AUDIO_MIC_PWR_CTL & MIC_PWR_FROM_GPIO)
-#define TCFG_AUDIO_MIC_PWR_PORT				IO_PORTA_03
-#define TCFG_AUDIO_MIC1_PWR_PORT			NO_CONFIG_PORT
+#define TCFG_AUDIO_MIC_PWR_PORT				IO_PORTA_00
+#define TCFG_AUDIO_MIC1_PWR_PORT			IO_PORTB_09
 #define TCFG_AUDIO_MIC2_PWR_PORT			NO_CONFIG_PORT
 #endif/*MIC_PWR_FROM_GPIO*/
 
@@ -533,7 +533,7 @@
 //*********************************************************************************//
 //                                  充电仓配置                                     //
 //*********************************************************************************//
-#define TCFG_CHARGESTORE_ENABLE				1 //DISABLE_THIS_MOUDLE       //是否支持智能充点仓
+#define TCFG_CHARGESTORE_ENABLE				0 //DISABLE_THIS_MOUDLE       //是否支持智能充点仓
 #define TCFG_TEST_BOX_ENABLE			    1
 #define TCFG_CHARGE_CALIBRATION_ENABLE      DISABLE_THIS_MOUDLE       //是否支持充电电流校准功能
 #if TCFG_AUDIO_ANC_ENABLE
@@ -754,7 +754,7 @@
 //*********************************************************************************//
 #define TCFG_AUTO_SHUT_DOWN_TIME		          180   //没有蓝牙连接自动关机时间
 #define TCFG_SYS_LVD_EN						      1   //电量检测使能
-#define TCFG_POWER_ON_NEED_KEY                    1   //是否需要按按键开机配置
+#define TCFG_POWER_ON_NEED_KEY                    0   //是否需要按按键开机配置
 
 //*********************************************************************************//
 //                                  蓝牙配置                                       //

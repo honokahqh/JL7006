@@ -34,6 +34,37 @@
 
 void board_power_init(void);
 
+// 声明HALL IO
+#define HALL_IO IO_PORTB_03
+
+// 声明PA控制函数
+extern void pa_enable_set(u8 enable);
+extern void pa_enable_init(void);
+
+void board_power_init(void);
+
+// 添加PA使能脚定义
+#define PA_ENABLE_IO        IO_PORTC_04
+
+// PA使能脚控制函数
+void pa_enable_set(u8 enable)
+{
+    if (enable) {
+        gpio_direction_output(PA_ENABLE_IO, 1);
+        log_info("PA Enable ON\n");
+    } else {
+        gpio_direction_output(PA_ENABLE_IO, 0);
+        log_info("PA Enable OFF\n");
+    }
+}
+
+// PA使能脚初始化
+void pa_enable_init(void)
+{
+    gpio_direction_output(PA_ENABLE_IO, 0);  // 初始化为关闭状态
+    log_info("PA Enable Init\n");
+}
+
 /*各个状态下默认的闪灯方式和提示音设置，如果USER_CFG中设置了USE_CONFIG_STATUS_SETTING为1，则会从配置文件读取对应的配置来填充改结构体*/
 STATUS_CONFIG status_config = {
     //灯状态设置
@@ -78,9 +109,7 @@ STATUS_CONFIG status_config = {
 /*各个按键的消息设置，如果USER_CFG中设置了USE_CONFIG_KEY_SETTING为1，则会从配置文件读取对应的配置来填充改结构体*/
 u8 key_table[KEY_NUM_MAX][KEY_EVENT_MAX] = {
     // SHORT           LONG              HOLD              UP              DOUBLE           TRIPLE
-    {KEY_MUSIC_PP,   KEY_POWEROFF,  KEY_POWEROFF_HOLD,  KEY_NULL,     KEY_DOUBLE_CLICK,     KEY_OPEN_SIRI,     KEY_NULL,      KEY_NULL,     KEY_NULL,      KEY_RESET},   //KEY_0
-    {KEY_MUSIC_NEXT, KEY_VOL_UP,    KEY_VOL_UP,         KEY_NULL,     KEY_NULL,        KEY_NULL},   //KEY_1
-    {KEY_MUSIC_PREV, KEY_VOL_DOWN,  KEY_VOL_DOWN,       KEY_NULL,     KEY_NULL,      KEY_NULL},   //KEY_2
+    {KEY_VOL_UP, KEY_POWEROFF, KEY_POWEROFF_HOLD, KEY_MUSIC_NEXT, KEY_MUSIC_PP, KEY_OPEN_SIRI},
 };
 
 
@@ -553,6 +582,14 @@ struct port_wakeup ldoin_port = {
 };
 #endif
 
+struct port_wakeup hall_port = {
+    .pullup_down_enable = ENABLE,                            //配置I/O 内部上下拉使能
+    .edge               = RISING_EDGE,                      //唤醒方式选择上升沿
+    .both_edge          = 0,                                //不使能双边沿
+    .filter             = PORT_FLT_16ms,                    //滤波时间
+    .iomap              = HALL_IO,                          //唤醒IO为PB3
+};
+
 const struct wakeup_param wk_param = {
 #if (!(TCFG_LP_TOUCH_KEY_ENABLE && TCFG_LP_TOUCH_KEY1_EN))
 	.port[1] = &port0,
@@ -560,6 +597,7 @@ const struct wakeup_param wk_param = {
 #if (TCFG_TEST_BOX_ENABLE || TCFG_CHARGESTORE_ENABLE || TCFG_ANC_BOX_ENABLE || TCFG_CHARGE_CALIBRATION_ENABLE)
 	.port[2] = &port1,
 #endif
+    .port[3] = &hall_port,
 
 #if TCFG_CHARGE_ENABLE
     .aport[0] = &charge_port,
@@ -694,6 +732,8 @@ void board_init()
 	extern void uartSendInit();
 	uartSendInit();
 #endif/*AUDIO_PCM_DEBUG*/
+
+    pa_enable_init();
 }
 
 enum {
@@ -747,6 +787,8 @@ static void close_gpio(u8 is_softoff)
    	//默认唤醒io
 	port_protect(port_group, IO_PORTB_01);
 #endif
+
+    port_protect(port_group, HALL_IO);
 
 #if TCFG_PWMLED_ENABLE
 	if(!is_softoff){
@@ -900,6 +942,9 @@ static void port_wakeup_callback(u8 index, u8 gpio)
 			chargestore_ldo5v_fall_deal();
 			break;
 #endif
+        case 3:
+            log_info("hall wake up:%d\n",gpio);
+            break;
 	}
 }
 
@@ -918,6 +963,26 @@ static void aport_wakeup_callback(u8 index, u8 gpio, u8 edge)
 #endif
 }
 
+/*
+ * 霍尔开关检测任务,定期检测霍尔开关状态
+ * 当检测到下降沿时执行关机
+ */
+static void hall_switch_detect(void *priv) 
+{
+    static u8 last_state = 1;  //默认上拉为高电平
+    static u8 pwr_off_flag = 0;
+    u8 curr_state = gpio_read(HALL_IO);
+
+    if (curr_state == 0 && last_state == 0 && pwr_off_flag == 0){
+        log_info("HALL SWITCH OFF, pwr off\n");
+        pwr_off_flag = 1;
+        sys_enter_soft_poweroff(NULL);
+    } else if (curr_state == 0 && last_state == 1){
+        log_info("HALL SWITCH OFF, wait 50ms\n");
+    }
+    last_state = curr_state;
+}
+
 void board_power_init(void)
 {
     //disable PA6 PC3 USB_IO by ic
@@ -928,12 +993,11 @@ void board_power_init(void)
         gpio_set_die(IO_PORT_DM, 0);
         gpio_set_dieh(IO_PORT_DM, 0);
 
-		/************mic**************/
-		// gpio_set_pull_up(IO_PORTC_04, 0);
-		// gpio_set_pull_down(IO_PORTC_04, 0);
-		// gpio_set_die(IO_PORTC_04, 0);
-		// gpio_set_dieh(IO_PORTC_04, 0);
-
+        /************hall switch**************/
+        gpio_set_die(HALL_IO, 1);       //使能数字输入
+        gpio_set_direction(HALL_IO, 1);  //设置为输入
+        gpio_set_pull_up(HALL_IO, 1);   //使能上拉
+        gpio_set_pull_down(HALL_IO, 0); //关闭下拉
     }
     log_info("--Power init : %s", __FILE__);
 
@@ -949,9 +1013,36 @@ void board_power_init(void)
 
     aport_edge_wkup_set_callback(aport_wakeup_callback);
     port_edge_wkup_set_callback(port_wakeup_callback);
-
+    
 #if (!TCFG_IOKEY_ENABLE && !TCFG_ADKEY_ENABLE)
     charge_check_and_set_pinr(1);
 #endif
+
+    //创建霍尔开关检测任务,20ms检测一次
+    sys_timer_add(NULL, hall_switch_detect, 50);
 }
+
+// 重定义DAC功率状态回调函数来控制PA使能脚
+void audio_dac_power_state(u8 state)
+{
+    switch (state) {
+    case DAC_ANALOG_OPEN_PREPARE:   // DAC模拟开启准备
+        log_info("USER_DAC_ANALOG_OPEN_PREPARE\n");
+        break;
+    case DAC_ANALOG_OPEN_FINISH:    // DAC模拟开启完成
+        log_info("USER_DAC_ANALOG_OPEN_FINISH\n");
+        pa_enable_set(1);           // 打开PA使能
+        break;
+    case DAC_ANALOG_CLOSE_PREPARE:  // DAC模拟关闭准备
+        log_info("USER_DAC_ANALOG_CLOSE_PREPARE\n");
+        pa_enable_set(0);           // 关闭PA使能
+        break;
+    case DAC_ANALOG_CLOSE_FINISH:   // DAC模拟关闭完成
+        log_info("USER_DAC_ANALOG_CLOSE_FINISH\n");
+        break;
+    default:
+        break;
+    }
+}
+
 #endif /* #ifdef CONFIG_BOARD_AC698X_DEMO */

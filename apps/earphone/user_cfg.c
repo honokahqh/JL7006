@@ -177,18 +177,18 @@ u8 get_tone_vol(void)
     return (audio_cfg.tone_vol);
 }
 
-#define USE_CONFIG_BIN_FILE                  0
+#define USE_CONFIG_BIN_FILE                  1
 
 #define USE_CONFIG_STATUS_SETTING            1                          //状态设置，包括灯状态和提示音
 #define USE_CONFIG_AUDIO_SETTING             USE_CONFIG_BIN_FILE        //音频设置
 #define USE_CONFIG_CHARGE_SETTING            USE_CONFIG_BIN_FILE        //充电设置
-#define USE_CONFIG_KEY_SETTING               USE_CONFIG_BIN_FILE        //按键消息设置
+#define USE_CONFIG_KEY_SETTING               USE_CONFIG_BIN_FILE        //按键消息设置  只对IO KEY和AD KEY有效
 #define USE_CONFIG_MIC_TYPE_SETTING          USE_CONFIG_BIN_FILE        //MIC类型设置
 #define USE_CONFIG_LOWPOWER_V_SETTING        USE_CONFIG_BIN_FILE        //低电提示设置
 #define USE_CONFIG_AUTO_OFF_SETTING          USE_CONFIG_BIN_FILE        //自动关机时间设置
 #define USE_CONFIG_COMBINE_VOL_SETTING       1					        //联合音量读配置
 
-#define USE_CONFIG_DEBUG_INFO				 0							//打印配置信息用于调试和测试，打开该宏编译后会多出4K
+#define USE_CONFIG_DEBUG_INFO				 1							//打印配置信息用于调试和测试，打开该宏编译后会多出4K
 
 #if USE_CONFIG_DEBUG_INFO
 #if USE_CONFIG_STATUS_SETTING

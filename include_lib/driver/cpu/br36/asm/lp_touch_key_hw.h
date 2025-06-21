@@ -142,7 +142,7 @@ u8 get_lpctmu_ana_level(void);
 
 #define CTMU_SHORT_CLICK_DELAY_TIME 	400 	//单击事件后等待下一次单击时间(ms)
 #define CTMU_HOLD_CLICK_DELAY_TIME 		200 	//long事件产生后, 发hold事件间隔(ms)
-#define CTMU_LONG_KEY_DELAY_TIME 		2000 	//从按下到产生long事件的时间(ms)
+#define CTMU_LONG_KEY_DELAY_TIME 		1000 	//从按下到产生long事件的时间(ms)
 
 #endif /* #ifndef _LP_TOUCH_KEY_HW_H_ */
 

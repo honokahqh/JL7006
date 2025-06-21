@@ -8,7 +8,7 @@
 #define LIB_DEBUG    1
 #define CONFIG_DEBUG_LIB(x)         (x & LIB_DEBUG)
 
-// #define CONFIG_DEBUG_ENABLE
+#define CONFIG_DEBUG_ENABLE
 
 #ifndef CONFIG_DEBUG_ENABLE
 //#define CONFIG_DEBUG_LITE_ENABLE  //轻量级打印开关, 默认关闭
@@ -18,13 +18,13 @@
 //*********************************************************************************//
 //                                  AI配置                                       //
 //*********************************************************************************//
-//#define CONFIG_APP_BT_ENABLE
+#define CONFIG_APP_BT_ENABLE
 
 #ifdef CONFIG_APP_BT_ENABLE
-#define    TRANS_DATA_EN             0
+#define    TRANS_DATA_EN             1
 #define    RCSP_BTMATE_EN            0
 #define    RCSP_ADV_EN               0
-#define    AI_APP_PROTOCOL           1
+#define    AI_APP_PROTOCOL           0
 #define    LL_SYNC_EN                0
 #define    TUYA_DEMO_EN              0
 #else

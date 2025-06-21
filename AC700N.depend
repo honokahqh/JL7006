@@ -1,0 +1,5973 @@
+# depslib dependency file v1.0
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\audio\amplitude_statistic.c
+	"amplitude_statistic.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\audio\amplitude_statistic.h
+	"generic/typedef.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\generic\typedef.h
+	"asm/cpu.h"
+	"generic/errno-base.h"
+	"string.h"
+	"strings.h"
+	"system/malloc.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\cpu.h
+	"br36.h"
+	"csfr.h"
+	"cache.h"
+	"asm/irq.h"
+	"generic/printf.h"
+	"system/generic/log.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\br36.h
+	"io_omap.h"
+	"io_imap.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\io_omap.h
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\io_imap.h
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\csfr.h
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\cache.h
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\irq.h
+	"asm/hwi.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\hwi.h
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\generic\printf.h
+	<stdarg.h>
+	"typedef.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\generic\log.h
+	"system/generic/printf.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\generic\errno-base.h
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\malloc.h
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\audio\audio_demo.c
+	"system/includes.h"
+	"audio_config.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\includes.h
+	"init.h"
+	"event.h"
+	"malloc.h"
+	"spinlock.h"
+	"task.h"
+	"timer.h"
+	"wait.h"
+	"app_core.h"
+	"app_msg.h"
+	"database.h"
+	"fs/fs.h"
+	"power_manage.h"
+	"syscfg_id.h"
+	"bank_switch.h"
+	"movable.h"
+	"generic/includes.h"
+	"device/includes.h"
+	"asm/includes.h"
+	"device/sdio_host_init.h"
+	"crypto_toolbox/crypto.h"
+	"crypto_toolbox/Crypto_hash.h"
+	"crypto_toolbox/hmac.h"
+	"crypto_toolbox/sha256.h"
+	"crypto_toolbox/bigint.h"
+	"crypto_toolbox/bigint_impl.h"
+	"crypto_toolbox/ecdh.h"
+	"crypto_toolbox/micro-ecc/uECC_new.h"
+	"crypto_toolbox/micro-ecc/uECC.h"
+	"crypto_toolbox/aes_cmac.h"
+	"crypto_toolbox/rijndael.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\init.h
+
+1715161030 d:\project\btglass\jl700\sdk\include_lib\system\event.h
+	"generic/typedef.h"
+	"generic/list.h"
+	"generic/rect.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\generic\list.h
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\generic\rect.h
+	"typedef.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\spinlock.h
+	"typedef.h"
+	"cpu.h"
+	"irq.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\system\generic\cpu.h
+	<asm/cpu.h>
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\generic\irq.h
+	"asm/irq.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\task.h
+	"os/os_api.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\os\os_api.h
+	"generic/typedef.h"
+	"os/os_cpu.h"
+	"os/os_error.h"
+	"os/os_type.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\os\os_cpu.h
+	"asm/cpu.h"
+	"jiffies.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\generic\jiffies.h
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\os\os_error.h
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\os\os_type.h
+	<os/ucos_ii.h>
+	"FreeRTOS/FreeRTOS.h"
+	"FreeRTOS/semphr.h"
+	"FreeRTOS/task.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\os\ucos_ii.h
+	"generic/typedef.h"
+	"os/os_cpu.h"
+	"os/os_cfg.h"
+	"os/os_api.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\os\os_cfg.h
+	"os/os_cpu.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\os\freertos\freertos.h
+	"FreeRTOSConfig.h"
+	"projdefs.h"
+	"portable.h"
+	<reent.h>
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\os\freertos\freertosconfig.h
+	"printf.h"
+	"pi32v2/portmacro.h"
+	"pi32_lto/portmacro.h"
+	"q32s/portmacro.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\os\freertos\pi32v2\portmacro.h
+	"asm/cpu.h"
+	<stdint.h>
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\os\freertos\pi32_lto\portmacro.h
+	"asm/cpu.h"
+	<stdint.h>
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\os\freertos\q32s\portmacro.h
+	"asm/cpu.h"
+	<stdint.h>
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\os\freertos\projdefs.h
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\os\freertos\portable.h
+	"deprecated_definitions.h"
+	"portmacro.h"
+	"mpu_wrappers.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\os\freertos\deprecated_definitions.h
+	"..\..\Source\portable\owatcom\16bitdos\pc\portmacro.h"
+	"..\..\Source\portable\owatcom\16bitdos\flsh186\portmacro.h"
+	"../portable/GCC/ATMega323/portmacro.h"
+	"../portable/IAR/ATMega323/portmacro.h"
+	"../../Source/portable/MPLAB/PIC24_dsPIC/portmacro.h"
+	"../../Source/portable/MPLAB/PIC24_dsPIC/portmacro.h"
+	"../../Source/portable/MPLAB/PIC18F/portmacro.h"
+	"../../Source/portable/MPLAB/PIC32MX/portmacro.h"
+	"libFreeRTOS/Include/portmacro.h"
+	"../../Source/portable/SDCC/Cygnal/portmacro.h"
+	"../../Source/portable/GCC/ARM7_LPC2000/portmacro.h"
+	"portmacro.h"
+	"../../Source/portable/GCC/ARM7_LPC23xx/portmacro.h"
+	"..\..\Source\portable\IAR\MSP430\portmacro.h"
+	"../../Source/portable/GCC/MSP430F449/portmacro.h"
+	"../../Source/portable/Rowley/MSP430F449/portmacro.h"
+	"..\..\Source\portable\RVDS\ARM7_LPC21xx\portmacro.h"
+	"../../Source/portable/GCC/ARM7_AT91SAM7S/portmacro.h"
+	"..\..\Source\portable\IAR\AtmelSAM7S64\portmacro.h"
+	"..\..\Source\portable\IAR\AtmelSAM9XE\portmacro.h"
+	"..\..\Source\portable\IAR\LPC2000\portmacro.h"
+	"..\..\Source\portable\IAR\STR71x\portmacro.h"
+	"..\..\Source\portable\IAR\STR75x\portmacro.h"
+	"..\..\Source\portable\GCC\STR75x\portmacro.h"
+	"..\..\Source\portable\IAR\STR91x\portmacro.h"
+	"../../Source/portable/GCC/H8S2329/portmacro.h"
+	"../../Source/portable/GCC/ARM7_AT91FR40008/portmacro.h"
+	"../../Source/portable/RVDS/ARM_CM3/portmacro.h"
+	"../../Source/portable/GCC/ARM_CM3/portmacro.h"
+	"../../Source/portable/GCC/ARM_CM3/portmacro.h"
+	"../../Source/portable/IAR/ARM_CM3/portmacro.h"
+	"../../Source/portable/IAR/ARM_CM3/portmacro.h"
+	"../../Source/portable/CodeWarrior/HCS12/portmacro.h"
+	"../../Source/portable/GCC/MicroBlaze/portmacro.h"
+	"..\..\Source\portable\Paradigm\Tern_EE\small\portmacro.h"
+	"../../Source/portable/GCC/HCS12/portmacro.h"
+	"../../Source/portable/GCC/MCF5235/portmacro.h"
+	"../../../Source/portable/GCC/ColdFire_V2/portmacro.h"
+	"../../Source/portable/CodeWarrior/ColdFire_V2/portmacro.h"
+	"../../Source/portable/GCC/PPC405_Xilinx/portmacro.h"
+	"../../Source/portable/GCC/PPC440_Xilinx/portmacro.h"
+	"..\..\Source\portable\Softune\MB96340\portmacro.h"
+	"frconfig.h"
+	"..\portable\BCC\16BitDOS\PC\prtmacro.h"
+	"frconfig.h"
+	"..\portable\BCC\16BitDOS\flsh186\prtmacro.h"
+	"portmacro.h"
+	"portmacro.h"
+	"portmacro.h"
+	"portmacro.h"
+	"../../Source/portable/IAR/V850ES/portmacro.h"
+	"../../Source/portable/IAR/V850ES/portmacro.h"
+	"../../Source/portable/IAR/V850ES/portmacro.h"
+	"../../Source/portable/IAR/V850ES/portmacro.h"
+	"../../Source/portable/IAR/V850ES/portmacro.h"
+	"../../Source/portable/IAR/78K0R/portmacro.h"
+	"../../Source/portable/IAR/78K0R/portmacro.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\os\freertos\mpu_wrappers.h
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\os\freertos\semphr.h
+	"queue.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\os\freertos\queue.h
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\os\freertos\task.h
+	"list.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\os\freertos\list.h
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\timer.h
+	"typedef.h"
+	"generic/list.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\wait.h
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\app_core.h
+	"typedef.h"
+	"generic/list.h"
+	"system/event.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\app_msg.h
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\database.h
+	"typedef.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\fs\fs.h
+	"generic/typedef.h"
+	"generic/list.h"
+	"generic/ioctl.h"
+	"generic/atomic.h"
+	"system/task.h"
+	"system/malloc.h"
+	"system/sys_time.h"
+	"stdarg.h"
+	"fs_file_name.h"
+	"sdfile.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\generic\ioctl.h
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\system\generic\atomic.h
+	"cpu.h"
+	"irq.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\sys_time.h
+	"typedef.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\fs\fs_file_name.h
+	"generic/typedef.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\fs\sdfile.h
+	"typedef.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\power_manage.h
+	"generic/typedef.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\syscfg_id.h
+	"typedef.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\bank_switch.h
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\movable.h
+	"generic/typedef.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\system\generic\includes.h
+	"errno-base.h"
+	"typedef.h"
+	"ascii.h"
+	"atomic.h"
+	"ioctl.h"
+	"cpu.h"
+	"gpio.h"
+	"irq.h"
+	"jiffies.h"
+	"list.h"
+	"printf.h"
+	"rect.h"
+	"version.h"
+	"lbuf.h"
+	"lbuf_lite.h"
+	"circular_buf.h"
+	"index.h"
+	"debug_lite.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\generic\ascii.h
+	"typedef.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\generic\gpio.h
+	"asm/gpio.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\gpio.h
+	"typedef.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\generic\version.h
+	"typedef.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\generic\lbuf.h
+	"typedef.h"
+	"list.h"
+	"system/spinlock.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\generic\lbuf_lite.h
+	"typedef.h"
+	"list.h"
+	"system/spinlock.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\system\generic\circular_buf.h
+	"typedef.h"
+	"system/spinlock.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\generic\index.h
+	"typedef.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\generic\debug_lite.h
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\device\includes.h
+	"device.h"
+	"ioctl_cmds.h"
+	"key_driver.h"
+	"iokey.h"
+	"irkey.h"
+	"adkey.h"
+	"slidekey.h"
+	"touch_key.h"
+	"rdec_key.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\device\device.h
+	"generic/typedef.h"
+	"generic/list.h"
+	"generic/atomic.h"
+	"device/ioctl_cmds.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\device\ioctl_cmds.h
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\device\key_driver.h
+	"typedef.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\device\iokey.h
+	"typedef.h"
+	"device/device.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\device\irkey.h
+	"typedef.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\device\adkey.h
+	"typedef.h"
+	"asm/adc_api.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\adc_api.h
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\device\slidekey.h
+	"typedef.h"
+	"device/device.h"
+	"asm/adc_api.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\device\touch_key.h
+	"typedef.h"
+	"asm/plcnt.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\plcnt.h
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\device\rdec_key.h
+	"typedef.h"
+	"asm/rdec.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\rdec.h
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\includes.h
+	"asm/cpu.h"
+	"asm/crc16.h"
+	"asm/clock.h"
+	"asm/uart.h"
+	"asm/uart_dev.h"
+	"asm/gpio.h"
+	"asm/spiflash.h"
+	"asm/csfr.h"
+	"asm/power_interface.h"
+	"asm/efuse.h"
+	"asm/wdt.h"
+	"asm/debug.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\crc16.h
+	"typedef.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\clock.h
+	"typedef.h"
+	"clock_hw.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\clock_hw.h
+	"typedef.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\uart.h
+	"device/uart.h"
+	"device/device.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\device\uart.h
+	"typedef.h"
+	"device/device.h"
+	"generic/ioctl.h"
+	"system/task.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\uart_dev.h
+	"typedef.h"
+	"os/os_api.h"
+	"jiffies.h"
+	"irq.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\spiflash.h
+	"device/device.h"
+	"device/spiflash.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\driver\device\spiflash.h
+	"typedef.h"
+	"generic/list.h"
+	"generic/ioctl.h"
+	"device/device.h"
+	"system/task.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\power_interface.h
+	"generic/typedef.h"
+	"asm/power/power_api.h"
+	"asm/power/lp_wakeup.h"
+	"asm/power/power_reset.h"
+	"asm/power/power_port.h"
+	"asm/power/p33.h"
+	"asm/power/p11.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\power\power_api.h
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\power\lp_wakeup.h
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\power\power_reset.h
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\power\power_port.h
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\power\p33.h
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\power\p11.h
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\efuse.h
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\wdt.h
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\debug.h
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\driver\device\sdio_host_init.h
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\crypto_toolbox\crypto.h
+	"endian.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\crypto_toolbox\endian.h
+	"generic/typedef.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\crypto_toolbox\crypto_hash.h
+	"generic/typedef.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\crypto_toolbox\hmac.h
+	"crypto.h"
+	"sha256.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\crypto_toolbox\sha256.h
+	"crypto.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\crypto_toolbox\bigint.h
+	"bigint_impl.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\crypto_toolbox\bigint_impl.h
+	"generic/typedef.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\crypto_toolbox\ecdh.h
+	"bigint_impl.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\crypto_toolbox\micro-ecc\uecc_new.h
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\crypto_toolbox\micro-ecc\uecc.h
+	<stdint.h>
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\crypto_toolbox\aes_cmac.h
+	<stdint.h>
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\crypto_toolbox\rijndael.h
+	<stdint.h>
+
+1698751104 d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_config.h
+	"generic/typedef.h"
+	"board_config.h"
+
+1698751099 d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_config.h
+	"media/audio_def.h"
+	"board_ac700n_demo_cfg.h"
+	"board_ac7006f_earphone_cfg.h"
+	"board_ac700n_sd_pc_demo_cfg.h"
+	"board_ac7003f_demo_cfg.h"
+	"board_ac700n_anc_cfg.h"
+	"board_ac700n_dms_cfg.h"
+	"board_ac700n_test_cfg.h"
+	"board_ac700n_hearing_aid_cfg.h"
+	"board_ac700n_iis_linein_cfg.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\media\audio_def.h
+
+1750472161 d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_demo_cfg.h
+	"board_ac700n_demo_global_build_cfg.h"
+	"usb_std_class_def.h"
+
+1715161722 d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_demo_global_build_cfg.h
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\device\usb\usb_std_class_def.h
+
+1698751099 d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac7006f_earphone_cfg.h
+	"board_ac7006f_earphone_global_build_cfg.h"
+	"usb_std_class_def.h"
+
+1698751099 d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac7006f_earphone_global_build_cfg.h
+
+1698751101 d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_sd_pc_demo_cfg.h
+	"board_ac700n_sd_pc_demo_global_build_cfg.h"
+	"usb_std_class_def.h"
+	"usb_std_class_def.h"
+
+1698751099 d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_sd_pc_demo_global_build_cfg.h
+
+1698751099 d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac7003f_demo_cfg.h
+	"board_ac7003f_demo_global_build_cfg.h"
+	"usb_std_class_def.h"
+
+1698751099 d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac7003f_demo_global_build_cfg.h
+
+1698751099 d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_anc_cfg.h
+	"board_ac700n_anc_global_build_cfg.h"
+	"usb_std_class_def.h"
+
+1698751099 d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_anc_global_build_cfg.h
+
+1698751099 d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_dms_cfg.h
+	"board_ac700n_dms_global_build_cfg.h"
+	"usb_std_class_def.h"
+
+1698751099 d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_dms_global_build_cfg.h
+
+1698751099 d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_test_cfg.h
+	"board_ac700n_test_global_build_cfg.h"
+	"usb_std_class_def.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_test_global_build_cfg.h
+
+1698751100 d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_hearing_aid_cfg.h
+	"board_ac700n_hearing_aid_global_build_cfg.h"
+	"usb_std_class_def.h"
+
+1698751099 d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_hearing_aid_global_build_cfg.h
+
+1698751099 d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_iis_linein_cfg.h
+	"board_ac700n_iis_linein_global_build_cfg.h"
+	"usb_std_class_def.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_iis_linein_global_build_cfg.h
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\audio\audio_dvol.c
+	"audio_dvol.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\audio\audio_dvol.h
+	"generic/typedef.h"
+	"os/os_type.h"
+	"os/os_api.h"
+	"generic/list.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\audio\audio_export_demo.c
+	"app_config.h"
+	"uartPcmSender.h"
+
+1750474863 d:\project\btglass\jl700\sdk\apps\earphone\include\app_config.h
+	"board_config.h"
+	"usb_std_class_def.h"
+	"usb_common_def.h"
+	"btcontroller_mode.h"
+	"user_cfg_id.h"
+	"bt_profile_cfg.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\device\usb\usb_common_def.h
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\btctrler\btcontroller_mode.h
+
+1698751096 d:\project\btglass\jl700\sdk\apps\earphone\include\user_cfg_id.h
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\config\include\bt_profile_cfg.h
+	"app_config.h"
+	"btcontroller_modules.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\btctrler\btcontroller_modules.h
+	"hci_transport.h"
+	"btcontroller_mode.h"
+	"ble/hci_ll.h"
+	"classic/hci_lmp.h"
+
+1698751107 d:\project\btglass\jl700\sdk\include_lib\btctrler\hci_transport.h
+	"generic/typedef.h"
+
+1698751107 d:\project\btglass\jl700\sdk\include_lib\btctrler\ble\hci_ll.h
+	<stdint.h>
+	<stdlib.h>
+	<stdarg.h>
+	"typedef.h"
+
+1698751107 d:\project\btglass\jl700\sdk\include_lib\btctrler\classic\hci_lmp.h
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\audio\uartpcmsender.h
+	"system/includes.h"
+	"app_config.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\audio\audio_noise_gate.c
+	"system/includes.h"
+	"os/os_api.h"
+	"limiter_noiseGate_api.h"
+	"audio_noise_gate.h"
+
+1698751106 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\limiter_noisegate_api.h
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\audio\audio_noise_gate.h
+	"generic/typedef.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\audio\audio_ns.c
+	"audio_ns.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\audio\audio_ns.h
+	"generic/typedef.h"
+	"generic/circular_buf.h"
+	"commproc_ns.h"
+
+1698751107 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\cpu\br36\commproc_ns.h
+	"generic/typedef.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\audio\audio_plc.c
+	"system/includes.h"
+	"PLC.h"
+	"os/os_api.h"
+	"app_config.h"
+	"audio_config.h"
+
+1698751106 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\plc.h
+	"generic/typedef.h"
+
+1716533506 source:d:\project\btglass\jl700\sdk\apps\common\audio\decode\audio_key_tone.c
+	"asm/includes.h"
+	"media/includes.h"
+	"system/includes.h"
+	"app_config.h"
+	"audio_config.h"
+	"application/audio_dec_app.h"
+	"tone_player.h"
+	"sine_make.h"
+	"audio_codec_clock.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\includes.h
+	"media/audio_decoder.h"
+	"media/audio_encoder.h"
+	"media/mixer.h"
+	"media/automute.h"
+	"media/audio_stream.h"
+	"asm/cpu_includes.h"
+	"application/eq_func_define.h"
+	"asm/dac.h"
+	"asm/audio_adc.h"
+	"asm/audio_src.h"
+	"asm/audio_spdif.h"
+
+1698751107 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\audio_decoder.h
+	"generic/typedef.h"
+	"generic/list.h"
+	"media/audio_base.h"
+	"os/os_api.h"
+
+1698751106 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\audio_base.h
+
+1698751107 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\audio_encoder.h
+	"generic/typedef.h"
+	"generic/list.h"
+	"generic/circular_buf.h"
+	"media/audio_base.h"
+	"os/os_api.h"
+
+1698751107 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\mixer.h
+	"generic/typedef.h"
+	"generic/list.h"
+	"os/os_api.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\automute.h
+	"generic/typedef.h"
+	"generic/list.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\media\audio_stream.h
+	"generic/includes.h"
+	"media/audio_base.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\cpu\br36\asm\cpu_includes.h
+	"asm/audio_adc.h"
+	"asm/audio_linein.h"
+	"asm/audio_src.h"
+	"asm/audio_sync_resample.h"
+	"dac.h"
+	"asm/hw_eq.h"
+
+1698751106 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\cpu\br36\asm\audio_adc.h
+	"generic/typedef.h"
+	"generic/list.h"
+	"generic/atomic.h"
+	"media/audio_def.h"
+
+1698751107 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\cpu\br36\asm\audio_linein.h
+	"generic/typedef.h"
+	"asm/audio_adc.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\cpu\br36\asm\audio_src.h
+	"system/includes.h"
+
+1698751106 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\cpu\br36\asm\audio_sync_resample.h
+	"typedef.h"
+	"system/includes.h"
+	"os/os_api.h"
+	"audio_src.h"
+
+1698751107 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\cpu\br36\asm\dac.h
+	"generic/typedef.h"
+	"generic/atomic.h"
+	"os/os_api.h"
+	"audio_src.h"
+	"media/audio_cfifo.h"
+
+1698751106 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\audio_cfifo.h
+	"generic/list.h"
+	"typedef.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\cpu\br36\asm\hw_eq.h
+	"generic/typedef.h"
+	"generic/list.h"
+	"os/os_api.h"
+	"application/eq_func_define.h"
+
+1698751106 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\application\eq_func_define.h
+	"generic/typedef.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\application\audio_dec_app.h
+	"asm/includes.h"
+	"media/includes.h"
+	"system/includes.h"
+
+1698751100 d:\project\btglass\jl700\sdk\apps\earphone\include\tone_player.h
+	"app_config.h"
+	"tone_player_api.h"
+
+1698751105 d:\project\btglass\jl700\sdk\cpu\br36\audio\tone_player_api.h
+	"audio_config.h"
+	"sine_make.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\audio\sine_make.h
+	"generic/typedef.h"
+
+1716533614 d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_codec_clock.h
+	"audio_base.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\audio\decode\decode.c
+	"application/audio_dec_app.h"
+	"app_config.h"
+	"audio_config.h"
+	"app_main.h"
+	"tone_player.h"
+
+1698751096 d:\project\btglass\jl700\sdk\apps\earphone\include\app_main.h
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\audio\online_debug\aud_mic_dut.c
+	"aud_mic_dut.h"
+	"audio_online_debug.h"
+	"online_db_deal.h"
+	"mic_dut_process.h"
+	"app_config.h"
+	"system/includes.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\audio\online_debug\aud_mic_dut.h
+	"generic/typedef.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\audio\online_debug\audio_online_debug.h
+	"generic/typedef.h"
+	"online_db_deal.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\online_db\online_db_deal.h
+	"typedef.h"
+
+1698751105 d:\project\btglass\jl700\sdk\cpu\br36\audio\mic_dut_process.h
+	"generic/typedef.h"
+	"online_debug/aud_mic_dut.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\audio\online_debug\audio_online_debug.c
+	"audio_online_debug.h"
+	"generic/list.h"
+	"aud_mic_dut.h"
+	"board_config.h"
+	"system/includes.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\audio\sine_make.c
+	"system/includes.h"
+	"sine_make.h"
+	"asm/math_fast_function.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\math\cpu\br36\asm\math_fast_function.h
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\audio\uartpcmsender.c
+	"app_config.h"
+	"system/includes.h"
+	"asm/uart_dev.h"
+	"uartPcmSender.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\audio\wm8978\iic.c
+	"iic.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\audio\wm8978\iic.h
+	"generic/typedef.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\audio\wm8978\wm8978.c
+	"iic.h"
+	"wm8978.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\audio\wm8978\wm8978.h
+
+1698751103 source:d:\project\btglass\jl700\sdk\apps\common\cjson\cjson.c
+	<string.h>
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+	<float.h>
+	<limits.h>
+	<ctype.h>
+	"cJSON.h"
+
+1698751104 d:\project\btglass\jl700\sdk\apps\common\cjson\cjson.h
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\config\app_config.c
+	"system/includes.h"
+	"app_config.h"
+	"config/config_interface.h"
+	"debug.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\config\config_interface.h
+	"config/config_transport.h"
+	"config/config_target.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\config\config_transport.h
+	"typedef.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\config\config_target.h
+	"typedef.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\debug.h
+	"asm/cpu.h"
+	"generic/typedef.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\config\bt_profile_config.c
+	"system/includes.h"
+	"app_config.h"
+	"btcontroller_config.h"
+	"btstack/bt_profile_config.h"
+	"bt_common.h"
+	"debug.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\btctrler\port\br36\btcontroller_config.h
+	"btcontroller_modules.h"
+	"ble/ll_config.h"
+	"classic/lmp_config.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\btctrler\ble\ll_config.h
+	<stdint.h>
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\btctrler\classic\lmp_config.h
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\btstack\bt_profile_config.h
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\include\bt_common.h
+	<stdint.h>
+	"app_config.h"
+	"lib_profile_cfg.h"
+	"bt_profile_cfg.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\config\ci_transport_uart.c
+	"system/includes.h"
+	"config/config_interface.h"
+	"system/event.h"
+	"app_online_cfg.h"
+	"asm/uart_dev.h"
+	"app_config.h"
+	"asm/crc16.h"
+	"cfg_tool.h"
+	"debug.h"
+
+1698751100 d:\project\btglass\jl700\sdk\apps\earphone\include\app_online_cfg.h
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\config\include\cfg_tool.h
+	"typedef.h"
+	"sdfile.h"
+	"fs.h"
+	"asm/sfc_norflash_api.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\sfc_norflash_api.h
+	"typedef.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\config\new_cfg_tool.c
+	"cfg_tool.h"
+	"event.h"
+	"usb/device/cdc.h"
+	"boot.h"
+	"ioctl_cmds.h"
+	"board_config.h"
+	"app_online_cfg.h"
+	"asm/crc16.h"
+	"app_config.h"
+	"debug.h"
+
+1698751100 d:\project\btglass\jl700\sdk\apps\common\device\usb\device\cdc.h
+	"usb/device/usb_stack.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\device\usb\device\usb_stack.h
+	"typedef.h"
+	"asm/usb.h"
+	"usb/ch9.h"
+	"usb/usb_phy.h"
+	"usb/otg.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\usb.h
+	"typedef.h"
+	"generic/ioctl.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\device\usb\ch9.h
+	"typedef.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\device\usb\usb_phy.h
+	"typedef.h"
+	"asm/usb.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\driver\device\usb\otg.h
+	"asm/usb.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\boot.h
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\debug\debug.c
+	"app_config.h"
+	"typedef.h"
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\common\debug\debug_lite.c
+	"app_config.h"
+	"typedef.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\dev_manager\dev_manager.c
+	"dev_manager.h"
+	"dev_reg.h"
+	"app_config.h"
+	"dev_multiplex_api.h"
+	"spi/nor_fs.h"
+	"dev_update.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\dev_manager\dev_manager.h
+	"system/includes.h"
+	"typedef.h"
+	"system/fs/fs.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\dev_manager\dev_reg.h
+	"system/includes.h"
+	"typedef.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\spi\nor_fs.h
+	"typedef.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\dev_manager\dev_update.h
+	"typedef.h"
+	"system/includes.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\dev_manager\dev_reg.c
+	"dev_reg.h"
+	"app_config.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\dev_manager\dev_update.c
+	"dev_update.h"
+	"dev_manager.h"
+	"update/update.h"
+	"update/update_loader_download.h"
+	"app_config.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\update\update.h
+	"typedef.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\update\update_loader_download.h
+	"typedef.h"
+	"system/task.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\device\gsensor\da230.c
+	"gSensor/EPMotion.h"
+	"gSensor/da230.h"
+	"gSensor/gSensor_manage.h"
+	"app_config.h"
+	"debug.h"
+
+1698751100 d:\project\btglass\jl700\sdk\apps\common\device\gsensor\epmotion.h
+	"mira_std.h"
+
+1698751100 d:\project\btglass\jl700\sdk\apps\common\device\gsensor\mira_std.h
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\device\gsensor\da230.h
+	"typedef.h"
+	"mira_std.h"
+
+1698751100 d:\project\btglass\jl700\sdk\apps\common\device\gsensor\gsensor_manage.h
+	"printf.h"
+	"cpu.h"
+	"asm/iic_hw.h"
+	"asm/iic_soft.h"
+	"timer.h"
+	"app_config.h"
+	"event.h"
+	"system/includes.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\iic_hw.h
+	"system/generic/typedef.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\iic_soft.h
+	"generic/typedef.h"
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\common\device\gsensor\gsensor_manage.c
+	"gSensor/gSensor_manage.h"
+	"device/device.h"
+	"app_config.h"
+	"debug.h"
+	"key_event_deal.h"
+	"btstack/avctp_user.h"
+	"app_main.h"
+	"tone_player.h"
+	"user_cfg.h"
+	"system/os/os_api.h"
+	"bt_tws.h"
+	"debug.h"
+
+1715161594 d:\project\btglass\jl700\sdk\apps\earphone\include\key_event_deal.h
+	"typedef.h"
+	"bt_profile_cfg.h"
+	"system/event.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\btstack\avctp_user.h
+	"typedef.h"
+	"btstack_typedef.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\btstack\btstack_typedef.h
+	"typedef.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\user_cfg.h
+	"typedef.h"
+	"app_config.h"
+
+1698751096 d:\project\btglass\jl700\sdk\apps\earphone\include\bt_tws.h
+	"classic/tws_api.h"
+	"classic/tws_event.h"
+	"system/includes.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\btctrler\classic\tws_api.h
+	"typedef.h"
+	"classic/tws_event.h"
+	"classic/tws_local_media_sync.h"
+	"classic/tws_data_trans.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\btctrler\classic\tws_event.h
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\btctrler\classic\tws_local_media_sync.h
+	"generic/list.h"
+	"generic/typedef.h"
+
+1698751107 d:\project\btglass\jl700\sdk\include_lib\btctrler\classic\tws_data_trans.h
+	"generic/typedef.h"
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\common\device\gsensor\sc7a20.c
+	"gSensor/SC7A20.h"
+	"gSensor/gSensor_manage.h"
+	"app_config.h"
+	"gSensor/SC7A20.h"
+	"math.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\device\gsensor\sc7a20.h
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\common\device\gsensor\stk8321.c
+	"gSensor/STK8321.h"
+	"gSensor/gSensor_manage.h"
+	"app_config.h"
+
+1698751100 d:\project\btglass\jl700\sdk\apps\common\device\gsensor\stk8321.h
+	"typedef.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\device\gx8002_npu\gx8002_enc\gx8002_enc.c
+	"includes.h"
+	"app_config.h"
+	"gx8002_enc.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\device\gx8002_npu\gx8002_enc\gx8002_enc.h
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\device\gx8002_npu\gx8002_npu.c
+	"includes.h"
+	"app_config.h"
+	"gx8002_npu.h"
+	"gx8002_npu_api.h"
+	"asm/pwm_led.h"
+	"btstack/avctp_user.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\device\gx8002_npu\gx8002_npu.h
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\device\gx8002_npu\gx8002_npu_api.h
+	"app_config.h"
+	"update_loader_download.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\pwm_led.h
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\device\gx8002_npu\gx8002_npu_event_deal.c
+	"includes.h"
+	"app_config.h"
+	"gx8002_npu.h"
+	"gx8002_npu_api.h"
+	"btstack/avctp_user.h"
+	"tone_player.h"
+	"bt_tws.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\device\gx8002_npu\gx8002_upgrade\app_upgrade\gx_uart_upgrade_app.c
+	"includes.h"
+	"../gx_uart_upgrade.h"
+	"../../gx8002_npu_api.h"
+	"../gx_uart_upgrade_porting.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\device\gx8002_npu\gx8002_upgrade\gx_uart_upgrade.h
+	"gx_upgrade_def.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\device\gx8002_npu\gx8002_upgrade\gx_upgrade_def.h
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\device\gx8002_npu\gx8002_upgrade\gx_uart_upgrade_porting.h
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\device\gx8002_npu\gx8002_upgrade\app_upgrade\gx_uart_upgrade_tws.c
+	"includes.h"
+	"../gx_uart_upgrade.h"
+	"../../gx8002_npu_api.h"
+	"../gx_uart_upgrade_porting.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\device\gx8002_npu\gx8002_upgrade\gx_uart_upgrade.c
+	"includes.h"
+	"gx_uart_upgrade.h"
+	"../gx8002_npu_api.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\device\gx8002_npu\gx8002_upgrade\gx_uart_upgrade_porting.c
+	"includes.h"
+	"asm/uart_dev.h"
+	"gx_uart_upgrade_porting.h"
+	"../gx8002_npu_api.h"
+	"app_config.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\device\gx8002_npu\gx8002_upgrade\sdfile_upgrade\gx_uart_upgrade_sdfile.c
+	"includes.h"
+	"../gx_uart_upgrade.h"
+	"../../gx8002_npu_api.h"
+	"../gx_uart_upgrade_porting.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\device\gx8002_npu\gx8002_upgrade\spp_upgrade\gx_fifo.c
+	"includes.h"
+	"gx_fifo.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\device\gx8002_npu\gx8002_upgrade\spp_upgrade\gx_fifo.h
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\device\gx8002_npu\gx8002_upgrade\spp_upgrade\gx_uart_upgrade_spp.c
+	"includes.h"
+	"../gx_uart_upgrade.h"
+	"../../gx8002_npu_api.h"
+	"../gx_uart_upgrade_porting.h"
+	"btstack/avctp_user.h"
+	"classic/hci_lmp.h"
+	"gx_fifo.h"
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\common\device\in_ear_detect\in_ear_detect.c
+	"in_ear_detect/in_ear_manage.h"
+	"in_ear_detect/in_ear_detect.h"
+	"system/includes.h"
+	"app_config.h"
+	"debug.h"
+
+1698751100 d:\project\btglass\jl700\sdk\apps\common\device\in_ear_detect\in_ear_manage.h
+	"typedef.h"
+
+1698751100 d:\project\btglass\jl700\sdk\apps\common\device\in_ear_detect\in_ear_detect.h
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\device\in_ear_detect\in_ear_manage.c
+	"in_ear_detect/in_ear_manage.h"
+	"in_ear_detect/in_ear_detect.h"
+	"system/includes.h"
+	"app_config.h"
+	"btstack/avctp_user.h"
+	"tone_player.h"
+	"debug.h"
+	"bt_tws.h"
+	"audio_anc.h"
+
+1698751104 d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_anc.h
+	"generic/typedef.h"
+	"asm/anc.h"
+	"anc_btspp.h"
+	"anc_uart.h"
+	"app_config.h"
+	"in_ear_detect/in_ear_manage.h"
+
+1698751106 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\cpu\br36\asm\anc.h
+	"generic/typedef.h"
+	"system/task.h"
+	"media/audio_def.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\anc_btspp.h
+	"generic/typedef.h"
+	"asm/anc.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\anc_uart.h
+	"generic/typedef.h"
+	"generic/circular_buf.h"
+	"system/includes.h"
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\common\device\ir_sensor\ir_manage.c
+	"app_config.h"
+	"ir_sensor/ir_manage.h"
+	"debug.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\device\ir_sensor\ir_manage.h
+	"printf.h"
+	"cpu.h"
+	"asm/iic_hw.h"
+	"asm/iic_soft.h"
+	"timer.h"
+	"app_config.h"
+	"event.h"
+	"system/includes.h"
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\common\device\ir_sensor\jsa1221.c
+	"asm/includes.h"
+	"irSensor/jsa1221.h"
+	"app_config.h"
+	"asm/iic_soft.h"
+	"asm/iic_hw.h"
+	"system/timer.h"
+	"system/includes.h"
+	"ir_manage.h"
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\common\device\key\adkey.c
+	"key_driver.h"
+	"adkey.h"
+	"gpio.h"
+	"system/event.h"
+	"app_config.h"
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\common\device\key\adkey_rtcvdd.c
+	"includes.h"
+	"key_driver.h"
+	"adkey.h"
+	"gpio.h"
+	"system/event.h"
+	"app_config.h"
+	"asm/power/p33.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\device\key\ctmu_touch_key.c
+	"key_driver.h"
+	"app_config.h"
+	"asm/ctmu.h"
+	"debug.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\ctmu.h
+	"typedef.h"
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\common\device\key\iokey.c
+	"key_driver.h"
+	"iokey.h"
+	"gpio.h"
+	"system/event.h"
+	"app_config.h"
+	"asm/clock.h"
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\common\device\key\irkey.c
+	"key_driver.h"
+	"irkey.h"
+	"gpio.h"
+	"asm/irflt.h"
+	"app_config.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\irflt.h
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\common\device\key\key_driver.c
+	"device/key_driver.h"
+	"system/event.h"
+	"system/init.h"
+	"iokey.h"
+	"adkey.h"
+	"slidekey.h"
+	"irkey.h"
+	"touch_key.h"
+	"system/timer.h"
+	"asm/power_interface.h"
+	"app_config.h"
+	"rdec_key.h"
+	"tent600_key.h"
+	"tone_player.h"
+	"irSensor/ir_manage.h"
+	"debug.h"
+	"asm/ctmu.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\device\tent600_key.h
+	"typedef.h"
+	"asm/adc_api.h"
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\common\device\key\touch_key.c
+	"touch_key.h"
+	"key_driver.h"
+	"app_config.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\device\key\uart_key.c
+	"key_driver.h"
+	"system/event.h"
+	"asm/uart.h"
+	"app_config.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\device\norflash\norflash.c
+	"norflash.h"
+	"app_config.h"
+	"asm/clock.h"
+	"system/timer.h"
+	"debug.h"
+
+1698751100 d:\project\btglass\jl700\sdk\apps\common\include\norflash.h
+	"device/device.h"
+	"ioctl_cmds.h"
+	"asm/spi.h"
+	"printf.h"
+	"gpio.h"
+	"device_drive.h"
+	"malloc.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\spi.h
+	"typedef.h"
+	"generic/ioctl.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\device\device_drive.h
+	"typedef.h"
+	"errno-base.h"
+	"ioctl.h"
+	"os/os_api.h"
+	<pthread.h>
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\common\device\ntc\ntc_det.c
+	"ntc_det_api.h"
+	"asm/power/p33.h"
+	"system/includes.h"
+	"asm/charge.h"
+
+1698751100 d:\project\btglass\jl700\sdk\apps\common\device\ntc\ntc_det_api.h
+	"typedef.h"
+	"app_config.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\charge.h
+	"typedef.h"
+	"device.h"
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\common\device\usb\device\cdc.c
+	"usb/device/usb_stack.h"
+	"usb/usb_config.h"
+	"usb/device/cdc.h"
+	"app_config.h"
+	"os/os_api.h"
+	"cdc_defs.h"
+	"debug.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\device\usb\usb_config.h
+	"typedef.h"
+	"asm/usb.h"
+	"usb/device/usb_stack.h"
+	"usb/host/usb_host.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\driver\device\usb\host\usb_host.h
+	"system/task.h"
+	"device/device.h"
+	"asm/usb.h"
+	"usb/ch9.h"
+	"usb/usb_phy.h"
+
+1698751100 d:\project\btglass\jl700\sdk\apps\common\device\usb\device\cdc_defs.h
+	"typedef.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\device\usb\device\descriptor.c
+	"usb/device/usb_stack.h"
+	"usb/device/descriptor.h"
+	"usb/device/uac_audio.h"
+	"app_config.h"
+	"debug.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\driver\device\usb\device\descriptor.h
+	"asm/usb.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\device\usb\device\uac_audio.h
+	"asm/usb.h"
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\common\device\usb\device\hid.c
+	"os/os_api.h"
+	"usb/device/usb_stack.h"
+	"usb/device/hid.h"
+	"usb_config.h"
+	"app_config.h"
+	"debug.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\device\usb\device\hid.h
+	"typedef.h"
+	"asm/usb.h"
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\common\device\usb\device\kugou\kugou_info.c
+	"system/includes.h"
+	"kugou/kugou_info.h"
+	"usb/device/kugou/kugou_packet.h"
+	"debug.h"
+
+1698751100 d:\project\btglass\jl700\sdk\apps\common\device\usb\device\kugou\kugou_info.h
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\device\usb\device\kugou\kugou_packet.h
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\common\device\usb\device\msd.c
+	"system/includes.h"
+	"usb/device/usb_stack.h"
+	"usb/device/msd.h"
+	"usb/scsi.h"
+	"usb_config.h"
+	"device/device.h"
+	"app_config.h"
+	"dev_manager.h"
+	"apple_dock/iAP.h"
+	"debug.h"
+	"usb/device/kugou/kugou_protocol.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\driver\device\usb\device\msd.h
+	"asm/usb.h"
+	"usb_stack.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\driver\device\usb\scsi.h
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\system\apple_dock\iap.h
+	"generic/typedef.h"
+	"uart.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\driver\device\usb\device\kugou\kugou_protocol.h
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\common\device\usb\device\msd_upgrade.c
+	"system/includes.h"
+	"usb/device/msd.h"
+	"usb/scsi.h"
+	"usb_config.h"
+	"app_config.h"
+	"cpu.h"
+	"asm/debug.h"
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\common\device\usb\device\task_pc.c
+	"system/app_core.h"
+	"system/includes.h"
+	"server/server_core.h"
+	"app_config.h"
+	"app_action.h"
+	"os/os_api.h"
+	"device/sdmmc.h"
+	"app_charge.h"
+	"asm/charge.h"
+	"app_task.h"
+	"usb/usb_config.h"
+	"usb/device/usb_stack.h"
+	"usb/device/hid.h"
+	"usb/device/msd.h"
+	"usb/device/cdc.h"
+	"dev_multiplex_api.h"
+	"apple_dock/iAP.h"
+	"debug.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\server\server_core.h
+	"generic/typedef.h"
+	"system/task.h"
+	"spinlock.h"
+	"list.h"
+
+1698751096 d:\project\btglass\jl700\sdk\apps\earphone\include\app_action.h
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\driver\device\sdmmc.h
+	"generic/typedef.h"
+	"generic/ioctl.h"
+
+1698751095 d:\project\btglass\jl700\sdk\apps\earphone\include\app_charge.h
+	"typedef.h"
+	"system/event.h"
+
+1698751096 d:\project\btglass\jl700\sdk\apps\earphone\include\app_task.h
+	"typedef.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\device\usb\device\uac1.c
+	"system/includes.h"
+	"usb_config.h"
+	"usb/device/usb_stack.h"
+	"usb/device/uac_audio.h"
+	"app_config.h"
+	"debug.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\device\usb\device\uac_stream.c
+	"app_config.h"
+	"system/includes.h"
+	"printf.h"
+	"usb/usb_config.h"
+	"usb/device/usb_stack.h"
+	"usb/device/uac_audio.h"
+	"uac_stream.h"
+	"audio_config.h"
+	"media/audio_def.h"
+	"audio_track.h"
+	"debug.h"
+
+1698751100 d:\project\btglass\jl700\sdk\apps\common\device\usb\device\uac_stream.h
+	"typedef.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\audio_track.h
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\device\usb\device\usb_device.c
+	"usb/device/usb_stack.h"
+	"usb_config.h"
+	"usb/device/msd.h"
+	"usb/scsi.h"
+	"usb/device/hid.h"
+	"usb/device/uac_audio.h"
+	"usb/device/cdc.h"
+	"irq.h"
+	"init.h"
+	"gpio.h"
+	"app_config.h"
+	"debug.h"
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\common\device\usb\device\user_setup.c
+	"usb/device/usb_stack.h"
+	"usb_config.h"
+	"usb/device/msd.h"
+	"usb/scsi.h"
+	"usb/device/hid.h"
+	"usb/device/uac_audio.h"
+	"irq.h"
+	"init.h"
+	"gpio.h"
+	"app_config.h"
+	"apple_dock/iAP.h"
+	"debug.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\device\usb\host\adb.c
+	"includes.h"
+	"asm/includes.h"
+	"system/timer.h"
+	"device/ioctl_cmds.h"
+	"usb/host/usb_host.h"
+	"usb_ctrl_transfer.h"
+	"usb_bulk_transfer.h"
+	"device_drive.h"
+	"adb.h"
+	"usb_config.h"
+	"app_config.h"
+	"debug.h"
+	"adb_rsa_key.c"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\device\usb\host\usb_ctrl_transfer.h
+	"usb/ch9.h"
+	"usb/usb_phy.h"
+	"device/device.h"
+	"usb_config.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\device\usb\host\usb_bulk_transfer.h
+	"typedef.h"
+	"device/device.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\device\usb\host\adb.h
+	"system/task.h"
+	"device/device.h"
+	"usb/scsi.h"
+	"usb_bulk_transfer.h"
+	"usb/host/usb_host.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\device\usb\host\adb_rsa_key.c
+	"typedef.h"
+	"app_config.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\device\usb\host\aoa.c
+	"includes.h"
+	"app_config.h"
+	"usb_config.h"
+	"usb/host/usb_host.h"
+	"usb/usb_phy.h"
+	"device_drive.h"
+	"usb_ctrl_transfer.h"
+	"usb_bulk_transfer.h"
+	"usb_storage.h"
+	"adb.h"
+	"aoa.h"
+	"usb_hid_keys.h"
+	"gamebox.h"
+	"debug.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\device\usb\host\usb_storage.h
+	"system/task.h"
+	"device/device.h"
+	"usb/scsi.h"
+	"usb_bulk_transfer.h"
+	"usb/host/usb_host.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\device\usb\host\aoa.h
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\device\usb\host\usb_hid_keys.h
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\common\device\usb\host\audio.c
+	"includes.h"
+	"asm/includes.h"
+	"app_config.h"
+	"system/timer.h"
+	"device/ioctl_cmds.h"
+	"device_drive.h"
+	"usb/host/usb_host.h"
+	"usb_ctrl_transfer.h"
+	"usb_bulk_transfer.h"
+	"audio.h"
+	"usb_config.h"
+	"debug.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\device\usb\host\audio.h
+	"system/task.h"
+	"device/device.h"
+	"usb_bulk_transfer.h"
+	"usb/host/usb_host.h"
+	"usb/device/uac_audio.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\device\usb\host\audio_demo.c
+	"includes.h"
+	"asm/includes.h"
+	"app_config.h"
+	"system/timer.h"
+	"device/ioctl_cmds.h"
+	"device_drive.h"
+	"usb/host/usb_host.h"
+	"usb_ctrl_transfer.h"
+	"usb_bulk_transfer.h"
+	"audio.h"
+	"usb_config.h"
+	"debug.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\device\usb\host\hid.c
+	"includes.h"
+	"asm/includes.h"
+	"app_config.h"
+	"system/timer.h"
+	"device/ioctl_cmds.h"
+	"device_drive.h"
+	"usb/host/usb_host.h"
+	"usb_ctrl_transfer.h"
+	"usb_bulk_transfer.h"
+	"hid.h"
+	"usb_config.h"
+	"usb_hid_keys.h"
+	"debug.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\device\usb\host\hid.h
+	"system/task.h"
+	"device/device.h"
+	"usb/scsi.h"
+	"usb_bulk_transfer.h"
+	"usb/host/usb_host.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\device\usb\host\usb_bulk_transfer.c
+	<string.h>
+	"jiffies.h"
+	"usb_config.h"
+	"usb_bulk_transfer.h"
+	"usb_ctrl_transfer.h"
+	"usb_storage.h"
+	"usb/host/usb_host.h"
+	"usb/usb_phy.h"
+	"app_config.h"
+	"device_drive.h"
+	"debug.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\device\usb\host\usb_ctrl_transfer.c
+	"usb/host/usb_host.h"
+	"usb_ctrl_transfer.h"
+	"app_config.h"
+	"device_drive.h"
+	"gpio.h"
+	"usb/scsi.h"
+	"debug.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\device\usb\host\usb_host.c
+	"includes.h"
+	"app_config.h"
+	"device_drive.h"
+	"usb_config.h"
+	"usb/host/usb_host.h"
+	"usb/usb_phy.h"
+	"usb_ctrl_transfer.h"
+	"usb_storage.h"
+	"adb.h"
+	"aoa.h"
+	"hid.h"
+	"audio.h"
+	"apple_dock/iAP.h"
+	"apple_mfi.h"
+	"debug.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\device\usb\host\apple_mfi.h
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\device\usb\host\usb_storage.c
+	"asm/includes.h"
+	"system/timer.h"
+	"device/ioctl_cmds.h"
+	"usb/host/usb_host.h"
+	"usb_ctrl_transfer.h"
+	"usb_bulk_transfer.h"
+	"device_drive.h"
+	"usb_storage.h"
+	"usb_config.h"
+	"app_config.h"
+	"debug.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\device\usb\usb_config.c
+	"usb_config.h"
+	"usb/scsi.h"
+	"irq.h"
+	"init.h"
+	"gpio.h"
+	"timer.h"
+	"app_config.h"
+	"lbuf.h"
+	"adapter_usb_hid.h"
+	"debug.h"
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\common\device\usb\usb_host_config.c
+	"usb_config.h"
+	"usb/scsi.h"
+	"irq.h"
+	"init.h"
+	"gpio.h"
+	"app_config.h"
+	"debug.h"
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\common\file_operate\file_bs_deal.c
+	"file_bs_deal.h"
+	"uart.h"
+	"dev_manager.h"
+
+1698751100 d:\project\btglass\jl700\sdk\apps\common\file_operate\file_bs_deal.h
+	"fs/fs.h"
+	"storage_dev/storage_dev.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\storage_dev\storage_dev.h
+	"typedef.h"
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\common\file_operate\file_manager.c
+	"file_manager.h"
+	"app_config.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\file_operate\file_manager.h
+	"system/includes.h"
+	"typedef.h"
+	"system/fs/fs.h"
+	"dev_manager.h"
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\common\jl_kws\jl_kws_algo.c
+	"jl_kws_common.h"
+	"jlsp_simple_dvad.h"
+
+1698751100 d:\project\btglass\jl700\sdk\apps\common\jl_kws\jl_kws_common.h
+	"includes.h"
+	"app_config.h"
+
+1698751100 d:\project\btglass\jl700\sdk\apps\common\jl_kws\jlsp_simple_dvad.h
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\jl_kws\jl_kws_audio.c
+	"jl_kws_common.h"
+	"audio_enc.h"
+	"asm/audio_adc.h"
+	"audio_codec_clock.h"
+
+1698751104 d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_enc.h
+	"generic/typedef.h"
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\common\jl_kws\jl_kws_event.c
+	"jl_kws_common.h"
+	"btstack/avctp_user.h"
+	"bt_tws.h"
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\common\jl_kws\jl_kws_main.c
+	"jl_kws_common.h"
+	"jl_kws_api.h"
+
+1698751100 d:\project\btglass\jl700\sdk\apps\common\jl_kws\jl_kws_api.h
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\common\music\breakpoint.c
+	"breakpoint.h"
+	"app_config.h"
+	"vm.h"
+	"system/syscfg_id.h"
+
+1698751100 d:\project\btglass\jl700\sdk\apps\common\music\breakpoint.h
+	"system/includes.h"
+	"media/audio_decoder.h"
+	"music/music_player.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\music\music_player.h
+	"system/app_core.h"
+	"system/includes.h"
+	"server/server_core.h"
+	"media/audio_decoder.h"
+	"dev_manager/dev_manager.h"
+	"file_operate/file_manager.h"
+	"audio_dec/audio_dec_file.h"
+
+1698751105 d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_dec\audio_dec_file.h
+	"asm/includes.h"
+	"media/includes.h"
+	"media/file_decoder.h"
+	"system/includes.h"
+	"media/audio_decoder.h"
+	"app_config.h"
+	"music/music_decrypt.h"
+	"music/music_id3.h"
+	"audio_dec_eff.h"
+
+1698751106 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\file_decoder.h
+	"media/includes.h"
+
+1698751099 d:\project\btglass\jl700\sdk\apps\common\music\music_decrypt.h
+	"typedef.h"
+
+1698751099 d:\project\btglass\jl700\sdk\apps\common\music\music_id3.h
+	"typedef.h"
+
+1698751104 d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_dec_eff.h
+	"asm/includes.h"
+	"media/includes.h"
+	"system/includes.h"
+	"classic/tws_api.h"
+	"classic/hci_lmp.h"
+	"application/eq_config.h"
+	"application/audio_surround.h"
+	"app_config.h"
+	"audio_config.h"
+	"app_main.h"
+	"application/audio_vbass.h"
+	"audio_anc.h"
+	"online_db_deal.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\application\eq_config.h
+	"application/audio_eq.h"
+	"application/audio_drc.h"
+	"application/audio_vbass.h"
+	"spinlock.h"
+	"math.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\application\audio_eq.h
+	"typedef.h"
+	"asm/hw_eq.h"
+
+1698751107 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\application\audio_drc.h
+	"typedef.h"
+	"sw_drc.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\sw_drc.h
+	"generic/typedef.h"
+	"generic/list.h"
+	"os/os_api.h"
+	"drc_api.h"
+
+1698751106 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\drc_api.h
+
+1698751107 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\application\audio_vbass.h
+	"system/includes.h"
+	"media/audio_stream.h"
+	"media/VirtualBass_api.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\media\virtualbass_api.h
+	"AudioEffect_DataType.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\media\audioeffect_datatype.h
+
+1698751106 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\application\audio_surround.h
+	"surround/effect_sur_api.h"
+
+1698751107 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\surround\effect_sur_api.h
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\device\vm.h
+	"ioctl.h"
+	"device/device.h"
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\common\music\music_decrypt.c
+	"system/app_core.h"
+	"system/includes.h"
+	"app_config.h"
+	"music/music_decrypt.h"
+	"system/fs/fs.h"
+	"debug.h"
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\common\music\music_id3.c
+	"system/app_core.h"
+	"system/includes.h"
+	"app_config.h"
+	"music/music_id3.h"
+	"system/fs/fs.h"
+	"debug.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\music\music_player.c
+	"music/music_player.h"
+	"key_event_deal.h"
+	"app_config.h"
+	"audio_enc.h"
+	"app_main.h"
+	"vm.h"
+	"debug.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\temp_trim\dtemp_pll_trim.c
+	"typedef.h"
+	"asm/clock.h"
+	"timer.h"
+	"init.h"
+	"asm/efuse.h"
+	"irq.h"
+	"jiffies.h"
+	"app_config.h"
+	"syscfg_id.h"
+	"system/includes.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\common\3th_profile_api.c
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	"typedef.h"
+	"3th_profile_api.h"
+	"bt_tws.h"
+	"key_event_deal.h"
+	"system/timer.h"
+	"bt_common.h"
+	"btstack/avctp_user.h"
+	"os/os_api.h"
+	"rcsp_adv_tws_ota.h"
+	"smartbox_update_tws.h"
+	"update_tws.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\common\3th_profile_api.h
+	<string.h>
+	<stdint.h>
+	"le_common.h"
+
+1698751103 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\le_common.h
+	"typedef.h"
+	<stdint.h>
+	"btstack/bluetooth.h"
+	"app_config.h"
+	"btstack/le/le_common_define.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\btstack\bluetooth.h
+	"typedef.h"
+	"le/ble_data_types.h"
+	"le/ble_api.h"
+	"le/le_user.h"
+	"le/att.h"
+	"le/gatt.h"
+	"le/sm.h"
+	"btstack_event.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\btstack\le\ble_data_types.h
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\btstack\le\ble_api.h
+	"typedef.h"
+	"btstack/btstack_typedef.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\btstack\le\le_user.h
+	"typedef.h"
+	"btstack/btstack_typedef.h"
+	"ble_api.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\btstack\le\att.h
+	"typedef.h"
+	"btstack/btstack_typedef.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\btstack\le\gatt.h
+	"typedef.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\btstack\le\sm.h
+	"typedef.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\btstack\btstack_event.h
+	"btstack/btstack_typedef.h"
+	<stdint.h>
+	"le/gatt.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\btstack\le\le_common_define.h
+	"typedef.h"
+	<stdint.h>
+	"btstack/bluetooth.h"
+
+1698751100 d:\project\btglass\jl700\sdk\apps\common\include\update_tws.h
+	"app_config.h"
+	"system/event.h"
+	"update_loader_download.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\common\custom_cfg.c
+	"custom_cfg.h"
+	"app_config.h"
+	"rcsp_user_update.h"
+	"rcsp_bluetooth.h"
+	"rcsp_adv_user_update.h"
+	"rcsp_adv_bluetooth.h"
+	"smartbox_adv_bluetooth.h"
+	"app_protocol_api.h"
+	"app_config.h"
+	"fs.h"
+	"uart.h"
+	<string.h>
+	"flash_api.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\common\custom_cfg.h
+	"typedef.h"
+	<string.h>
+	"app_config.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\rcsp_updata\rcsp_user_update.h
+	"typedef.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\rcsp_bluetooth.h
+	"typedef.h"
+	"le_common.h"
+	"spp_user.h"
+	"system/event.h"
+	"rcsp_msg.h"
+	"ble_user.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\btstack\third_party\common\spp_user.h
+	"typedef.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\rcsp_msg.h
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\btstack\third_party\common\ble_user.h
+	"typedef.h"
+
+1698751103 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\rcsp_updata\rcsp_adv_user_update.h
+	"typedef.h"
+
+1698751103 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\adv_rcsp_protocol\rcsp_adv_bluetooth.h
+	"app_config.h"
+	"typedef.h"
+	"system/event.h"
+	"le_common.h"
+	"ble_user.h"
+	"spp_user.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\interface\app_protocol_api.h
+	<string.h>
+	<stdint.h>
+	"typedef.h"
+	"os/os_api.h"
+	"btstack/third_party/app_protocol_event.h"
+	"app_protocol_common.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\btstack\third_party\app_protocol_event.h
+	<string.h>
+	<stdint.h>
+	"typedef.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\interface\app_protocol_common.h
+	<string.h>
+	<stdint.h>
+	"typedef.h"
+	"tone_player.h"
+	"audio_base.h"
+	"system/event.h"
+
+1698751103 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\common\mic_rec.c
+	"system/includes.h"
+	"media/includes.h"
+	"app_config.h"
+	"audio_config.h"
+	"classic/tws_local_media_sync.h"
+	"3th_profile_api.h"
+	"classic/tws_api.h"
+	"btstack/avctp_user.h"
+	"bt_tws.h"
+	"debug.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\interface\app_protocol_api.c
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	"system/timer.h"
+	"system/task.h"
+	"app_protocol_api.h"
+	"btstack/avctp_user.h"
+	"syscfg_id.h"
+	"system/includes.h"
+	"bt_tws.h"
+	"app_protocol_ota.h"
+	"btstack/third_party/app_protocol_libs_api.h"
+	"audio_config.h"
+	"bt_profile_cfg.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\interface\app_protocol_ota.h
+	"typedef.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\btstack\third_party\app_protocol_libs_api.h
+	"typedef.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\interface\app_protocol_common.c
+	"app_protocol_api.h"
+	"app_protocol_common.h"
+	"system/includes.h"
+	"app_config.h"
+	"audio_config.h"
+	"app_chargestore.h"
+	"app_power_manage.h"
+	"asm/charge.h"
+	"bt_tws.h"
+	"btstack/avctp_user.h"
+	"3th_profile_api.h"
+	"bt_common.h"
+	"tone_player.h"
+	"app_main.h"
+	"key_event_deal.h"
+
+1698751096 d:\project\btglass\jl700\sdk\apps\earphone\include\app_chargestore.h
+	"typedef.h"
+	"system/event.h"
+
+1698751096 d:\project\btglass\jl700\sdk\apps\earphone\include\app_power_manage.h
+	"typedef.h"
+	"system/event.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\interface\app_protocol_dma.c
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	"app_protocol_api.h"
+	"system/includes.h"
+	"vm.h"
+	"audio_config.h"
+	"app_power_manage.h"
+	"user_cfg.h"
+	"app_main.h"
+	"bt_tws.h"
+	"btstack/avctp_user.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\interface\app_protocol_gma.c
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	"app_protocol_api.h"
+	"system/includes.h"
+	"vm.h"
+	"audio_config.h"
+	"app_power_manage.h"
+	"user_cfg.h"
+	"bt_tws.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\interface\app_protocol_mma.c
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	"app_protocol_api.h"
+	"system/includes.h"
+	"audio_config.h"
+	"app_power_manage.h"
+	"user_cfg.h"
+	"bt_tws.h"
+	"custom_cfg.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\interface\app_protocol_ota.c
+	"app_config.h"
+	"app_protocol_ota.h"
+	"app_protocol_api.h"
+	"fs.h"
+	"os/os_error.h"
+	"update_loader_download.h"
+	"dual_bank_updata_api.h"
+	"update.h"
+	"timer.h"
+	"debug.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\update\dual_bank_updata_api.h
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\interface\app_protocol_tme.c
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	"app_protocol_api.h"
+	"system/includes.h"
+	"audio_config.h"
+	"app_power_manage.h"
+	"user_cfg.h"
+	"btstack/avctp_user.h"
+	"bt_tws.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\interface\dma_use_lib\dma_le_port.c
+	"system/includes.h"
+	"btstack/btstack_task.h"
+	"btstack/bluetooth.h"
+	"btstack/le/le_common_define.h"
+	"dma_le_port.h"
+	"btstack/third_party/common/ble_user.h"
+	"btstack/third_party/common/spp_user.h"
+	"btstack/third_party/app_protocol_event.h"
+	"dma_setting.h"
+	"dma_wrapper.h"
+	"btstack/avctp_user.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\btstack\btstack_task.h
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\interface\dma_use_lib\dma_le_port.h
+	<stdint.h>
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\interface\dma_use_lib\dma_setting.h
+	<stdlib.h>
+	<string.h>
+	"typedef.h"
+	"system/includes.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\interface\dma_use_lib\dma_wrapper.h
+	<stddef.h>
+	"cpu.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\interface\dma_use_lib\dma_setting.c
+	<stdlib.h>
+	<string.h>
+	"dma_setting.h"
+	"typedef.h"
+	"btstack/avctp_user.h"
+	"btstack/third_party/app_protocol_event.h"
+	"dma_wrapper.h"
+	"dma_ota_wrapper.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\interface\dma_use_lib\dma_ota_wrapper.h
+	<stddef.h>
+	"stdio.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\interface\dma_use_lib\dma_spp_port.c
+	"btstack/avctp_user.h"
+	"system/includes.h"
+	"spp_user.h"
+	"string.h"
+	"dma_setting.h"
+	"btstack/third_party/common/spp_user.h"
+	"btstack/third_party/app_protocol_event.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\interface\dma_use_lib\platform_template.c
+	"dma_wrapper.h"
+	"dma_ota_wrapper.h"
+	"system/includes.h"
+	"os/os_api.h"
+	"dma_setting.h"
+	"btstack/third_party/app_protocol_event.h"
+	"btstack/avctp_user.h"
+	"system/timer.h"
+
+1698751103 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\adv_app_browser\adv_app_browser.c
+	"app_config.h"
+	"syscfg_id.h"
+	"le_rcsp_adv_module.h"
+	"rcsp_adv_bluetooth.h"
+	"adv_app_browser.h"
+	"dev_manager.h"
+	"file_operate/file_bs_deal.h"
+	"JL_rcsp_api.h"
+	"JL_rcsp_protocol.h"
+	"JL_rcsp_packet.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\bt_trans_data\le_rcsp_adv_module.h
+	<stdint.h>
+	"bt_common.h"
+
+1698751104 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\adv_app_browser\adv_app_browser.h
+	"typedef.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\btstack\third_party\rcsp\jl_rcsp_api.h
+	"typedef.h"
+	"uart.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\btstack\third_party\rcsp\jl_rcsp_protocol.h
+	"typedef.h"
+	"JL_rcsp_packet.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\btstack\third_party\rcsp\jl_rcsp_packet.h
+	"typedef.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\adv_app_setting\adv_anc_voice.c
+	"app_config.h"
+	"syscfg_id.h"
+	"user_cfg_id.h"
+	"le_rcsp_adv_module.h"
+	"adv_anc_voice.h"
+	"adv_setting_common.h"
+	"rcsp_adv_tws_sync.h"
+	"rcsp_adv_opt.h"
+	"rcsp_adv_bluetooth.h"
+	"audio_anc.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\adv_app_setting\adv_anc_voice.h
+	"le_rcsp_adv_module.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\adv_app_setting\adv_setting_common.h
+	"typedef.h"
+	"event.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\adv_rcsp_protocol\rcsp_adv_tws_sync.h
+	"classic/tws_api.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\adv_rcsp_protocol\rcsp_adv_opt.h
+
+1698751103 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\adv_app_setting\adv_anc_voice_key.c
+	"app_config.h"
+	"syscfg_id.h"
+	"user_cfg_id.h"
+	"key_event_deal.h"
+	"le_rcsp_adv_module.h"
+	"adv_anc_voice_key.h"
+	"adv_setting_common.h"
+	"rcsp_adv_tws_sync.h"
+	"rcsp_adv_opt.h"
+	"adv_anc_voice.h"
+	"audio_anc.h"
+
+1698751103 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\adv_app_setting\adv_anc_voice_key.h
+	"le_rcsp_adv_module.h"
+
+1698751103 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\adv_app_setting\adv_bt_name_setting.c
+	"app_config.h"
+	"user_cfg.h"
+	"syscfg_id.h"
+	"user_cfg_id.h"
+	"le_rcsp_adv_module.h"
+	"adv_bt_name_setting.h"
+	"adv_setting_common.h"
+	"rcsp_adv_tws_sync.h"
+	"rcsp_adv_opt.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\adv_app_setting\adv_bt_name_setting.h
+	"le_rcsp_adv_module.h"
+
+1698751103 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\adv_app_setting\adv_eq_setting.c
+	"app_config.h"
+	"syscfg_id.h"
+	"user_cfg_id.h"
+	"le_rcsp_adv_module.h"
+	"adv_eq_setting.h"
+	"adv_setting_common.h"
+	"rcsp_adv_tws_sync.h"
+	"rcsp_adv_opt.h"
+	"application/audio_eq.h"
+	"application/eq_config.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\adv_app_setting\adv_eq_setting.h
+	"le_rcsp_adv_module.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\adv_app_setting\adv_hearing_aid_setting.c
+	"app_config.h"
+	"syscfg_id.h"
+	"le_rcsp_adv_module.h"
+	"adv_hearing_aid_setting.h"
+	"rcsp_adv_tws_sync.h"
+	"JL_rcsp_protocol.h"
+	"rcsp_adv_bluetooth.h"
+	"spp_user.h"
+
+1698751104 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\adv_app_setting\adv_hearing_aid_setting.h
+	"le_rcsp_adv_module.h"
+	"audio_hearing_aid.h"
+
+1698751104 d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_hearing_aid.h
+	"generic/typedef.h"
+	"board_config.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\adv_app_setting\adv_high_low_vol_setting.c
+	"app_config.h"
+	"syscfg_id.h"
+	"user_cfg_id.h"
+	"adv_high_low_vol.h"
+	"adv_setting_common.h"
+	"rcsp_adv_tws_sync.h"
+	"rcsp_adv_opt.h"
+
+1698751104 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\adv_app_setting\adv_high_low_vol.h
+	"le_rcsp_adv_module.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\adv_app_setting\adv_key_setting.c
+	"app_config.h"
+	"syscfg_id.h"
+	"user_cfg_id.h"
+	"key_event_deal.h"
+	"le_rcsp_adv_module.h"
+	"adv_key_setting.h"
+	"adv_setting_common.h"
+	"rcsp_adv_tws_sync.h"
+	"rcsp_adv_opt.h"
+	"adv_anc_voice_key.h"
+
+1698751103 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\adv_app_setting\adv_key_setting.h
+	"le_rcsp_adv_module.h"
+
+1698751104 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\adv_app_setting\adv_led_setting.c
+	"app_config.h"
+	"syscfg_id.h"
+	"user_cfg_id.h"
+	"asm/pwm_led.h"
+	"user_cfg.h"
+	"ui_manage.h"
+	"le_rcsp_adv_module.h"
+	"adv_led_setting.h"
+	"adv_setting_common.h"
+	"rcsp_adv_tws_sync.h"
+	"rcsp_adv_opt.h"
+
+1698751096 d:\project\btglass\jl700\sdk\apps\earphone\include\ui_manage.h
+	"typedef.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\adv_app_setting\adv_led_setting.h
+	"le_rcsp_adv_module.h"
+
+1698751104 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\adv_app_setting\adv_mic_setting.c
+	"app_config.h"
+	"syscfg_id.h"
+	"user_cfg_id.h"
+	"le_rcsp_adv_module.h"
+	"adv_mic_setting.h"
+	"adv_setting_common.h"
+	"rcsp_adv_tws_sync.h"
+	"rcsp_adv_opt.h"
+
+1698751104 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\adv_app_setting\adv_mic_setting.h
+	"le_rcsp_adv_module.h"
+
+1698751104 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\adv_app_setting\adv_music_info_setting.c
+	"app_config.h"
+	"syscfg_id.h"
+	"user_cfg_id.h"
+	"le_rcsp_adv_module.h"
+	"adv_setting_common.h"
+	"rcsp_adv_tws_sync.h"
+	"rcsp_adv_opt.h"
+	"adv_music_info_setting.h"
+	"btstack/avctp_user.h"
+	"rcsp_adv_bluetooth.h"
+	"bt_tws.h"
+
+1698751103 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\adv_app_setting\adv_music_info_setting.h
+	"le_rcsp_adv_module.h"
+
+1698751103 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\adv_app_setting\adv_time_stamp_setting.c
+	"app_config.h"
+	"syscfg_id.h"
+	"user_cfg_id.h"
+	"rcsp_adv_bluetooth.h"
+	"JL_rcsp_protocol.h"
+	"le_rcsp_adv_module.h"
+	"adv_time_stamp_setting.h"
+	"adv_setting_common.h"
+	"rcsp_adv_tws_sync.h"
+	"rcsp_adv_opt.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\adv_app_setting\adv_time_stamp_setting.h
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\adv_app_setting\adv_work_setting.c
+	"app_config.h"
+	"syscfg_id.h"
+	"user_cfg_id.h"
+	"le_rcsp_adv_module.h"
+	"adv_work_setting.h"
+	"adv_setting_common.h"
+	"rcsp_adv_tws_sync.h"
+	"rcsp_adv_opt.h"
+	"os/os_api.h"
+	"btstack/avctp_user.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\adv_app_setting\adv_work_setting.h
+	"le_rcsp_adv_module.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\adv_rcsp_protocol\rcsp_adv_bluetooth.c
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	"string.h"
+	"attr.h"
+	"JL_rcsp_api.h"
+	"JL_rcsp_protocol.h"
+	"JL_rcsp_packet.h"
+	"spp_user.h"
+	"btstack/avctp_user.h"
+	"system/timer.h"
+	"app_core.h"
+	"user_cfg.h"
+	"asm/pwm_led.h"
+	"ui_manage.h"
+	"key_event_deal.h"
+	"syscfg_id.h"
+	"classic/tws_api.h"
+	"event.h"
+	"bt_tws.h"
+	"custom_cfg.h"
+	"app_config.h"
+	"app_main.h"
+	"rcsp_adv_user_update.h"
+	"le_rcsp_adv_module.h"
+	"rcsp_adv_bluetooth.h"
+	"adv_setting_common.h"
+	"adv_eq_setting.h"
+	"adv_music_info_setting.h"
+	"adv_high_low_vol.h"
+	"adv_work_setting.h"
+	"adv_hearing_aid_setting.h"
+	"rcsp_adv_customer_user.h"
+	"vm.h"
+	"tone_player.h"
+	"audio_config.h"
+	"adv_anc_voice.h"
+	"adv_anc_voice_key.h"
+	"music/music_player.h"
+	"app_task.h"
+	"dev_manager.h"
+	"adv_app_browser.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\btstack\third_party\rcsp\attr.h
+	"typedef.h"
+
+1698751103 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\adv_rcsp_protocol\rcsp_adv_customer_user.h
+	"app_config.h"
+	"typedef.h"
+	"system/event.h"
+	"le_common.h"
+	"spp_user.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\adv_rcsp_protocol\rcsp_adv_customer_user.c
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	"string.h"
+	"JL_rcsp_api.h"
+	"JL_rcsp_protocol.h"
+	"JL_rcsp_packet.h"
+	"spp_user.h"
+	"btstack/avctp_user.h"
+	"system/timer.h"
+	"app_core.h"
+	"user_cfg.h"
+	"asm/pwm_led.h"
+	"ui_manage.h"
+	"key_event_deal.h"
+	"syscfg_id.h"
+	"user_cfg_id.h"
+	"classic/tws_api.h"
+	"event.h"
+	"bt_tws.h"
+	"custom_cfg.h"
+	"app_config.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\adv_rcsp_protocol\rcsp_adv_opt.c
+	"app_config.h"
+	"syscfg_id.h"
+	"user_cfg_id.h"
+	"le_rcsp_adv_module.h"
+	"rcsp_adv_bluetooth.h"
+	"rcsp_adv_opt.h"
+	"adv_setting_common.h"
+	"rcsp_adv_tws_sync.h"
+	"adv_time_stamp_setting.h"
+	"adv_bt_name_setting.h"
+	"adv_key_setting.h"
+	"adv_led_setting.h"
+	"adv_mic_setting.h"
+	"adv_work_setting.h"
+	"adv_eq_setting.h"
+	"adv_high_low_vol.h"
+	"adv_anc_voice_key.h"
+	"bt_tws.h"
+	"btstack/avctp_user.h"
+	"adv_hearing_aid_setting.h"
+	"adv_anc_voice.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\adv_rcsp_protocol\rcsp_adv_tws_sync.c
+	"app_config.h"
+	"rcsp_adv_tws_sync.h"
+	"adv_setting_common.h"
+	"rcsp_adv_opt.h"
+	"adv_time_stamp_setting.h"
+	"rcsp_adv_bluetooth.h"
+	"bt_tws.h"
+
+1698751103 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\bt_trans_data\le_rcsp_adv_module.c
+	"system/app_core.h"
+	"system/includes.h"
+	"app_config.h"
+	"app_action.h"
+	"btstack/btstack_task.h"
+	"btstack/bluetooth.h"
+	"user_cfg.h"
+	"vm.h"
+	"app_power_manage.h"
+	"btcontroller_modules.h"
+	"JL_rcsp_api.h"
+	"rcsp_adv_bluetooth.h"
+	"bt_common.h"
+	"3th_profile_api.h"
+	"btstack/avctp_user.h"
+	"app_chargestore.h"
+	"le_common.h"
+	"le_rcsp_adv_module.h"
+	"btcrypt.h"
+	"custom_cfg.h"
+	"adv_music_info_setting.h"
+	"classic/tws_api.h"
+	"rcsp_adv_user_update.h"
+	"bt_tws.h"
+	"adv_hearing_aid_setting.h"
+	"chgbox_box.h"
+
+1698751103 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\btcrypt.h
+	<string.h>
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\bt_trans_data\rcsp_adv_spp_user.c
+	"app_config.h"
+	"app_action.h"
+	"system/includes.h"
+	"spp_user.h"
+	"string.h"
+	"circular_buf.h"
+	"3th_profile_api.h"
+	"bt_common.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\rcsp_updata\rcsp_adv_user_update.c
+	"app_config.h"
+	"rcsp_adv_user_update.h"
+	"uart.h"
+	"system/timer.h"
+	"update.h"
+	"custom_cfg.h"
+	"btstack/avctp_user.h"
+	"JL_rcsp_packet.h"
+	"JL_rcsp_protocol.h"
+	"rcsp_adv_bluetooth.h"
+	"le_rcsp_adv_module.h"
+	"update_loader_download.h"
+	"classic/tws_api.h"
+	"syscfg_id.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\rcsp_updata\rcsp_ch_loader_download.c
+	"update.h"
+	"uart.h"
+	"update_loader_download.h"
+	"system/fs/fs.h"
+	"rcsp_user_update.h"
+	"JL_rcsp_protocol.h"
+	"os/os_error.h"
+	<string.h>
+	"update_tws_new.h"
+	"update_tws.h"
+	"bt_tws.h"
+
+1698751100 d:\project\btglass\jl700\sdk\apps\common\include\update_tws_new.h
+	"app_config.h"
+	"system/event.h"
+	"update_loader_download.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\jl_rcsp\rcsp_updata\rcsp_user_update.c
+	"rcsp_user_update.h"
+	"app_config.h"
+	"uart.h"
+	"system/timer.h"
+	"update.h"
+	"custom_cfg.h"
+	"btstack/avctp_user.h"
+	"JL_rcsp_packet.h"
+	"JL_rcsp_protocol.h"
+	"rcsp_bluetooth.h"
+	"update_loader_download.h"
+	"classic/tws_api.h"
+	"btstack_3th_protocol_user.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\btstack\third_party\common\btstack_3th_protocol_user.h
+	"spp_config.h"
+	"ble_config.h"
+	"JL_rcsp_api.h"
+	"JL_rcsp_protocol.h"
+	"JL_rcsp_packet.h"
+	"attr.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\btstack\third_party\common\spp_config.h
+	"typedef.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\btstack\third_party\common\ble_config.h
+	"typedef.h"
+	"ble_user.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\online_db\online_db_deal.c
+	"app_config.h"
+	"app_action.h"
+	"system/includes.h"
+	"string.h"
+	"online_db_deal.h"
+	"circular_buf.h"
+	"bt_common.h"
+	"debug.h"
+
+1698751103 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\online_db\spp_online_db.c
+	"app_config.h"
+	"app_action.h"
+	"system/includes.h"
+	"spp_user.h"
+	"string.h"
+	"circular_buf.h"
+	"bt_common.h"
+	"online_db_deal.h"
+	"spp_online_db.h"
+	"cfg_tool.h"
+	"app_anctool.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\online_db\spp_online_db.h
+	"typedef.h"
+	"bt_common.h"
+
+1698751096 d:\project\btglass\jl700\sdk\apps\earphone\include\app_anctool.h
+	"typedef.h"
+	"anctool.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\device\anctool.h
+	"typedef.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\trans_data_demo\le_trans_data.c
+	"system/app_core.h"
+	"system/includes.h"
+	"app_config.h"
+	"app_action.h"
+	"btstack/btstack_task.h"
+	"btstack/bluetooth.h"
+	"user_cfg.h"
+	"vm.h"
+	"btcontroller_modules.h"
+	"bt_common.h"
+	"3th_profile_api.h"
+	"le_trans_data.h"
+	"le_common.h"
+	"rcsp_bluetooth.h"
+	"JL_rcsp_api.h"
+	"custom_cfg.h"
+	"btstack/btstack_event.h"
+
+1750475515 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\trans_data_demo\le_trans_data.h
+	<stdint.h>
+	"app_config.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\trans_data_demo\spp_trans_data.c
+	"app_config.h"
+	"app_action.h"
+	"system/includes.h"
+	"spp_user.h"
+	"string.h"
+	"circular_buf.h"
+	"spp_trans_data.h"
+	"bt_common.h"
+	"btstack/avctp_user.h"
+	"spp_trans_data.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\trans_data_demo\spp_trans_data.h
+	"typedef.h"
+	"bt_common.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\wireless_mic\le_wireless_mic_client.c
+	"system/app_core.h"
+	"system/includes.h"
+	"app_config.h"
+	"app_action.h"
+	"btstack/btstack_task.h"
+	"btstack/bluetooth.h"
+	"user_cfg.h"
+	"vm.h"
+	"btcontroller_modules.h"
+	"bt_common.h"
+	"le_client_demo.h"
+	"le_common.h"
+	"ble_user.h"
+
+1698751103 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\le_client_demo.h
+	<stdint.h>
+	"btstack/le/att.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\wireless_mic\le_wireless_mic_server.c
+	"system/app_core.h"
+	"system/includes.h"
+	"app_config.h"
+	"app_action.h"
+	"btstack/btstack_task.h"
+	"btstack/bluetooth.h"
+	"user_cfg.h"
+	"vm.h"
+	"btcontroller_modules.h"
+	"bt_common.h"
+	"3th_profile_api.h"
+	"le_trans_data.h"
+	"le_common.h"
+	"rcsp_bluetooth.h"
+	"JL_rcsp_api.h"
+	"custom_cfg.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tecent_ll\tecent_ll_demo\ll_demo.c
+	"system/app_core.h"
+	"system/includes.h"
+	"app_config.h"
+	"app_action.h"
+	"btstack/btstack_task.h"
+	"btstack/bluetooth.h"
+	"user_cfg.h"
+	"vm.h"
+	"btcontroller_modules.h"
+	"bt_common.h"
+	"3th_profile_api.h"
+	"ll_demo.h"
+	"le_common.h"
+	"rcsp_bluetooth.h"
+	"JL_rcsp_api.h"
+	"custom_cfg.h"
+	"ble_qiot_export.h"
+	"ble_qiot_service.h"
+	"ll_task.h"
+	"btstack/btstack_event.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tecent_ll\tecent_ll_demo\ll_demo.h
+	<stdint.h>
+	"app_config.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tecent_ll\include\ble_qiot_export.h
+	"ble_qiot_config.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tecent_ll\include\ble_qiot_config.h
+	<printf.h>
+	<stdint.h>
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tecent_ll\include\ble_qiot_service.h
+	<stdint.h>
+	"ble_qiot_export.h"
+	"ble_qiot_llsync_data.h"
+	"ble_qiot_template.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tecent_ll\include\ble_qiot_llsync_data.h
+	<stdint.h>
+	<ble_qiot_export.h>
+
+1698751103 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tecent_ll\include\ble_qiot_template.h
+	<stdint.h>
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tecent_ll\tecent_ll_demo\ll_task.h
+	"typedef.h"
+	"os/os_api.h"
+	"circular_buf.h"
+
+1698751103 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tecent_ll\tecent_ll_demo\ll_task.c
+	"ll_task.h"
+	"os/os_api.h"
+	"ble_qiot_config.h"
+	"ble_qiot_service.h"
+	"ble_qiot_import.h"
+
+1698751103 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tecent_ll\include\ble_qiot_import.h
+	"ble_qiot_export.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tecent_ll\tecent_protocol\ble_qiot_import.c
+	"ble_qiot_import.h"
+	"vm.h"
+	"le_common.h"
+	"dual_bank_updata_api.h"
+	"debug.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tecent_ll\tecent_protocol\ble_qiot_llsync_data.c
+	<stdlib.h>
+	<string.h>
+	"ble_qiot_config.h"
+	"ble_qiot_export.h"
+	"ble_qiot_import.h"
+	"ble_qiot_common.h"
+	"ble_qiot_llsync_event.h"
+	"ble_qiot_utils_base64.h"
+	"ble_qiot_log.h"
+	"ble_qiot_param_check.h"
+	"ble_qiot_service.h"
+	"ble_qiot_template.h"
+	"ble_qiot_llsync_data.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tecent_ll\include\ble_qiot_common.h
+
+1698751103 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tecent_ll\include\ble_qiot_llsync_event.h
+	<stdint.h>
+	"ble_qiot_config.h"
+	"ble_qiot_export.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tecent_ll\include\ble_qiot_utils_base64.h
+	<stdlib.h>
+	<stdint.h>
+	"ble_qiot_export.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tecent_ll\include\ble_qiot_log.h
+	"ble_qiot_config.h"
+
+1698751103 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tecent_ll\include\ble_qiot_param_check.h
+	"ble_qiot_log.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tecent_ll\tecent_protocol\ble_qiot_llsync_device.c
+	"ble_qiot_config.h"
+	<stdint.h>
+	<printf.h>
+	<string.h>
+	"ble_qiot_common.h"
+	"ble_qiot_config.h"
+	"ble_qiot_export.h"
+	"ble_qiot_hmac.h"
+	"ble_qiot_import.h"
+	"ble_qiot_log.h"
+	"ble_qiot_param_check.h"
+	"ble_qiot_utils_base64.h"
+	"ble_qiot_md5.h"
+	"ble_qiot_llsync_device.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tecent_ll\include\ble_qiot_hmac.h
+	<string.h>
+
+1698751103 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tecent_ll\include\ble_qiot_md5.h
+	<stdint.h>
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tecent_ll\include\ble_qiot_llsync_device.h
+	<stdint.h>
+	"ble_qiot_common.h"
+	"ble_qiot_export.h"
+	"ble_qiot_hmac.h"
+	"ble_qiot_llsync_event.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tecent_ll\tecent_protocol\ble_qiot_llsync_event.c
+	"ble_qiot_config.h"
+	<string.h>
+	"ble_qiot_import.h"
+	"ble_qiot_common.h"
+	"ble_qiot_param_check.h"
+	"ble_qiot_service.h"
+	"ble_qiot_template.h"
+	"ble_qiot_llsync_device.h"
+	"ble_qiot_llsync_event.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tecent_ll\tecent_protocol\ble_qiot_llsync_ota.c
+	"ble_qiot_config.h"
+	<stdlib.h>
+	<string.h>
+	"ble_qiot_export.h"
+	"ble_qiot_import.h"
+	"ble_qiot_common.h"
+	"ble_qiot_llsync_data.h"
+	"ble_qiot_llsync_event.h"
+	"ble_qiot_utils_base64.h"
+	"ble_qiot_crc.h"
+	"ble_qiot_log.h"
+	"ble_qiot_param_check.h"
+	"ble_qiot_service.h"
+	"ble_qiot_template.h"
+	"ble_qiot_llsync_ota.h"
+	"dual_bank_updata_api.h"
+	"timer.h"
+	"os/os_api.h"
+	"update_loader_download.h"
+	"app_config.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tecent_ll\include\ble_qiot_crc.h
+	<printf.h>
+	<stdint.h>
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tecent_ll\include\ble_qiot_llsync_ota.h
+	<stdint.h>
+	"ble_qiot_config.h"
+	"ble_qiot_export.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tecent_ll\tecent_protocol\ble_qiot_service.c
+	<printf.h>
+	"ble_qiot_config.h"
+	"ble_qiot_export.h"
+	"ble_qiot_import.h"
+	"ble_qiot_llsync_data.h"
+	"ble_qiot_llsync_device.h"
+	"ble_qiot_llsync_event.h"
+	"ble_qiot_log.h"
+	"ble_qiot_llsync_ota.h"
+	"ble_qiot_param_check.h"
+	"ble_qiot_service.h"
+	"ble_qiot_template.h"
+	"ble_qiot_service.h"
+	"ble_qiot_crc.h"
+	"asm/clock.h"
+	"app_config.h"
+	"update_loader_download.h"
+	"os/os_api.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tecent_ll\tecent_protocol\ble_qiot_template.c
+	"ble_qiot_template.h"
+	<printf.h>
+	<string.h>
+	"ble_qiot_export.h"
+	"ble_qiot_common.h"
+	"ble_qiot_param_check.h"
+	"ble_qiot_llsync_event.h"
+	"ble_qiot_service.h"
+	"ble_qiot_llsync_device.h"
+	"gpio.h"
+
+1698751103 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tecent_ll\tecent_protocol\ble_qiot_utils_base64.c
+	"ble_qiot_utils_base64.h"
+	"ble_qiot_export.h"
+	<stdint.h>
+	<stdlib.h>
+
+1698751103 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tecent_ll\tecent_protocol\ble_qiot_utils_crc.c
+	"ble_qiot_crc.h"
+	<printf.h>
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tecent_ll\tecent_protocol\ble_qiot_utils_hmac.c
+	<stdint.h>
+	"ble_qiot_log.h"
+	"ble_qiot_sha1.h"
+	"ble_qiot_hmac.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tecent_ll\include\ble_qiot_sha1.h
+	<stdint.h>
+	<stddef.h>
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tecent_ll\tecent_protocol\ble_qiot_utils_log.c
+	"ble_qiot_log.h"
+	<stdint.h>
+	<printf.h>
+	<string.h>
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tecent_ll\tecent_protocol\ble_qiot_utils_md5.c
+	"ble_qiot_md5.h"
+	<stdint.h>
+	<stdlib.h>
+	<string.h>
+
+1698751103 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tecent_ll\tecent_protocol\ble_qiot_utils_sha1.c
+	"ble_qiot_sha1.h"
+	<stdlib.h>
+	<string.h>
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\app\demo\tuya_ble_app_demo.c
+	"tuya_ble_app_demo.h"
+	"tuya_ota.h"
+	"system/generic/printf.h"
+	"log.h"
+	"system/includes.h"
+	"btstack/avctp_user.h"
+	"tone_player.h"
+	"application/audio_eq.h"
+	"bt_tws.h"
+	"user_cfg.h"
+	"key_event_deal.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\app\demo\tuya_ble_app_demo.h
+	"tuya_ble_type.h"
+	"tuya_ble_internal_config.h"
+	"os/os_type.h"
+	"user_cfg.h"
+
+1698751103 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\sdk\include\tuya_ble_type.h
+	"tuya_ble_stdlib.h"
+
+1698751103 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\port\tuya_ble_stdlib.h
+	"cpu.h"
+	<stdint.h>
+	<string.h>
+	<stdlib.h>
+	<stddef.h>
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\sdk\include\tuya_ble_internal_config.h
+	"tuya_ble_config.h"
+	"tuya_ble_port.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\tuya_ble_config.h
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\port\tuya_ble_port.h
+	"tuya_ble_stdlib.h"
+	"tuya_ble_type.h"
+	"tuya_ble_config.h"
+	"tuya_ble_port_peripheral.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\port\tuya_ble_port_peripheral.h
+	"tuya_ble_stdlib.h"
+	"tuya_ble_type.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\app\demo\tuya_ota.h
+	"typedef.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\app\demo\tuya_ota.c
+	"tuya_ota.h"
+	"tuya_ble_app_demo.h"
+	"dual_bank_updata_api.h"
+	"timer.h"
+	"asm/clock.h"
+	"classic/tws_api.h"
+	"update_tws_new.h"
+	"btstack/avctp_user.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\app\product_test\tuya_ble_app_production_test.c
+	"tuya_ble_stdlib.h"
+	"tuya_ble_type.h"
+	"tuya_ble_heap.h"
+	"tuya_ble_mem.h"
+	"tuya_ble_api.h"
+	"tuya_ble_port.h"
+	"tuya_ble_main.h"
+	"tuya_ble_internal_config.h"
+	"tuya_ble_data_handler.h"
+	"tuya_ble_mutli_tsf_protocol.h"
+	"tuya_ble_utils.h"
+	"tuya_ble_secure.h"
+	"tuya_ble_main.h"
+	"tuya_ble_storage.h"
+	"tuya_ble_app_production_test.h"
+	"tuya_ble_log.h"
+	"tuya_ble_api.h"
+	"tuya_ble_utils.h"
+	"tuya_ecc.h"
+	"cJSON.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\sdk\include\tuya_ble_heap.h
+	"tuya_ble_stdlib.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\sdk\include\tuya_ble_mem.h
+	"tuya_ble_type.h"
+
+1698751103 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\sdk\include\tuya_ble_api.h
+	"tuya_ble_type.h"
+	"tuya_ble_internal_config.h"
+	"tuya_ble_port.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\sdk\include\tuya_ble_main.h
+	"tuya_ble_type.h"
+	"tuya_ble_internal_config.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\sdk\include\tuya_ble_data_handler.h
+	"tuya_ble_stdlib.h"
+	"tuya_ble_internal_config.h"
+
+1698751103 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\sdk\include\tuya_ble_mutli_tsf_protocol.h
+	"tuya_ble_stdlib.h"
+	"tuya_ble_config.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\sdk\include\tuya_ble_utils.h
+	"tuya_ble_stdlib.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\sdk\lib\tuya_ble_secure.h
+	"tuya_ble_type.h"
+
+1698751103 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\sdk\include\tuya_ble_storage.h
+	"tuya_ble_type.h"
+	"tuya_ble_internal_config.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\app\product_test\tuya_ble_app_production_test.h
+	<stdint.h>
+	"tuya_ble_internal_config.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\sdk\include\tuya_ble_log.h
+	"tuya_ble_stdlib.h"
+	"tuya_ble_internal_config.h"
+	"tuya_ble_log_internal.h"
+
+1698751103 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\sdk\include\tuya_ble_log_internal.h
+	"tuya_ble_port.h"
+	"tuya_ble_internal_config.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\app\uart_common\tuya_ble_app_uart_common_handler.c
+	"tuya_ble_stdlib.h"
+	"tuya_ble_type.h"
+	"tuya_ble_heap.h"
+	"tuya_ble_mem.h"
+	"tuya_ble_api.h"
+	"tuya_ble_port.h"
+	"tuya_ble_main.h"
+	"tuya_ble_internal_config.h"
+	"tuya_ble_data_handler.h"
+	"tuya_ble_mutli_tsf_protocol.h"
+	"tuya_ble_utils.h"
+	"tuya_ble_secure.h"
+	"tuya_ble_main.h"
+	"tuya_ble_storage.h"
+	"tuya_ble_app_uart_common_handler.h"
+	"tuya_ble_log.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\app\uart_common\tuya_ble_app_uart_common_handler.h
+	<stdint.h>
+	"tuya_ble_internal_config.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\extern_components\mbedtls\aes.c
+	"aes.h"
+	<string.h>
+	"mbedtls/padlock.h"
+	"mbedtls/aesni.h"
+	"mbedtls/platform.h"
+
+1698751103 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\extern_components\mbedtls\aes.h
+	<stddef.h>
+	<stdint.h>
+	"aes_alt.h"
+
+1698751103 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\extern_components\mbedtls\ccm.c
+	<string.h>
+	"aes.h"
+	"ccm.h"
+	"cpu.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\extern_components\mbedtls\ccm.h
+
+1698751103 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\extern_components\mbedtls\hmac.c
+	"sha1.h"
+	"sha256.h"
+	"hmac.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\extern_components\mbedtls\sha1.h
+	<stddef.h>
+	<stdint.h>
+	"sha1_alt.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\extern_components\mbedtls\sha256.h
+	<stddef.h>
+	<stdint.h>
+	"sha256_alt.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\extern_components\mbedtls\hmac.h
+	<string.h>
+	<stddef.h>
+	<stdint.h>
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\extern_components\mbedtls\md5.c
+	"md5.h"
+	<string.h>
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\extern_components\mbedtls\md5.h
+	<stddef.h>
+	<stdint.h>
+	"md5_alt.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\extern_components\mbedtls\sha1.c
+	"sha1.h"
+	<string.h>
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\extern_components\mbedtls\sha256.c
+	"sha256.h"
+	<string.h>
+	<stdlib.h>
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\port\tuya_ble_port.c
+	"tuya_ble_port.h"
+	"tuya_ble_type.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\port\tuya_ble_port_jl.c
+	"tuya_ble_port.h"
+	"tuya_ble_port_JL.h"
+	"tuya_ble_main.h"
+	"tuya_ble_log.h"
+	"cpu.h"
+	"timer.h"
+	"os/os_api.h"
+	"system/includes.h"
+	"update.h"
+	"update_loader_download.h"
+	"aes.h"
+	"md5.h"
+	"tuya_ble_data_handler.h"
+	"btstack/le/le_user.h"
+
+1698751103 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\port\tuya_ble_port_jl.h
+	"os/os_type.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\port\tuya_ble_port_peripheral.c
+	"tuya_ble_port.h"
+	"tuya_ble_type.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\sdk\src\tuya_ble_api.c
+	"tuya_ble_stdlib.h"
+	"tuya_ble_api.h"
+	"tuya_ble_port.h"
+	"tuya_ble_type.h"
+	"tuya_ble_main.h"
+	"tuya_ble_mem.h"
+	"tuya_ble_log.h"
+	"tuya_ble_data_handler.h"
+	"tuya_ble_internal_config.h"
+	"tuya_ble_mutli_tsf_protocol.h"
+	"tuya_ble_storage.h"
+	"tuya_ble_utils.h"
+	"tuya_ble_sdk_version.h"
+	"tuya_ble_gatt_send_queue.h"
+	"tuya_ble_event.h"
+	"tuya_ble_app_production_test.h"
+	"cJSON.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\tuya_ble_sdk_version.h
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\sdk\include\tuya_ble_gatt_send_queue.h
+	"tuya_ble_stdlib.h"
+	"tuya_ble_type.h"
+	"tuya_ble_queue.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\sdk\include\tuya_ble_queue.h
+	"tuya_ble_stdlib.h"
+	"tuya_ble_type.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\sdk\include\tuya_ble_event.h
+	"tuya_ble_stdlib.h"
+	"tuya_ble_type.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\sdk\src\tuya_ble_bulk_data.c
+	"tuya_ble_bulk_data.h"
+	"tuya_ble_stdlib.h"
+	"tuya_ble_type.h"
+	"tuya_ble_heap.h"
+	"tuya_ble_mem.h"
+	"tuya_ble_api.h"
+	"tuya_ble_port.h"
+	"tuya_ble_main.h"
+	"tuya_ble_internal_config.h"
+	"tuya_ble_data_handler.h"
+	"tuya_ble_mutli_tsf_protocol.h"
+	"tuya_ble_utils.h"
+	"tuya_ble_secure.h"
+	"tuya_ble_main.h"
+	"tuya_ble_storage.h"
+	"tuya_ble_unix_time.h"
+	"tuya_ble_log.h"
+	"tuya_ble_gatt_send_queue.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\sdk\include\tuya_ble_bulk_data.h
+	"tuya_ble_stdlib.h"
+	"tuya_ble_type.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\sdk\include\tuya_ble_unix_time.h
+	"tuya_ble_stdlib.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\sdk\src\tuya_ble_data_handler.c
+	"tuya_ble_stdlib.h"
+	"tuya_ble_type.h"
+	"tuya_ble_heap.h"
+	"tuya_ble_mem.h"
+	"tuya_ble_api.h"
+	"tuya_ble_port.h"
+	"tuya_ble_main.h"
+	"tuya_ble_internal_config.h"
+	"tuya_ble_data_handler.h"
+	"tuya_ble_mutli_tsf_protocol.h"
+	"tuya_ble_utils.h"
+	"tuya_ble_secure.h"
+	"tuya_ble_main.h"
+	"tuya_ble_storage.h"
+	"tuya_ble_unix_time.h"
+	"tuya_ble_log.h"
+	"tuya_ble_gatt_send_queue.h"
+	"tuya_ble_bulk_data.h"
+	"tuya_ble_app_production_test.h"
+	"tuya_ble_app_uart_common_handler.h"
+	"tuya_ble_feature_weather.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\sdk\include\tuya_ble_feature_weather.h
+	"tuya_ble_stdlib.h"
+	"tuya_ble_type.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\sdk\src\tuya_ble_event.c
+	"tuya_ble_stdlib.h"
+	"tuya_ble_type.h"
+	"tuya_ble_heap.h"
+	"tuya_ble_mem.h"
+	"tuya_ble_api.h"
+	"tuya_ble_port.h"
+	"tuya_ble_main.h"
+	"tuya_ble_secure.h"
+	"tuya_ble_data_handler.h"
+	"tuya_ble_storage.h"
+	"tuya_ble_sdk_version.h"
+	"tuya_ble_utils.h"
+	"tuya_ble_event.h"
+	"tuya_ble_log.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\sdk\src\tuya_ble_event_handler.c
+	"tuya_ble_stdlib.h"
+	"tuya_ble_type.h"
+	"tuya_ble_heap.h"
+	"tuya_ble_mem.h"
+	"tuya_ble_api.h"
+	"tuya_ble_port.h"
+	"tuya_ble_main.h"
+	"tuya_ble_secure.h"
+	"tuya_ble_data_handler.h"
+	"tuya_ble_storage.h"
+	"tuya_ble_sdk_version.h"
+	"tuya_ble_event.h"
+	"tuya_ble_utils.h"
+	"tuya_ble_app_uart_common_handler.h"
+	"tuya_ble_app_production_test.h"
+	"tuya_ble_log.h"
+	"tuya_ble_event_handler.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\sdk\lib\tuya_ble_event_handler.h
+	"tuya_ble_type.h"
+
+1698751103 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\sdk\src\tuya_ble_event_handler_weak.c
+	"tuya_ble_stdlib.h"
+	"tuya_ble_type.h"
+	"tuya_ble_event_handler.h"
+
+1698751103 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\sdk\src\tuya_ble_feature_weather.c
+	"tuya_ble_stdlib.h"
+	"tuya_ble_type.h"
+	"tuya_ble_heap.h"
+	"tuya_ble_mem.h"
+	"tuya_ble_api.h"
+	"tuya_ble_port.h"
+	"tuya_ble_main.h"
+	"tuya_ble_internal_config.h"
+	"tuya_ble_feature_weather.h"
+	"tuya_ble_data_handler.h"
+	"tuya_ble_mutli_tsf_protocol.h"
+	"tuya_ble_utils.h"
+	"tuya_ble_secure.h"
+	"tuya_ble_main.h"
+	"tuya_ble_storage.h"
+	"tuya_ble_unix_time.h"
+	"tuya_ble_log.h"
+	"tuya_ble_gatt_send_queue.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\sdk\src\tuya_ble_gatt_send_queue.c
+	"tuya_ble_stdlib.h"
+	"tuya_ble_gatt_send_queue.h"
+	"tuya_ble_type.h"
+	"tuya_ble_config.h"
+	"tuya_ble_port.h"
+	"tuya_ble_mem.h"
+	"tuya_ble_main.h"
+	"tuya_ble_log.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\sdk\src\tuya_ble_heap.c
+	"tuya_ble_stdlib.h"
+	"tuya_ble_heap.h"
+	"tuya_ble_port.h"
+	"tuya_ble_internal_config.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\sdk\src\tuya_ble_main.c
+	"tuya_ble_stdlib.h"
+	"tuya_ble_type.h"
+	"tuya_ble_heap.h"
+	"tuya_ble_mem.h"
+	"tuya_ble_api.h"
+	"tuya_ble_port.h"
+	"tuya_ble_main.h"
+	"tuya_ble_secure.h"
+	"tuya_ble_data_handler.h"
+	"tuya_ble_storage.h"
+	"tuya_ble_sdk_version.h"
+	"tuya_ble_event.h"
+	"tuya_ble_utils.h"
+	"tuya_ble_app_uart_common_handler.h"
+	"tuya_ble_app_production_test.h"
+	"tuya_ble_log.h"
+	"tuya_ble_internal_config.h"
+
+1698751103 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\sdk\src\tuya_ble_mem.c
+	"tuya_ble_stdlib.h"
+	"tuya_ble_type.h"
+	"tuya_ble_heap.h"
+	"tuya_ble_mem.h"
+	"tuya_ble_internal_config.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\sdk\src\tuya_ble_mutli_tsf_protocol.c
+	"tuya_ble_stdlib.h"
+	"tuya_ble_type.h"
+	"tuya_ble_mem.h"
+	"tuya_ble_mutli_tsf_protocol.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\sdk\src\tuya_ble_queue.c
+	"tuya_ble_stdlib.h"
+	"tuya_ble_queue.h"
+	"tuya_ble_type.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\sdk\src\tuya_ble_storage.c
+	"tuya_ble_stdlib.h"
+	"tuya_ble_api.h"
+	"tuya_ble_port.h"
+	"tuya_ble_type.h"
+	"tuya_ble_main.h"
+	"tuya_ble_mem.h"
+	"tuya_ble_data_handler.h"
+	"tuya_ble_internal_config.h"
+	"tuya_ble_mutli_tsf_protocol.h"
+	"tuya_ble_storage.h"
+	"tuya_ble_utils.h"
+	"tuya_ble_log.h"
+
+1698751103 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\sdk\src\tuya_ble_unix_time.c
+	"tuya_ble_stdlib.h"
+	"tuya_ble_unix_time.h"
+
+1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\tuya_protocol\sdk\src\tuya_ble_utils.c
+	"tuya_ble_stdlib.h"
+	"tuya_ble_utils.h"
+	"tuya_ble_port.h"
+	"tuya_ble_mem.h"
+
+1698751103 source:d:\project\btglass\jl700\sdk\apps\common\ui\lcd_simple\lcd_simple_api.c
+	"app_config.h"
+	"includes.h"
+	"ui/ui_api.h"
+	"ui/ui.h"
+	"typedef.h"
+	"ui/ui_simple/ui_res.h"
+	"font/font_textout.h"
+	"ui/lcd_simple/ui_mainmenu.h"
+	"key_event_deal.h"
+	"app_task.h"
+	"font/language_list.h"
+
+1698751098 d:\project\btglass\jl700\sdk\apps\earphone\include\ui\ui_api.h
+	"app_config.h"
+	"ui/lcd_spi/lcd_drive.h"
+	"ui/ui.h"
+	"ui/ui_style.h"
+
+1698751100 d:\project\btglass\jl700\sdk\apps\earphone\include\ui\lcd_spi\lcd_drive.h
+	"asm/spi.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\ui\ui\ui.h
+	"window.h"
+	"ui_button.h"
+	"ui_grid.h"
+	"ui_time.h"
+	"ui_camera.h"
+	"ui_pic.h"
+	"ui_text.h"
+	"ui_battery.h"
+	"ui_browser.h"
+	"ui_slider.h"
+	"ui_slider_vert.h"
+	"ui_number.h"
+	"ui_watch.h"
+	"ui_progress.h"
+	"ui_progress_multi.h"
+	"ui_rotate.h"
+	<stdarg.h>
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\system\ui\ui\window.h
+	"ui/layer.h"
+	"ui/ui_core.h"
+	"ui/control.h"
+	"list.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\ui\ui\layer.h
+	"ui/layout.h"
+	"ui/control.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\ui\ui\layout.h
+	"ui/ui_core.h"
+	"ui/control.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\ui\ui\ui_core.h
+	"typedef.h"
+	"rect.h"
+	"system/event.h"
+	"res/resfile.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\ui\res\resfile.h
+	"typedef.h"
+	"fs/fs.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\ui\ui\control.h
+	"ui/ui_core.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\ui\ui\ui_button.h
+	"ui/control.h"
+	"ui/ui_core.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\ui\ui\ui_grid.h
+	"ui/ui_core.h"
+	"ui/control.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\ui\ui\ui_time.h
+	"ui/control.h"
+	"ui/ui_core.h"
+	"ui/p.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\ui\ui\p.h
+	"ui/ui_core.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\system\ui\ui\ui_camera.h
+	"ui/control.h"
+	"ui/ui_core.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\ui\ui\ui_pic.h
+	"ui/ui_core.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\system\ui\ui\ui_text.h
+	"ui/ui_core.h"
+	"ui/control.h"
+	"font/font_all.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\ui\font\font_all.h
+	"generic/typedef.h"
+	"font/font_sdfs.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\system\ui\font\font_sdfs.h
+	"generic/typedef.h"
+	"fs/fs.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\ui\ui\ui_battery.h
+	"ui/control.h"
+	"list.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\system\ui\ui\ui_browser.h
+	"ui/ui_core.h"
+	"ui/control.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\ui\ui\ui_slider.h
+	"ui/ui_core.h"
+	"ui/control.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\system\ui\ui\ui_slider_vert.h
+	"ui/ui_core.h"
+	"ui/control.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\system\ui\ui\ui_number.h
+	"ui/control.h"
+	"ui/ui_core.h"
+	"ui/p.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\ui\ui\ui_watch.h
+	"ui/control.h"
+	"ui/ui_core.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\ui\ui\ui_progress.h
+	"ui/control.h"
+	"ui/ui_core.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\system\ui\ui\ui_progress_multi.h
+	"ui/control.h"
+	"ui/ui_core.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\system\ui\ui\ui_rotate.h
+	"rect.h"
+
+1698751100 d:\project\btglass\jl700\sdk\apps\earphone\include\ui\ui_style.h
+	"ui/style_led7.h"
+	"ui/style_jl01.h"
+	"ui/style_jl02.h"
+
+1698751098 d:\project\btglass\jl700\sdk\apps\earphone\include\ui\style_led7.h
+	"ui/ui_common.h"
+	"ui/led7/led7_driver.h"
+	"ui/lcd_seg/lcd_seg3x9_driver.h"
+
+1698751098 d:\project\btglass\jl700\sdk\apps\earphone\include\ui\ui_common.h
+	"typedef.h"
+
+1698751098 d:\project\btglass\jl700\sdk\apps\earphone\include\ui\led7\led7_driver.h
+
+1698751096 d:\project\btglass\jl700\sdk\apps\earphone\include\ui\lcd_seg\lcd_seg3x9_driver.h
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\ui\ui_simple\ui_res.h
+	"typedef.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\ui\font\font_textout.h
+	"generic/typedef.h"
+	"font/font_all.h"
+
+1698751100 d:\project\btglass\jl700\sdk\apps\earphone\include\ui\lcd_simple\ui_mainmenu.h
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\system\ui\font\language_list.h
+
+1698751103 source:d:\project\btglass\jl700\sdk\apps\common\ui\lcd_simple\ui.c
+	"app_config.h"
+	"includes.h"
+	"system/includes.h"
+	"fs/fs.h"
+	"ui/ui_simple/ui_res.h"
+	"ui/lcd_simple/ui.h"
+	"key_event_deal.h"
+
+1698751098 d:\project\btglass\jl700\sdk\apps\earphone\include\ui\lcd_simple\ui.h
+	"menu.h"
+	"font/language_list.h"
+	"typedef.h"
+
+1698751098 d:\project\btglass\jl700\sdk\apps\earphone\include\ui\lcd_simple\menu.h
+
+1698751104 source:d:\project\btglass\jl700\sdk\apps\common\ui\lcd_simple\ui_mainmenu.c
+	"app_config.h"
+	"includes.h"
+	"system/includes.h"
+	"fs/fs.h"
+	"ui/ui_simple/ui_res.h"
+	"ui/lcd_simple/ui_mainmenu.h"
+	"ui/lcd_simple/ui.h"
+	"key_event_deal.h"
+	"app_task.h"
+	"app_msg.h"
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\common\update\testbox_update.c
+	"update_loader_download.h"
+	"update.h"
+	"btctrler_task.h"
+	"app_config.h"
+	"lib_profile_cfg.h"
+	"bt_profile_cfg.h"
+	"smartbox/smartbox_task.h"
+	"system/debug.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\btctrler\btctrler_task.h
+	"typedef.h"
+	"system/task.h"
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\common\update\uart_update.c
+	"app_config.h"
+	"typedef.h"
+	"update_loader_download.h"
+	"os/os_api.h"
+	"system/task.h"
+	"update.h"
+	"gpio.h"
+	"uart_update.h"
+	"asm/uart_dev.h"
+	"asm/clock.h"
+	"debug.h"
+	"asm/power_interface.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\update\uart_update.h
+	"typedef.h"
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\common\update\uart_update_master.c
+	"app_config.h"
+	"typedef.h"
+	"update_loader_download.h"
+	"os/os_api.h"
+	"system/task.h"
+	"update.h"
+	"gpio.h"
+	"uart_update.h"
+	"asm/uart_dev.h"
+	"asm/clock.h"
+	"timer.h"
+	"system/fs/fs.h"
+	"debug.h"
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\common\update\update.c
+	"update.h"
+	"update_loader_download.h"
+	"asm/crc16.h"
+	"asm/wdt.h"
+	"os/os_api.h"
+	"app_config.h"
+	"cpu.h"
+	"syscfg_id.h"
+	"btcontroller_modules.h"
+	"system/includes.h"
+	"uart_update.h"
+	"dual_bank_updata_api.h"
+	"btstack/avctp_user.h"
+	"ui/ui_api.h"
+	"rcsp_user_update.h"
+	"rcsp_adv_user_update.h"
+	"tone_player.h"
+	"audio_config.h"
+	"asm/pwm_led.h"
+	"custom_cfg.h"
+	"system/debug.h"
+	"smartbox_extra_flash_opt.h"
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\common\update\update_tws.c
+	<stdlib.h>
+	<stdint.h>
+	<string.h>
+	"generic/lbuf.h"
+	"init.h"
+	"update_tws.h"
+	"dual_bank_updata_api.h"
+	"bt_tws.h"
+	"app_config.h"
+	"btstack/avctp_user.h"
+	"update.h"
+	"app_main.h"
+	"debug.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\common\update\update_tws_new.c
+	<stdlib.h>
+	<stdint.h>
+	<string.h>
+	"generic/lbuf.h"
+	"init.h"
+	"update_tws_new.h"
+	"dual_bank_updata_api.h"
+	"bt_tws.h"
+	"app_config.h"
+	"btstack/avctp_user.h"
+	"update.h"
+	"app_main.h"
+	"timer.h"
+	"debug.h"
+
+1698751099 source:d:\project\btglass\jl700\sdk\apps\earphone\aec\br36\audio_aec.c
+	"aec_user.h"
+	"system/includes.h"
+	"media/includes.h"
+	"application/eq_config.h"
+	"application/audio_drc.h"
+	"application/audio_pitch.h"
+	"circular_buf.h"
+	"overlay_code.h"
+	"audio_aec_online.h"
+	"audio_config.h"
+	"amplitude_statistic.h"
+	"audio_gain_process.h"
+	"audio_cvp_sync.h"
+	"bt_tws.h"
+	"commproc.h"
+	"debug.h"
+
+1698751100 d:\project\btglass\jl700\sdk\apps\earphone\include\aec_user.h
+	"generic/typedef.h"
+	"user_cfg.h"
+	"cvp/cvp_common.h"
+	"commproc_dms.h"
+	"commproc.h"
+	"commproc.h"
+
+1698751107 d:\project\btglass\jl700\sdk\include_lib\media\cvp\cvp_common.h
+	"DualMicSystem_flexible.h"
+	"DualMicSystem.h"
+	"jlsp_ns.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\media\cvp\dualmicsystem_flexible.h
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\media\cvp\dualmicsystem.h
+
+1698751107 d:\project\btglass\jl700\sdk\include_lib\media\cvp\jlsp_ns.h
+
+1698751106 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\cpu\br36\commproc_dms.h
+	"generic/typedef.h"
+
+1698751106 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\cpu\br36\commproc.h
+	"generic/typedef.h"
+
+1698751107 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\application\audio_pitch.h
+	"pitchshifter/pitchshifter_api.h"
+	"media/audio_stream.h"
+
+1698751106 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\pitchshifter\pitchshifter_api.h
+
+1698751106 d:\project\btglass\jl700\sdk\cpu\br36\overlay_code.h
+	"typedef.h"
+
+1698751092 d:\project\btglass\jl700\sdk\apps\earphone\aec\br36\audio_aec_online.h
+	"generic/typedef.h"
+
+1698751107 d:\project\btglass\jl700\sdk\include_lib\media\audio_gain_process.h
+	"media/audio_stream.h"
+
+1698751092 d:\project\btglass\jl700\sdk\apps\earphone\aec\br36\audio_cvp_sync.h
+
+1698751099 source:d:\project\btglass\jl700\sdk\apps\earphone\aec\br36\audio_aec_demo.c
+	"aec_user.h"
+	"system/includes.h"
+	"media/includes.h"
+	"application/eq_config.h"
+	"circular_buf.h"
+	"overlay_code.h"
+	"audio_config.h"
+	"debug.h"
+
+1698751092 source:d:\project\btglass\jl700\sdk\apps\earphone\aec\br36\audio_aec_dms.c
+	"aec_user.h"
+	"system/includes.h"
+	"media/includes.h"
+	"application/eq_config.h"
+	"application/audio_drc.h"
+	"application/audio_pitch.h"
+	"circular_buf.h"
+	"audio_aec_online.h"
+	"audio_dms_tool.h"
+	"bt_tws.h"
+	"overlay_code.h"
+	"audio_config.h"
+	"amplitude_statistic.h"
+	"audio_gain_process.h"
+	"audio_cvp_sync.h"
+	"cvp/cvp_common.h"
+	"app_main.h"
+	"debug.h"
+	"audio_aec_debug.c"
+	"commproc_dms.h"
+
+1698751105 d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_dms_tool.h
+	"generic/typedef.h"
+
+1698751099 d:\project\btglass\jl700\sdk\apps\earphone\aec\br36\audio_aec_debug.c
+
+1698751092 source:d:\project\btglass\jl700\sdk\apps\earphone\aec\br36\audio_aec_online.c
+	"audio_aec_online.h"
+	"app_online_cfg.h"
+	"config/config_target.h"
+	"system/includes.h"
+	"online_db_deal.h"
+	"timer.h"
+	"aec_user.h"
+
+1698751092 source:d:\project\btglass\jl700\sdk\apps\earphone\aec\br36\audio_cvp_sync.c
+	"system/includes.h"
+	"media/includes.h"
+	"audio_config.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\earphone\app_ancbox.c
+	"init.h"
+	"app_config.h"
+	"system/includes.h"
+	"audio_anc.h"
+	"asm/charge.h"
+	"asm/chargestore.h"
+	"user_cfg.h"
+	"device/vm.h"
+	"app_action.h"
+	"app_main.h"
+	"app_ancbox.h"
+	"app_power_manage.h"
+	"anc_btspp.h"
+	"user_cfg.h"
+	"debug.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\chargestore.h
+
+1698751100 d:\project\btglass\jl700\sdk\apps\earphone\include\app_ancbox.h
+	"typedef.h"
+	"system/event.h"
+
+1698751095 source:d:\project\btglass\jl700\sdk\apps\earphone\app_anctool.c
+	"init.h"
+	"app_config.h"
+	"system/includes.h"
+	"btstack/avctp_user.h"
+	"classic/hci_lmp.h"
+	"app_anctool.h"
+	"audio_anc.h"
+	"user_cfg.h"
+	"app_action.h"
+	"app_main.h"
+	"user_cfg.h"
+
+1716533463 source:d:\project\btglass\jl700\sdk\apps\earphone\app_main.c
+	"system/includes.h"
+	"btstack/btstack_task.h"
+	"app_config.h"
+	"app_action.h"
+	"asm/pwm_led.h"
+	"tone_player.h"
+	"ui_manage.h"
+	"gpio.h"
+	"app_main.h"
+	"asm/charge.h"
+	"update.h"
+	"app_power_manage.h"
+	"audio_config.h"
+	"app_charge.h"
+	"bt_profile_cfg.h"
+	"dev_manager/dev_manager.h"
+	"update_loader_download.h"
+	"app_task.h"
+	"audio_dec_server.h"
+	"bt_tws.h"
+	"debug.h"
+	"asm/audio_adc.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\earphone\app_protocol_deal.c
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	"app_protocol_api.h"
+	"system/includes.h"
+	"key_event_deal.h"
+	"tone_player.h"
+	"bt_tws.h"
+	"app_main.h"
+
+1698751093 source:d:\project\btglass\jl700\sdk\apps\earphone\app_task_switch.c
+	"system/includes.h"
+	"app_config.h"
+	"app_task.h"
+	"app_music.h"
+	"app_action.h"
+	"earphone.h"
+	"bt_background.h"
+
+1698751096 d:\project\btglass\jl700\sdk\apps\earphone\include\app_music.h
+
+1698751096 d:\project\btglass\jl700\sdk\apps\earphone\include\earphone.h
+	"system/includes.h"
+
+1698751096 d:\project\btglass\jl700\sdk\apps\earphone\include\bt_background.h
+	"generic/typedef.h"
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\earphone\ble_adv.c
+	"app_config.h"
+	"earphone.h"
+	"app_main.h"
+	"include/bt_ble.h"
+	"bt_common.h"
+	"btstack/avctp_user.h"
+	"system/includes.h"
+	"bt_tws.h"
+	"debug.h"
+
+1698751096 d:\project\btglass\jl700\sdk\apps\earphone\include\bt_ble.h
+	"typedef.h"
+
+1750475332 source:d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac7003f_demo.c
+	"app_config.h"
+	"system/includes.h"
+	"media/includes.h"
+	"asm/sdmmc.h"
+	"asm/chargestore.h"
+	"asm/charge.h"
+	"asm/pwm_led.h"
+	"tone_player.h"
+	"audio_config.h"
+	"gSensor/gSensor_manage.h"
+	"key_event_deal.h"
+	"asm/lp_touch_key_api.h"
+	"user_cfg.h"
+	"asm/power/p11.h"
+	"asm/power/p33.h"
+	"audio_link.h"
+	"audio_anc.h"
+	"debug.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\sdmmc.h
+	"device/sdmmc.h"
+
+1715161697 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\lp_touch_key_api.h
+	"typedef.h"
+	"asm/lp_touch_key_hw.h"
+
+1750471181 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\lp_touch_key_hw.h
+
+1698751104 d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_link.h
+
+1698751099 source:d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac7006f_earphone.c
+	"app_config.h"
+	"system/includes.h"
+	"media/includes.h"
+	"asm/sdmmc.h"
+	"asm/chargestore.h"
+	"asm/charge.h"
+	"asm/pwm_led.h"
+	"tone_player.h"
+	"audio_config.h"
+	"gSensor/gSensor_manage.h"
+	"key_event_deal.h"
+	"asm/lp_touch_key_api.h"
+	"user_cfg.h"
+	"asm/power/p11.h"
+	"asm/power/p33.h"
+	"audio_link.h"
+	"audio_anc.h"
+	"debug.h"
+
+1750472730 source:d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_demo.c
+	"app_config.h"
+	"system/includes.h"
+	"media/includes.h"
+	"asm/sdmmc.h"
+	"asm/chargestore.h"
+	"asm/charge.h"
+	"asm/pwm_led.h"
+	"asm/spi.h"
+	"tone_player.h"
+	"audio_config.h"
+	"gSensor/gSensor_manage.h"
+	"key_event_deal.h"
+	"asm/lp_touch_key_api.h"
+	"user_cfg.h"
+	"asm/power/p11.h"
+	"asm/power/p33.h"
+	"audio_link.h"
+	"asm/math_fast_function.h"
+	"audio_anc.h"
+	"debug.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_dms.c
+	"app_config.h"
+	"system/includes.h"
+	"media/includes.h"
+	"asm/sdmmc.h"
+	"asm/chargestore.h"
+	"asm/charge.h"
+	"asm/pwm_led.h"
+	"tone_player.h"
+	"audio_config.h"
+	"gSensor/gSensor_manage.h"
+	"key_event_deal.h"
+	"asm/lp_touch_key_api.h"
+	"user_cfg.h"
+	"asm/power/p11.h"
+	"asm/power/p33.h"
+	"audio_link.h"
+	"audio_anc.h"
+	"debug.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_hearing_aid.c
+	"app_config.h"
+	"system/includes.h"
+	"media/includes.h"
+	"asm/sdmmc.h"
+	"asm/chargestore.h"
+	"asm/charge.h"
+	"asm/pwm_led.h"
+	"asm/spi.h"
+	"tone_player.h"
+	"audio_config.h"
+	"gSensor/gSensor_manage.h"
+	"key_event_deal.h"
+	"asm/lp_touch_key_api.h"
+	"user_cfg.h"
+	"asm/power/p11.h"
+	"asm/power/p33.h"
+	"audio_link.h"
+	"asm/math_fast_function.h"
+	"audio_anc.h"
+	"debug.h"
+
+1698751099 source:d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_iis_linein.c
+	"app_config.h"
+	"app_main.h"
+	"system/includes.h"
+	"media/includes.h"
+	"asm/sdmmc.h"
+	"asm/chargestore.h"
+	"asm/charge.h"
+	"asm/pwm_led.h"
+	"asm/spi.h"
+	"tone_player.h"
+	"audio_config.h"
+	"gSensor/gSensor_manage.h"
+	"key_event_deal.h"
+	"asm/lp_touch_key_api.h"
+	"user_cfg.h"
+	"asm/power/p11.h"
+	"asm/power/p33.h"
+	"audio_link.h"
+	"asm/math_fast_function.h"
+	"audio_anc.h"
+	"app_task.h"
+	"debug.h"
+
+1698751099 source:d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_sd_pc_demo.c
+	"app_config.h"
+	"system/includes.h"
+	"media/includes.h"
+	"asm/sdmmc.h"
+	"asm/chargestore.h"
+	"asm/charge.h"
+	"asm/pwm_led.h"
+	"tone_player.h"
+	"audio_config.h"
+	"gSensor/gSensor_manage.h"
+	"key_event_deal.h"
+	"asm/lp_touch_key_api.h"
+	"user_cfg.h"
+	"asm/power/p11.h"
+	"asm/power/p33.h"
+	"dev_manager.h"
+	"usb/otg.h"
+	"audio_link.h"
+	"norflash.h"
+	"audio_anc.h"
+	"debug.h"
+	"app_main.h"
+
+1698751095 source:d:\project\btglass\jl700\sdk\apps\earphone\bt_auto_test.c
+	"system/includes.h"
+	"media/includes.h"
+	"tone_player.h"
+	"app_config.h"
+	"app_action.h"
+	"btstack/avctp_user.h"
+	"btstack/btstack_task.h"
+	"btstack/frame_queque.h"
+	"user_cfg.h"
+	"aec_user.h"
+	"classic/hci_lmp.h"
+	"bt_common.h"
+	"pbg_user.h"
+	"bt_tws.h"
+	"include/bt_ble.h"
+	"app_chargestore.h"
+	"asm/charge.h"
+	"app_charge.h"
+	"ui_manage.h"
+	"app_chargestore.h"
+	"app_online_cfg.h"
+	"app_main.h"
+	"app_power_manage.h"
+	"gSensor/gSensor_manage.h"
+	"key_event_deal.h"
+	"classic/tws_api.h"
+	"asm/pwm_led.h"
+	"vol_sync.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\btstack\frame_queque.h
+	<string.h>
+	<stdint.h>
+	"typedef.h"
+
+1698751100 d:\project\btglass\jl700\sdk\apps\earphone\include\pbg_user.h
+	"typedef.h"
+	"key_event_deal.h"
+
+1698751100 d:\project\btglass\jl700\sdk\apps\earphone\include\vol_sync.h
+
+1698751099 source:d:\project\btglass\jl700\sdk\apps\earphone\bt_background.c
+	"system/includes.h"
+	"classic/tws_api.h"
+	"btstack/avctp_user.h"
+	"btstack/a2dp_media_codec.h"
+	"app_config.h"
+	"app_main.h"
+	"app_action.h"
+	"app_task.h"
+	"audio_config.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\btstack\a2dp_media_codec.h
+	"generic/typedef.h"
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\earphone\bt_ble.c
+	"system/app_core.h"
+	"system/includes.h"
+	"app_config.h"
+	"app_action.h"
+	"btstack/btstack_task.h"
+	"user_cfg.h"
+	"vm.h"
+	"app_power_manage.h"
+	"btcontroller_modules.h"
+	"app_chargestore.h"
+	"btstack/avctp_user.h"
+	"bt_common.h"
+	"le_common.h"
+	"include/bt_ble.h"
+	"pbg_user.h"
+	"bt_tws.h"
+	"debug.h"
+
+1716533108 source:d:\project\btglass\jl700\sdk\apps\earphone\bt_tws.c
+	"system/includes.h"
+	"media/includes.h"
+	"device/vm.h"
+	"tone_player.h"
+	"app_config.h"
+	"app_action.h"
+	"earphone.h"
+	"btstack/avctp_user.h"
+	"btstack/btstack_task.h"
+	"classic/hci_lmp.h"
+	"user_cfg.h"
+	"bt_tws.h"
+	"asm/charge.h"
+	"app_charge.h"
+	"ui_manage.h"
+	"app_chargestore.h"
+	"app_online_cfg.h"
+	"app_main.h"
+	"app_power_manage.h"
+	"audio_config.h"
+	"user_cfg.h"
+	"btcontroller_config.h"
+	"bt_common.h"
+	"asm/pwm_led.h"
+	"bt_common.h"
+	"pbg_user.h"
+	"include/bt_ble.h"
+	"audio_anc.h"
+	"app_ancbox.h"
+	"debug.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\earphone\default_event_handler.c
+	"default_event_handler.h"
+	"app_action.h"
+	"bt_background.h"
+	"earphone.h"
+	"dev_manager/dev_manager.h"
+	"app_config.h"
+	"btstack/avctp_user.h"
+	"bt_tws.h"
+	"app_main.h"
+	"app_music.h"
+	"key_event_deal.h"
+	"asm/charge.h"
+	"app_sd_music.h"
+	"usb/otg.h"
+	"update.h"
+	"app_task.h"
+	"audio_dec/audio_dec_file.h"
+
+1698751096 d:\project\btglass\jl700\sdk\apps\earphone\include\default_event_handler.h
+	"system/includes.h"
+
+1698751096 d:\project\btglass\jl700\sdk\apps\earphone\include\app_sd_music.h
+
+1715161326 source:d:\project\btglass\jl700\sdk\apps\earphone\earphone.c
+	"system/includes.h"
+	"media/includes.h"
+	"tone_player.h"
+	"earphone.h"
+	"asm/math_fast_function.h"
+	"app_config.h"
+	"app_action.h"
+	"btstack/avctp_user.h"
+	"btstack/btstack_task.h"
+	"btctrler/btctrler_task.h"
+	"btstack/frame_queque.h"
+	"user_cfg.h"
+	"aec_user.h"
+	"classic/hci_lmp.h"
+	"bt_common.h"
+	"bt_ble.h"
+	"pbg_user.h"
+	"btstack/bluetooth.h"
+	"audio_anc.h"
+	"app_ancbox.h"
+	"bt_tws.h"
+	"include/bt_ble.h"
+	"app_chargestore.h"
+	"app_charge_calibration.h"
+	"jl_kws/jl_kws_api.h"
+	"asm/charge.h"
+	"app_charge.h"
+	"ui_manage.h"
+	"app_chargestore.h"
+	"app_online_cfg.h"
+	"app_main.h"
+	"app_power_manage.h"
+	"gSensor/gSensor_manage.h"
+	"key_event_deal.h"
+	"classic/tws_api.h"
+	"asm/pwm_led.h"
+	"ir_sensor/ir_manage.h"
+	"in_ear_detect/in_ear_manage.h"
+	"vol_sync.h"
+	"bt_background.h"
+	"default_event_handler.h"
+	"debug.h"
+
+1698751100 d:\project\btglass\jl700\sdk\apps\earphone\include\app_charge_calibration.h
+	"typedef.h"
+	"system/event.h"
+
+1698751099 source:d:\project\btglass\jl700\sdk\apps\earphone\eartch_event_deal.c
+	"includes.h"
+	"key_event_deal.h"
+	"btstack/avctp_user.h"
+	"bt_tws.h"
+	"tone_player.h"
+	"app_config.h"
+	"debug.h"
+
+1698751099 source:d:\project\btglass\jl700\sdk\apps\earphone\font\fontinit.c
+	"font/font_all.h"
+	"font/language_list.h"
+	"app_config.h"
+	"ui/res_config.h"
+
+1698751098 d:\project\btglass\jl700\sdk\apps\earphone\include\ui\res_config.h
+
+1698751092 source:d:\project\btglass\jl700\sdk\apps\earphone\fs_test.c
+	"system/includes.h"
+	"app_config.h"
+
+1698751092 source:d:\project\btglass\jl700\sdk\apps\earphone\hearing_aid\hearing_aid.c
+	"asm/includes.h"
+	"media/includes.h"
+	"system/includes.h"
+	"app_main.h"
+	"audio_config.h"
+	"app_action.h"
+	"audio_hearing_aid_lp.h"
+
+1698751104 d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_hearing_aid_lp.h
+
+1698751092 source:d:\project\btglass\jl700\sdk\apps\earphone\idle.c
+	"system/includes.h"
+	"media/includes.h"
+	"app_config.h"
+	"app_action.h"
+	"tone_player.h"
+	"asm/charge.h"
+	"app_charge.h"
+	"app_main.h"
+	"ui_manage.h"
+	"vm.h"
+	"app_chargestore.h"
+	"user_cfg.h"
+	"default_event_handler.h"
+	"app_ancbox.h"
+	"app_charge_calibration.h"
+	"debug.h"
+	"key_event_deal.h"
+	"btstack/btstack_typedef.h"
+
+1750471368 source:d:\project\btglass\jl700\sdk\apps\earphone\key_event_deal.c
+	"key_event_deal.h"
+	"btstack/avctp_user.h"
+	"event.h"
+	"app_power_manage.h"
+	"app_main.h"
+	"tone_player.h"
+	"audio_config.h"
+	"user_cfg.h"
+	"system/timer.h"
+	"vol_sync.h"
+	"media/includes.h"
+	"pbg_user.h"
+	"application/eq_config.h"
+	"earphone.h"
+	"bt_tws.h"
+	"audio_anc.h"
+	"debug.h"
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\earphone\kws_voice_event_deal.c
+	"includes.h"
+	"event.h"
+	"app_config.h"
+	"btstack/avctp_user.h"
+	"media/kws_event.h"
+	"bt_tws.h"
+	"audio_anc.h"
+	"debug.h"
+
+1698751107 d:\project\btglass\jl700\sdk\include_lib\media\kws_event.h
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\earphone\linein\linein_task.c
+	"system/includes.h"
+	"app_action.h"
+	"app_main.h"
+	"earphone.h"
+	"key_event_deal.h"
+	"audio_config.h"
+	"bt_background.h"
+	"default_event_handler.h"
+	"app_online_cfg.h"
+	"app_task.h"
+	"linein_iis.h"
+	"audio_dec/audio_dec_linein.h"
+	"tone_player.h"
+
+1698751104 d:\project\btglass\jl700\sdk\cpu\br36\audio\linein_iis.h
+
+1698751104 d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_dec\audio_dec_linein.h
+	"asm/includes.h"
+	"media/includes.h"
+	"system/includes.h"
+	"app_config.h"
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\earphone\ll_sync_demo\ll_sync_demo.c
+	"app_config.h"
+	"earphone.h"
+	"app_main.h"
+	"3th_profile_api.h"
+	"btstack/avctp_user.h"
+	"btstack/btstack_task.h"
+	"bt_tws.h"
+	"ble_qiot_export.h"
+	"update_tws.h"
+	"update_tws_new.h"
+	"debug.h"
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\earphone\log_config\app_config.c
+	"system/includes.h"
+
+1716519888 source:d:\project\btglass\jl700\sdk\apps\earphone\log_config\lib_btctrler_config.c
+	"app_config.h"
+	"system/includes.h"
+	"btcontroller_config.h"
+	"bt_common.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\earphone\log_config\lib_btstack_config.c
+	"app_config.h"
+	"system/includes.h"
+	"btcontroller_config.h"
+	"bt_common.h"
+
+1698751099 source:d:\project\btglass\jl700\sdk\apps\earphone\log_config\lib_driver_config.c
+	"app_config.h"
+	"system/includes.h"
+
+1698751099 source:d:\project\btglass\jl700\sdk\apps\earphone\log_config\lib_media_config.c
+	"app_config.h"
+	"system/includes.h"
+	"media/includes.h"
+	"audio_adc.h"
+	"audio_config.h"
+	"audio/demo/audio_decoder_test.c"
+	"audio/demo/audio_encoder_test.c"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\audio\demo\audio_decoder_test.c
+	"media/includes.h"
+
+1698751102 d:\project\btglass\jl700\sdk\apps\common\audio\demo\audio_encoder_test.c
+	"media/includes.h"
+
+1698751099 source:d:\project\btglass\jl700\sdk\apps\earphone\log_config\lib_system_config.c
+	"app_config.h"
+	"system/includes.h"
+
+1698751101 source:d:\project\btglass\jl700\sdk\apps\earphone\log_config\lib_update_config.c
+	"app_config.h"
+	"system/includes.h"
+	"update_loader_download.h"
+
+1698751095 source:d:\project\btglass\jl700\sdk\apps\earphone\music\sd_music.c
+	"system/includes.h"
+	"music/music_player.h"
+	"music/breakpoint.h"
+	"app_action.h"
+	"app_main.h"
+	"earphone.h"
+	"key_event_deal.h"
+	"audio_config.h"
+	"bt_background.h"
+	"default_event_handler.h"
+	"app_online_cfg.h"
+	"user_cfg.h"
+	"tone_player.h"
+	"app_task.h"
+	"earphone.h"
+	"debug.h"
+
+1698751099 source:d:\project\btglass\jl700\sdk\apps\earphone\pbg_demo.c
+	"system/includes.h"
+	"string.h"
+	"circular_buf.h"
+	"btstack/avctp_user.h"
+	"app_config.h"
+	"bt_tws.h"
+	"bt_common.h"
+	"syscfg_id.h"
+	"pbg_user.h"
+	"aec_user.h"
+	"tone_player.h"
+
+1698751099 source:d:\project\btglass\jl700\sdk\apps\earphone\pc\pc.c
+	"system/includes.h"
+	"music/music_player.h"
+	"music/breakpoint.h"
+	"app_action.h"
+	"key_event_deal.h"
+	"audio_config.h"
+	"bt_background.h"
+	"default_event_handler.h"
+	"usb/device/usb_stack.h"
+	"usb/device/hid.h"
+	"tone_player.h"
+	"user_cfg.h"
+	"app_task.h"
+	"earphone.h"
+	"debug.h"
+
+1716533464 source:d:\project\btglass\jl700\sdk\apps\earphone\power_manage\app_charge.c
+	"app_config.h"
+	"asm/charge.h"
+	"asm/pwm_led.h"
+	"asm/power_interface.h"
+	"ui_manage.h"
+	"system/event.h"
+	"system/app_core.h"
+	"system/includes.h"
+	"app_action.h"
+	"asm/wdt.h"
+	"app_power_manage.h"
+	"app_chargestore.h"
+	"btstack/avctp_user.h"
+	"app_action.h"
+	"app_main.h"
+	"bt_tws.h"
+	"usb/otg.h"
+	"bt_common.h"
+	"audio_anc.h"
+	"ntc/ntc_det_api.h"
+	"debug.h"
+	"app_ancbox.h"
+
+1698751092 source:d:\project\btglass\jl700\sdk\apps\earphone\power_manage\app_charge_calibration.c
+	"init.h"
+	"app_config.h"
+	"system/includes.h"
+	"asm/charge.h"
+	"asm/chargestore.h"
+	"app_chargestore.h"
+	"app_charge_calibration.h"
+	"user_cfg.h"
+	"device/vm.h"
+	"app_action.h"
+	"app_main.h"
+	"debug.h"
+	"asm/charge_calibration.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\charge_calibration.h
+	"typedef.h"
+
+1716533076 source:d:\project\btglass\jl700\sdk\apps\earphone\power_manage\app_chargestore.c
+	"init.h"
+	"app_config.h"
+	"system/includes.h"
+	"asm/charge.h"
+	"asm/chargestore.h"
+	"user_cfg.h"
+	"app_chargestore.h"
+	"device/vm.h"
+	"btstack/avctp_user.h"
+	"app_power_manage.h"
+	"app_action.h"
+	"app_main.h"
+	"app_charge.h"
+	"classic/tws_api.h"
+	"update.h"
+	"bt_ble.h"
+	"bt_tws.h"
+	"app_action.h"
+	"bt_common.h"
+	"le_rcsp_adv_module.h"
+	"app_ancbox.h"
+	"app_charge_calibration.h"
+	"debug.h"
+
+1698751093 source:d:\project\btglass\jl700\sdk\apps\earphone\power_manage\app_power_manage.c
+	"system/includes.h"
+	"app_power_manage.h"
+	"app_main.h"
+	"app_config.h"
+	"app_action.h"
+	"asm/charge.h"
+	"ui_manage.h"
+	"tone_player.h"
+	"asm/adc_api.h"
+	"btstack/avctp_user.h"
+	"user_cfg.h"
+	"asm/charge.h"
+	"bt_tws.h"
+	"debug.h"
+
+1698751093 source:d:\project\btglass\jl700\sdk\apps\earphone\rcsp\jl_phone_app.c
+	"app_config.h"
+	"btstack/avctp_user.h"
+	"adv_music_info_setting.h"
+
+1698751093 source:d:\project\btglass\jl700\sdk\apps\earphone\rcsp\rcsp_adv.c
+	"app_config.h"
+	"earphone.h"
+	"app_main.h"
+	"le_rcsp_adv_module.h"
+	"rcsp_adv_bluetooth.h"
+	"rcsp_bluetooth.h"
+	"adv_mic_setting.h"
+	"JL_rcsp_api.h"
+	"update_tws.h"
+	"update_tws_new.h"
+	"3th_profile_api.h"
+	"adv_time_stamp_setting.h"
+	"adv_anc_voice.h"
+	"btstack/avctp_user.h"
+	"btstack/btstack_task.h"
+	"bt_tws.h"
+	"debug.h"
+
+1698751093 source:d:\project\btglass\jl700\sdk\apps\earphone\sdk_version.z.s
+
+1698751099 source:d:\project\btglass\jl700\sdk\apps\earphone\tone_table.c
+	"tone_player.h"
+	"system/includes.h"
+
+1698751098 source:d:\project\btglass\jl700\sdk\apps\earphone\trans_data_demo\trans_data_demo.c
+	"app_config.h"
+	"earphone.h"
+	"app_main.h"
+	"update_tws.h"
+	"3th_profile_api.h"
+	"btstack/avctp_user.h"
+	"btstack/btstack_task.h"
+	"bt_tws.h"
+	"spp_trans_data.h"
+	"spp_user.h"
+	"debug.h"
+
+1698751095 source:d:\project\btglass\jl700\sdk\apps\earphone\tuya\tuya_app.c
+	"app_config.h"
+	"earphone.h"
+	"app_main.h"
+	"3th_profile_api.h"
+	"btstack/avctp_user.h"
+	"btstack/btstack_task.h"
+	"bt_tws.h"
+	"update_tws.h"
+	"update_tws_new.h"
+	"tuya_ble_app_demo.h"
+	"application/audio_eq.h"
+	"tone_player.h"
+	"user_cfg.h"
+	"key_event_deal.h"
+	"app_power_manage.h"
+	"debug.h"
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\earphone\tuya\tuya_demo.c
+	"system/app_core.h"
+	"system/includes.h"
+	"btstack/btstack_task.h"
+	"btstack/bluetooth.h"
+	"vm.h"
+	"btcontroller_modules.h"
+	"JL_rcsp_api.h"
+	"classic/tws_api.h"
+	"tuya_demo.h"
+	"ble_user.h"
+	"le_common.h"
+	"3th_profile_api.h"
+	"btstack/btstack_event.h"
+
+1698751095 d:\project\btglass\jl700\sdk\apps\earphone\tuya\tuya_demo.h
+	<stdint.h>
+	"tuya_ble_internal_config.h"
+	"bt_profile_cfg.h"
+
+1698751100 source:d:\project\btglass\jl700\sdk\apps\earphone\ui\lcd_simple\my_demo.c
+	"ui/ui.h"
+	"app_config.h"
+	"ui/ui_api.h"
+	"app_task.h"
+	"system/timer.h"
+	"key_event_deal.h"
+	"audio_config.h"
+	"jiffies.h"
+	"ui/ui_simple/ui_res.h"
+	"ui/lcd_simple/ui.h"
+	"app_msg.h"
+	"ui/lcd_simple/ui_mainmenu.h"
+
+1698751099 source:d:\project\btglass\jl700\sdk\apps\earphone\ui_manage.c
+	"ui_manage.h"
+	"asm/pwm_led.h"
+	"system/includes.h"
+	"app_config.h"
+	"user_cfg.h"
+	"classic/tws_api.h"
+	"debug.h"
+
+1698751099 source:d:\project\btglass\jl700\sdk\apps\earphone\version.c
+	"system/includes.h"
+	"generic/log.h"
+
+1698751095 source:d:\project\btglass\jl700\sdk\apps\earphone\vol_sync.c
+	"typedef.h"
+	"app_main.h"
+	"app_config.h"
+	"vol_sync.h"
+	"tone_player.h"
+	"app_core.h"
+
+1698751099 source:d:\project\btglass\jl700\sdk\apps\earphone\wireless_mic\app_main_wireless_mic.c
+	"adapter_idev.h"
+	"adapter_odev.h"
+	"adapter_idev_bt.h"
+	"adapter_process.h"
+	"adapter_media.h"
+	"le_client_demo.h"
+	"system/malloc.h"
+	"key_event_deal.h"
+	"system/includes.h"
+
+1698751092 d:\project\btglass\jl700\sdk\apps\earphone\wireless_mic\idev\adapter_idev.h
+	"generic/typedef.h"
+	"adapter_media.h"
+	"wireless_mic_test.h"
+	"app_config.h"
+
+1698751099 d:\project\btglass\jl700\sdk\apps\earphone\wireless_mic\audio\adapter_media.h
+	"app_config.h"
+	"generic/typedef.h"
+	"media/includes.h"
+	"adapter_idev.h"
+	"adapter_odev.h"
+
+1698751092 d:\project\btglass\jl700\sdk\apps\earphone\wireless_mic\odev\adapter_odev.h
+	"generic/typedef.h"
+	"adapter_odev_bt.h"
+	"adapter_media.h"
+	"wireless_mic_test.h"
+	"event.h"
+
+1698751092 d:\project\btglass\jl700\sdk\apps\earphone\wireless_mic\odev\odev_bt\include\adapter_odev_bt.h
+	"generic/typedef.h"
+	"adapter_odev_edr.h"
+	"adapter_odev_ble.h"
+
+1698751099 d:\project\btglass\jl700\sdk\apps\earphone\wireless_mic\odev\odev_bt\include\adapter_odev_edr.h
+	"generic/typedef.h"
+	"user_cfg.h"
+	"event.h"
+	"sbc_enc.h"
+
+1698751107 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\sbc_enc.h
+	<stddef.h>
+
+1698751092 d:\project\btglass\jl700\sdk\apps\earphone\wireless_mic\odev\odev_bt\include\adapter_odev_ble.h
+	"generic/typedef.h"
+	"le_client_demo.h"
+	"app_config.h"
+
+1698751095 d:\project\btglass\jl700\sdk\apps\earphone\include\wireless_mic\wireless_mic_test.h
+	"system/includes.h"
+
+1698751092 d:\project\btglass\jl700\sdk\apps\earphone\wireless_mic\idev\idev_bt\include\adapter_idev_bt.h
+	"generic/typedef.h"
+	"adapter_idev_ble.h"
+
+1698751092 d:\project\btglass\jl700\sdk\apps\earphone\wireless_mic\idev\idev_bt\include\adapter_idev_ble.h
+	"generic/typedef.h"
+
+1698751092 d:\project\btglass\jl700\sdk\apps\earphone\wireless_mic\process\adapter_process.h
+	"app_config.h"
+	"generic/typedef.h"
+	"media/includes.h"
+	"stream/stream_entry.h"
+	"adapter_idev.h"
+	"adapter_odev.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\audio\stream\stream_entry.h
+	"system/includes.h"
+	"media/includes.h"
+
+1698751099 source:d:\project\btglass\jl700\sdk\apps\earphone\wireless_mic\audio\adapter_adc.c
+	"adapter_adc.h"
+	"media/includes.h"
+	"audio_config.h"
+	"asm/dac.h"
+	"audio_splicing.h"
+	"app_config.h"
+
+1698751099 d:\project\btglass\jl700\sdk\apps\earphone\wireless_mic\audio\adapter_adc.h
+	"generic/typedef.h"
+
+1698751106 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\audio_splicing.h
+	"generic/typedef.h"
+
+1698751099 source:d:\project\btglass\jl700\sdk\apps\earphone\wireless_mic\audio\adapter_media.c
+	"adapter_media.h"
+	"adapter_adc.h"
+	"adapter_wireless_dec.h"
+	"adapter_wireless_enc.h"
+
+1698751092 d:\project\btglass\jl700\sdk\apps\earphone\wireless_mic\audio\wireless\adapter_wireless_dec.h
+	"generic/typedef.h"
+	"media/includes.h"
+
+1698751092 d:\project\btglass\jl700\sdk\apps\earphone\wireless_mic\audio\wireless\adapter_wireless_enc.h
+	"asm/includes.h"
+	"generic/typedef.h"
+	"media/includes.h"
+
+1698751099 source:d:\project\btglass\jl700\sdk\apps\earphone\wireless_mic\audio\wireless\adapter_wireless_dec.c
+	"adapter_wireless_dec.h"
+	"asm/includes.h"
+	"system/includes.h"
+	"app_config.h"
+	"audio_config.h"
+	"adapter_process.h"
+
+1698751099 source:d:\project\btglass\jl700\sdk\apps\earphone\wireless_mic\audio\wireless\adapter_wireless_enc.c
+	"adapter_wireless_enc.h"
+	"media/sbc_enc.h"
+	"app_config.h"
+
+1698751099 source:d:\project\btglass\jl700\sdk\apps\earphone\wireless_mic\bt\bt_edr_fun.c
+	"system/includes.h"
+	"media/includes.h"
+	"app_config.h"
+	"app_task.h"
+	"btstack/avctp_user.h"
+	"btstack/btstack_task.h"
+	"btstack/bluetooth.h"
+	"btstack/btstack_error.h"
+	"btctrler/btctrler_task.h"
+	"classic/hci_lmp.h"
+	"bt_ble.h"
+	"bt_common.h"
+	"spp_user.h"
+	"app_chargestore.h"
+	"app_charge.h"
+	"app_main.h"
+	"app_power_manage.h"
+	"user_cfg.h"
+	"asm/pwm_led.h"
+	"system/timer.h"
+	"asm/hwi.h"
+	"cpu.h"
+	"ui/ui_api.h"
+	"tone_player.h"
+	"bt_edr_fun.h"
+	"adapter_process.h"
+	"aec_user.h"
+	"ui_manage.h"
+	"debug.h"
+
+1698751109 d:\project\btglass\jl700\sdk\include_lib\btstack\btstack_error.h
+
+1698751095 d:\project\btglass\jl700\sdk\apps\earphone\include\wireless_mic\bt_edr_fun.h
+	"adapter_odev_bt.h"
+	"app_main.h"
+
+1698751092 source:d:\project\btglass\jl700\sdk\apps\earphone\wireless_mic\bt\bt_status_event.c
+	"app_config.h"
+	"app_task.h"
+	"btstack/avctp_user.h"
+	"btstack/btstack_task.h"
+	"btstack/bluetooth.h"
+	"btstack/btstack_error.h"
+	"btctrler/btctrler_task.h"
+	"classic/hci_lmp.h"
+	"bt_ble.h"
+	"bt_common.h"
+	"spp_user.h"
+	"app_main.h"
+	"app_power_manage.h"
+	"ui/ui_api.h"
+	"bt_edr_fun.h"
+	"adapter_process.h"
+	"adapter_odev_bt.h"
+	"ui_manage.h"
+	"debug.h"
+
+1698751099 source:d:\project\btglass\jl700\sdk\apps\earphone\wireless_mic\idev\adapter_idev.c
+	"adapter_idev.h"
+	"app_config.h"
+
+1698751092 source:d:\project\btglass\jl700\sdk\apps\earphone\wireless_mic\idev\idev_bt\adapter_idev_bt.c
+	"adapter_idev.h"
+	"adapter_idev_bt.h"
+	"adapter_idev_ble.h"
+	"list.h"
+	"os/os_api.h"
+	"circular_buf.h"
+	"app_config.h"
+	"adapter_process.h"
+	"bt_edr_fun.h"
+	"debug.h"
+
+1698751099 source:d:\project\btglass\jl700\sdk\apps\earphone\wireless_mic\idev\idev_bt\idev_ble\adapter_idev_ble.c
+	"adapter_idev.h"
+	"adapter_idev_bt.h"
+	"adapter_idev_ble.h"
+	"app_config.h"
+	"btstack/le/att.h"
+	"btstack/le/le_user.h"
+	"ble_user.h"
+	"btcontroller_modules.h"
+	"adapter_process.h"
+	"adapter_wireless_dec.h"
+	"debug.h"
+
+1698751099 source:d:\project\btglass\jl700\sdk\apps\earphone\wireless_mic\idev\idev_mic\adapter_idev_mic.c
+	"adapter_idev_mic.h"
+	"adapter_process.h"
+	"adapter_adc.h"
+
+1698751092 d:\project\btglass\jl700\sdk\apps\earphone\wireless_mic\idev\idev_mic\adapter_idev_mic.h
+	"generic/typedef.h"
+	"adapter_idev.h"
+
+1698751092 source:d:\project\btglass\jl700\sdk\apps\earphone\wireless_mic\odev\adapter_odev.c
+	"adapter_odev.h"
+
+1698751099 source:d:\project\btglass\jl700\sdk\apps\earphone\wireless_mic\odev\odev_bt\adapter_odev_bt.c
+	"adapter_odev.h"
+	"adapter_odev_bt.h"
+	"adapter_odev_edr.h"
+	"adapter_odev_ble.h"
+	"btstack/avctp_user.h"
+	"classic/hci_lmp.h"
+	"list.h"
+	"os/os_api.h"
+	"circular_buf.h"
+	"app_config.h"
+	"adapter_process.h"
+	"btstack/bluetooth.h"
+	"btstack/btstack_error.h"
+	"bt_edr_fun.h"
+	"debug.h"
+
+1698751092 source:d:\project\btglass\jl700\sdk\apps\earphone\wireless_mic\odev\odev_bt\odev_ble\adapter_odev_ble.c
+	"adapter_odev.h"
+	"adapter_odev_ble.h"
+	"app_config.h"
+	"btstack/le/att.h"
+	"btstack/le/le_user.h"
+	"ble_user.h"
+	"btcontroller_modules.h"
+	"debug.h"
+
+1698751092 source:d:\project\btglass\jl700\sdk\apps\earphone\wireless_mic\odev\odev_bt\odev_ble\odev_ble_wireless.c
+	"adapter_odev.h"
+	"adapter_odev_ble.h"
+	"app_config.h"
+	"btstack/le/att.h"
+	"btstack/le/le_user.h"
+	"ble_user.h"
+	"btcontroller_modules.h"
+	"adapter_process.h"
+	"debug.h"
+
+1698751092 source:d:\project\btglass\jl700\sdk\apps\earphone\wireless_mic\odev\odev_bt\odev_edr\adapter_odev_edr.c
+	"adapter_odev.h"
+	"adapter_odev_bt.h"
+	"adapter_odev_edr.h"
+	"btstack/avctp_user.h"
+	"classic/hci_lmp.h"
+	"list.h"
+	"os/os_api.h"
+	"circular_buf.h"
+	"app_config.h"
+	"event.h"
+	"bt_edr_fun.h"
+	"usb/device/hid.h"
+	"debug.h"
+
+1698751099 source:d:\project\btglass\jl700\sdk\apps\earphone\wireless_mic\odev\odev_dac\adapter_odev_dac.c
+	"adapter_odev.h"
+	"adapter_process.h"
+	"adapter_odev_dac.h"
+	"audio_config.h"
+	"asm/dac.h"
+
+1698751092 d:\project\btglass\jl700\sdk\apps\earphone\wireless_mic\odev\odev_dac\adapter_odev_dac.h
+	"generic/typedef.h"
+
+1698751099 source:d:\project\btglass\jl700\sdk\apps\earphone\wireless_mic\process\adapter_process.c
+	"adapter_process.h"
+	"app_task.h"
+	"adapter_idev.h"
+	"adapter_odev.h"
+	"clock_cfg.h"
+
+1698751104 d:\project\btglass\jl700\sdk\cpu\br36\clock_cfg.h
+	"typedef.h"
+
+1698751104 source:d:\project\btglass\jl700\sdk\cpu\br36\adc_api.c
+	"typedef.h"
+	"asm/clock.h"
+	"asm/adc_api.h"
+	"timer.h"
+	"init.h"
+	"asm/efuse.h"
+	"irq.h"
+	"asm/power/p33.h"
+	"asm/power/p11.h"
+	"asm/power_interface.h"
+	"jiffies.h"
+
+1698751105 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\aec_tool.c
+	"system/includes.h"
+	"media/includes.h"
+	"app_config.h"
+	"app_online_cfg.h"
+	"online_db_deal.h"
+	"math.h"
+	"config/config_target.h"
+	"config/config_interface.h"
+	"aec_user.h"
+	"debug.h"
+
+1698751105 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\app_audio.c
+	"system/includes.h"
+	"media/includes.h"
+	"user_cfg.h"
+	"app_config.h"
+	"app_action.h"
+	"app_main.h"
+	"earphone.h"
+	"update.h"
+	"audio_config.h"
+	"audio_dvol.h"
+	"audio_dac_digital_volume.h"
+	"audio_anc.h"
+	"debug.h"
+
+1698751104 d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_dac_digital_volume.h
+	"generic/typedef.h"
+
+1698751104 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_ad2da_low_latency.c
+	"generic/typedef.h"
+	"board_config.h"
+	"media/includes.h"
+	"audio_config.h"
+	"sound_device.h"
+	"audio_ad2da_low_latency.h"
+
+1698751105 d:\project\btglass\jl700\sdk\cpu\br36\audio\sound_device.h
+	"media/sound/sound.h"
+
+1698751107 d:\project\btglass\jl700\sdk\include_lib\media\sound\sound.h
+	"generic/ioctl.h"
+	"sound/pcm.h"
+	"os/os_api.h"
+
+1698751106 d:\project\btglass\jl700\sdk\include_lib\media\sound\pcm.h
+	"audio_cfifo.h"
+
+1698751104 d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_ad2da_low_latency.h
+	"generic/typedef.h"
+	"board_config.h"
+
+1698751104 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_anc.c
+	"system/includes.h"
+	"audio_anc.h"
+	"system/task.h"
+	"timer.h"
+	"asm/clock.h"
+	"asm/power/p33.h"
+	"online_db_deal.h"
+	"app_config.h"
+	"tone_player.h"
+	"audio_adc.h"
+	"audio_enc.h"
+	"audio_anc_coeff.h"
+	"btstack/avctp_user.h"
+	"app_main.h"
+	"amplitude_statistic.h"
+	"bt_tws.h"
+	"le_rcsp_adv_module.h"
+	"audio_anc_hearing_aid.h"
+
+1698751105 d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_anc_coeff.h
+	"generic/typedef.h"
+
+1698751104 d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_anc_hearing_aid.h
+	"anc.h"
+
+1698751104 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_anc_hearing_aid.c
+	"asm/includes.h"
+	"media/includes.h"
+	"system/includes.h"
+	"app_main.h"
+	"audio_config.h"
+	"audio_anc_hearing_aid.h"
+	"audio_anc.h"
+	"howling_api.h"
+
+1698751107 d:\project\btglass\jl700\sdk\include_lib\media\howling_api.h
+	"media/howling_pitchshifter_api.h"
+	"media/pemafrow_api.h"
+	"media/audio_stream.h"
+
+1698751107 d:\project\btglass\jl700\sdk\include_lib\media\howling_pitchshifter_api.h
+
+1698751107 d:\project\btglass\jl700\sdk\include_lib\media\pemafrow_api.h
+	"media/audio_stream.h"
+
+1698751104 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_capture.c
+	"audio_capture.h"
+	"system/includes.h"
+	"media/includes.h"
+	"app_config.h"
+	"tone_player.h"
+	"app_main.h"
+	"user_cfg.h"
+	"online_db_deal.h"
+	"audio_enc.h"
+	"pdm_link.h"
+	"commproc_ns.h"
+
+1698751104 d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_capture.h
+	"generic/typedef.h"
+
+1698751106 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\cpu\br36\asm\pdm_link.h
+	"generic/typedef.h"
+
+1716534250 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_codec_clock.c
+	"debug.h"
+	"app_config.h"
+	"system/includes.h"
+	"audio_codec_clock.h"
+	"audio_dec_eff.h"
+	"asm/dac.h"
+
+1698751105 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_dac_digital_volume.c
+	"media/includes.h"
+
+1716531301 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_dec.c
+	"asm/includes.h"
+	"media/includes.h"
+	"system/includes.h"
+	"classic/tws_api.h"
+	"classic/hci_lmp.h"
+	"effectrs_sync.h"
+	"audio_syncts.h"
+	"application/eq_config.h"
+	"application/audio_energy_detect.h"
+	"application/audio_surround.h"
+	"app_config.h"
+	"audio_config.h"
+	"aec_user.h"
+	"audio_enc.h"
+	"app_main.h"
+	"btstack/avctp_user.h"
+	"btstack/a2dp_media_codec.h"
+	"tone_player.h"
+	"audio_demo/audio_demo.h"
+	"application/audio_vbass.h"
+	"audio_plc.h"
+	"audio_dec_eff.h"
+	"audio_codec_clock.h"
+	"media/bt_audio_timestamp.h"
+	"audio_spectrum.h"
+	"audio_hearing_aid.h"
+	"bt_tws.h"
+	"audio_dvol.h"
+	"audio_noise_gate.h"
+	"fm_emitter/fm_emitter_manage.h"
+	"audio_anc.h"
+	"phone_message/phone_message.h"
+	"sound_device.h"
+	"smart_voice/smart_voice.h"
+	"media/jl_kws.h"
+	"btstack/avctp_user.h"
+	"audio_effect_develop.h"
+	"audio_ns.h"
+	"media/tech_lib/LFaudio_plc_api.h"
+	"audio_iis.h"
+	"timer.h"
+
+1698751106 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\effectrs_sync.h
+	"generic/typedef.h"
+	"generic/list.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\audio_syncts.h
+	"typedef.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\application\audio_energy_detect.h
+	"typedef.h"
+	"application/audio_energy_detect.h"
+
+1698751104 d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_demo\audio_demo.h
+	"generic/typedef.h"
+
+1698751101 d:\project\btglass\jl700\sdk\apps\common\audio\audio_plc.h
+	"generic/typedef.h"
+
+1698751107 d:\project\btglass\jl700\sdk\include_lib\media\bt_audio_timestamp.h
+	"typedef.h"
+
+1698751104 d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_spectrum.h
+	"app_config.h"
+	"media/includes.h"
+	"asm/includes.h"
+	"media/spectrum/spectrum_eq.h"
+	"media/spectrum/spectrum_fft.h"
+
+1698751107 d:\project\btglass\jl700\sdk\include_lib\media\spectrum\spectrum_eq.h
+	"media/spectrum/coeff_calculate_api.h"
+	"media/spectrum/rms_api.h"
+	"application/audio_eq.h"
+	"media/audio_stream.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\media\spectrum\coeff_calculate_api.h
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\media\spectrum\rms_api.h
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\media\spectrum\spectrum_fft.h
+	"media/spectrum/SpectrumShow_api.h"
+	"media/audio_stream.h"
+
+1698751107 d:\project\btglass\jl700\sdk\include_lib\media\spectrum\spectrumshow_api.h
+
+1698751103 d:\project\btglass\jl700\sdk\apps\common\phone_message\phone_message.h
+	"application/audio_dec_app.h"
+	"btstack/avctp_user.h"
+	"classic/tws_api.h"
+	"app_config.h"
+	"app_main.h"
+
+1698751104 d:\project\btglass\jl700\sdk\cpu\br36\audio\smart_voice\smart_voice.h
+	"media/includes.h"
+	"app_config.h"
+	"tech_lib/jlsp_kws.h"
+	"tech_lib/jlsp_india_english.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\media\tech_lib\jlsp_kws.h
+
+1698751107 d:\project\btglass\jl700\sdk\include_lib\media\tech_lib\jlsp_india_english.h
+
+1698751106 d:\project\btglass\jl700\sdk\include_lib\media\jl_kws.h
+	"typedef.h"
+
+1698751103 d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_effect_develop.h
+
+1698751107 d:\project\btglass\jl700\sdk\include_lib\media\tech_lib\lfaudio_plc_api.h
+
+1698751103 d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_iis.h
+	"system/includes.h"
+	"sound/pcm.h"
+	"asm/iis.h"
+	"audio_link.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\iis.h
+	"generic/typedef.h"
+
+1698751105 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_dec\audio_dec_file.c
+	"asm/includes.h"
+	"media/includes.h"
+	"media/file_decoder.h"
+	"system/includes.h"
+	"effectrs_sync.h"
+	"app_config.h"
+	"audio_config.h"
+	"audio_dec.h"
+	"app_config.h"
+	"app_main.h"
+	"classic/tws_api.h"
+	"audio_dec/audio_dec_file.h"
+	"media/audio_stream.h"
+	"music/music_decrypt.h"
+	"music/music_id3.h"
+	"application/eq_config.h"
+	"audio_dec_eff.h"
+	"bt_tws.h"
+	"media/bt_audio_timestamp.h"
+	"media/audio_syncts.h"
+	"audio_codec_clock.h"
+	"audio_dvol.h"
+
+1698751104 d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_dec\audio_dec.h
+	"asm/includes.h"
+	"media/includes.h"
+	"system/includes.h"
+	"asm/audio_src.h"
+	"audio_dec_file.h"
+
+1698751104 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_dec\audio_dec_linein.c
+	"asm/includes.h"
+	"media/includes.h"
+	"system/includes.h"
+	"audio_config.h"
+	"app_config.h"
+	"audio_config.h"
+	"app_config.h"
+	"app_main.h"
+	"list.h"
+	"audio_dec/audio_dec.h"
+	"audio_codec_clock.h"
+	"clock_cfg.h"
+	"audio_dec_linein.h"
+
+1698751104 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_dec\audio_dec_pc.c
+	"uac_stream.h"
+	"app_config.h"
+	"audio_decoder.h"
+	"media/includes.h"
+	"audio_config.h"
+	"system/includes.h"
+	"audio_enc.h"
+	"application/audio_eq.h"
+	"application/audio_drc.h"
+	"app_config.h"
+	"audio_config.h"
+	"audio_dec.h"
+	"app_main.h"
+	"clock_cfg.h"
+	"audio_dec_eff.h"
+	"audio_codec_clock.h"
+	"audio_dvol.h"
+	"media/audio_def.h"
+	"media/24bit_convert.h"
+	"ui/ui_api.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\media\24bit_convert.h
+	"system/includes.h"
+
+1698751104 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_dec\audio_usb_mic.c
+	"asm/includes.h"
+	"media/includes.h"
+	"system/includes.h"
+	"device/uac_stream.h"
+	"audio/audio_enc.h"
+	"app_main.h"
+	"user_cfg_id.h"
+	"app_config.h"
+	"audio_codec_clock.h"
+	"audio_config.h"
+	"aec_user.h"
+	"audio_track.h"
+	"Resample_api.h"
+
+1698751106 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\resample_api.h
+
+1698751105 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_dec_eff.c
+	"audio_dec_eff.h"
+	"debug.h"
+	"system/syscfg_id.h"
+	"media/mixer.h"
+
+1698751105 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_demo\audio_adc_demo.c
+	"asm/includes.h"
+	"media/includes.h"
+	"system/includes.h"
+	"app_main.h"
+	"audio_config.h"
+	"audio_demo.h"
+
+1698751104 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_demo\audio_alink_demo.c
+	"audio_demo.h"
+	"audio_link.h"
+	"media/includes.h"
+	"audio_config.h"
+	"Resample_api.h"
+
+1698751105 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_demo\audio_cvp_demo.c
+	"asm/includes.h"
+	"media/includes.h"
+	"system/includes.h"
+	"aec_user.h"
+	"app_main.h"
+	"audio_config.h"
+	"audio_enc.h"
+
+1698751104 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_demo\audio_dac_demo.c
+	"audio_demo.h"
+	"media/includes.h"
+	"audio_config.h"
+	"audio_demo.h"
+
+1698751105 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_demo\audio_dac_io_demo.c
+	"media/includes.h"
+	"app_config.h"
+	"audio_config.h"
+	"asm/includes.h"
+	"audio_demo.h"
+
+1698751104 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_demo\audio_fft_demo.c
+	"audio_demo.h"
+	"hw_fft.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\media\media_new\media\hw_fft.h
+
+1698751104 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_demo\audio_linein_demo.c
+	"asm/includes.h"
+	"media/includes.h"
+	"system/includes.h"
+	"app_main.h"
+	"audio_config.h"
+	"audio_demo.h"
+
+1698751105 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_demo\audio_pdm_demo.c
+	"audio_demo.h"
+	"includes.h"
+	"asm/includes.h"
+	"asm/gpio.h"
+	"asm/dac.h"
+	"media/includes.h"
+	"pdm_link.h"
+	"audio_config.h"
+
+1698751105 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_demo\audio_wind_detect_demo.c
+	"audio_wind_detect_demo.h"
+	"system/includes.h"
+	"app_config.h"
+	"audio_adc.h"
+	"audio_enc.h"
+	"aec_user.h"
+	"task.h"
+	"cvp/cvp_common.h"
+	"online_db_deal.h"
+	"spp_user.h"
+
+1698751105 d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_demo\audio_wind_detect_demo.h
+	"generic/typedef.h"
+
+1698751104 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_dms_tool.c
+	"audio_dms_tool.h"
+	"online_db_deal.h"
+	"system/includes.h"
+	"app_config.h"
+	"aec_user.h"
+	"app_main.h"
+	"user_cfg_id.h"
+	"audio_config.h"
+
+1698751105 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_effect_develop.c
+	"app_config.h"
+	"audio_effect_develop.h"
+
+1698751104 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_enc.c
+	"asm/includes.h"
+	"media/includes.h"
+	"system/includes.h"
+	"classic/hci_lmp.h"
+	"aec_user.h"
+	"app_main.h"
+	"audio_config.h"
+	"audio_enc.h"
+	"app_config.h"
+	"audio_dms_tool.h"
+	"audio_anc.h"
+	"audio_link.h"
+	"Resample_api.h"
+	"phone_message/phone_message.h"
+	"smart_voice/smart_voice.h"
+	"media/jl_kws.h"
+	"btstack/avctp_user.h"
+	"audio_sidetone.h"
+	"pdm_link.h"
+
+1698751105 d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_sidetone.h
+	"generic/typedef.h"
+	"board_config.h"
+
+1698751104 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_hearing_aid.c
+	"generic/typedef.h"
+	"board_config.h"
+	"media/includes.h"
+	"audio_config.h"
+	"sound_device.h"
+	"audio_hearing_aid.h"
+	"howling_api.h"
+	"audio_codec_clock.h"
+	"application/eq_config.h"
+	"application/audio_drc.h"
+	"audio_dec_eff.h"
+	"audio_enc.h"
+	"audio_llns.h"
+	"audio_dvol.h"
+	"circular_buf.h"
+	"audio_gain_process.h"
+	"bt_tws.h"
+	"audio_noise_gate.h"
+	"amplitude_statistic.h"
+	"audio_hearing_aid_lp.h"
+	"Resample_api.h"
+
+1698751107 d:\project\btglass\jl700\sdk\include_lib\media\audio_llns.h
+	"generic/typedef.h"
+
+1698751104 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_hearing_aid_lp.c
+	"asm/includes.h"
+	"media/includes.h"
+	"system/includes.h"
+	"app_main.h"
+	"audio_config.h"
+	"app_action.h"
+	"audio_hearing_aid_lp.h"
+
+1698751104 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_link.c
+	"includes.h"
+	"asm/includes.h"
+	"media/includes.h"
+	"system/includes.h"
+	"app_config.h"
+	"asm/clock.h"
+	"asm/iis.h"
+	"audio_link.h"
+	"audio_syncts.h"
+	"audio_iis.h"
+	"sound/sound.h"
+	"Resample_api.h"
+	"aec_user.h"
+
+1698751104 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_mic\effect_reg.c
+	"effect_reg.h"
+	"app_config.h"
+
+1698751104 d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_mic\effect_reg.h
+	"system/includes.h"
+	"audio_mic/mic_stream.h"
+	"application/eq_config.h"
+	"media/audio_noisegate.h"
+	"media/audio_echo_reverb.h"
+	"media/audio_howling.h"
+	"application/audio_pitch.h"
+
+1698751104 d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_mic\mic_stream.h
+	"system/includes.h"
+	"media/includes.h"
+
+1698751106 d:\project\btglass\jl700\sdk\include_lib\media\audio_noisegate.h
+	"media/audio_stream.h"
+	"media/noisegate_api.h"
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\media\noisegate_api.h
+
+1698751108 d:\project\btglass\jl700\sdk\include_lib\media\audio_echo_reverb.h
+	"media/reverb_api.h"
+
+1698751107 d:\project\btglass\jl700\sdk\include_lib\media\reverb_api.h
+	"media/audio_stream.h"
+
+1698751107 d:\project\btglass\jl700\sdk\include_lib\media\audio_howling.h
+	"media/howling_api.h"
+
+1698751104 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_mic\mic_effect.c
+	"audio_splicing.h"
+	"clock_cfg.h"
+	"media/includes.h"
+	"mic_effect.h"
+	"asm/dac.h"
+	"app_task.h"
+	"audio_config.h"
+	"audio_dec_eff.h"
+	"sound_device.h"
+	"debug.h"
+
+1698751105 d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_mic\mic_effect.h
+	"system/includes.h"
+	"audio_mic/effect_reg.h"
+	"app_config.h"
+
+1698751105 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_mic\mic_stream.c
+	"mic_stream.h"
+	"app_config.h"
+	"system/includes.h"
+	"audio_splicing.h"
+	"audio_config.h"
+	"asm/dac.h"
+	"media/includes.h"
+
+1698751104 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_mic_capless.c
+	"system/includes.h"
+	"media/includes.h"
+	"app_config.h"
+	"app_action.h"
+	"app_main.h"
+	"audio_config.h"
+	"debug.h"
+
+1698751104 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_mic_codec.c
+	"asm/includes.h"
+	"media/includes.h"
+	"system/includes.h"
+	"classic/hci_lmp.h"
+	"aec_user.h"
+	"asm/audio_src.h"
+	"audio_enc.h"
+	"app_main.h"
+	"btstack/avctp_user.h"
+
+1698751105 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_sidetone.c
+	"generic/typedef.h"
+	"board_config.h"
+	"media/includes.h"
+	"audio_config.h"
+	"sound_device.h"
+	"audio_sidetone.h"
+
+1698751105 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_spectrum.c
+	"audio_spectrum.h"
+
+1698751104 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_sync.c
+	"board_config.h"
+	"asm/dac.h"
+	"media/includes.h"
+	"effectrs_sync.h"
+	"asm/gpio.h"
+	"audio_config.h"
+
+1698751104 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\eq_config.c
+	"system/includes.h"
+	"media/includes.h"
+	"app_config.h"
+	"app_online_cfg.h"
+	"online_db/online_db_deal.h"
+	"config/config_interface.h"
+	"application/eq_config.h"
+	"audio_config.h"
+	"cfg_tool.h"
+
+1698751104 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\linein_iis.c
+	"asm/includes.h"
+	"media/includes.h"
+	"system/includes.h"
+	"app_main.h"
+	"audio_config.h"
+	"audio_link.h"
+	"audio_iis.h"
+	"app_action.h"
+	"audio_dec/audio_dec_linein.h"
+	"asm/audio_src.h"
+
+1698751103 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\mic_dut_process.c
+	"mic_dut_process.h"
+	"audio_enc.h"
+	"app_config.h"
+	"audio_adc.h"
+	"audio_config.h"
+	"asm/dac.h"
+	"sound_device.h"
+	"audio_dvol.h"
+	"application/eq_config.h"
+	"audio_dec_eff.h"
+
+1698751104 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\smart_voice\kws_event.c
+	"system/includes.h"
+	"media/kws_event.h"
+	"media/jl_kws.h"
+
+1698751104 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\smart_voice\smart_voice_config.c
+	"typedef.h"
+	"app_config.h"
+
+1698751105 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\smart_voice\smart_voice_core.c
+	"debug.h"
+	"includes.h"
+	"voice_mic_data.h"
+	"kws_event.h"
+	"smart_voice.h"
+	"media/jl_kws.h"
+	"audio_codec_clock.h"
+	"audio_config.h"
+
+1698751105 d:\project\btglass\jl700\sdk\cpu\br36\audio\smart_voice\voice_mic_data.h
+	"asm/audio_adc.h"
+
+1698751104 d:\project\btglass\jl700\sdk\cpu\br36\audio\smart_voice\kws_event.h
+	"media/kws_event.h"
+
+1698751104 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\smart_voice\voice_mic_data.c
+	"app_config.h"
+	"voice_mic_data.h"
+	"smart_voice.h"
+	"app_main.h"
+	"audio_enc.h"
+
+1698751104 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\sound_device.c
+	"app_config.h"
+	"media/includes.h"
+	"audio_iis.h"
+	"sound_device.h"
+	"audio_config.h"
+	"audio_syncts.h"
+	"audio_dvol.h"
+
+1716531299 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\tone_player.c
+	"system/includes.h"
+	"media/includes.h"
+	"tone_player.h"
+	"audio_config.h"
+	"app_main.h"
+	"btstack/avctp_user.h"
+	"aec_user.h"
+	"audio_dvol.h"
+	"audio_codec_clock.h"
+	"audio_hearing_aid.h"
+	"fm_emitter/fm_emitter_manage.h"
+	"debug.h"
+	"media/bt_audio_timestamp.h"
+	"audio_syncts.h"
+	"bt_tws.h"
+
+1698751106 source:d:\project\btglass\jl700\sdk\cpu\br36\charge.c
+	"asm/clock.h"
+	"timer.h"
+	"asm/power/p33.h"
+	"asm/charge.h"
+	"asm/adc_api.h"
+	"uart.h"
+	"device/device.h"
+	"asm/power_interface.h"
+	"system/event.h"
+	"asm/efuse.h"
+	"gpio.h"
+	"syscfg_id.h"
+	"app_config.h"
+	"asm/charge_calibration.h"
+	"debug.h"
+
+1698751103 source:d:\project\btglass\jl700\sdk\cpu\br36\charge_calibration.c
+	"asm/clock.h"
+	"timer.h"
+	"asm/power/p33.h"
+	"asm/charge.h"
+	"asm/adc_api.h"
+	"uart.h"
+	"device/device.h"
+	"asm/power_interface.h"
+	"system/event.h"
+	"asm/efuse.h"
+	"gpio.h"
+	"app_config.h"
+	"asm/charge_calibration.h"
+	"debug.h"
+
+1698751104 source:d:\project\btglass\jl700\sdk\cpu\br36\chargestore.c
+	"generic/typedef.h"
+	"generic/gpio.h"
+	"asm/power/p33.h"
+	"asm/hwi.h"
+	"asm/gpio.h"
+	"asm/clock.h"
+	"asm/charge.h"
+	"asm/chargestore.h"
+	"update.h"
+	"app_config.h"
+
+1698751106 source:d:\project\btglass\jl700\sdk\cpu\br36\clock_manager.c
+	"system/includes.h"
+	"app_config.h"
+	"clock_cfg.h"
+
+1698751103 source:d:\project\btglass\jl700\sdk\cpu\br36\iic_hw.c
+	"asm/iic_hw.h"
+	"system/generic/gpio.h"
+	"system/generic/log.h"
+	"asm/clock.h"
+	"asm/cpu.h"
+
+1698751103 source:d:\project\btglass\jl700\sdk\cpu\br36\iic_soft.c
+	"asm/iic_soft.h"
+	"generic/gpio.h"
+
+1698751105 source:d:\project\btglass\jl700\sdk\cpu\br36\irflt.c
+	"asm/includes.h"
+	"asm/irflt.h"
+	"timer.h"
+	"generic/gpio.h"
+
+1698751103 source:d:\project\btglass\jl700\sdk\cpu\br36\ledc.c
+	"system/debug.h"
+	"generic/gpio.h"
+	"asm/clock.h"
+	"asm/ledc.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\ledc.h
+	"typedef.h"
+
+1715160840 source:d:\project\btglass\jl700\sdk\cpu\br36\lp_touch_key.c
+	"includes.h"
+	"asm/power/p11.h"
+	"asm/power/p33.h"
+	"asm/lp_touch_key_tool.h"
+	"asm/lp_touch_key_alog.h"
+	"device/key_driver.h"
+	"key_event_deal.h"
+	"app_config.h"
+	"asm/lp_touch_key_api.h"
+	"debug.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\lp_touch_key_tool.h
+	"typedef.h"
+
+1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\cpu\br36\asm\lp_touch_key_alog.h
+	"typedef.h"
+
+1698751106 source:d:\project\btglass\jl700\sdk\cpu\br36\lp_touch_key_alog.c
+	"includes.h"
+	"asm/lp_touch_key_alog.h"
+
+1698751105 source:d:\project\btglass\jl700\sdk\cpu\br36\lp_touch_key_tool.c
+	"includes.h"
+	"asm/lp_touch_key_tool.h"
+	"asm/lp_touch_key_api.h"
+	"btstack/avctp_user.h"
+	"classic/tws_api.h"
+	"app_config.h"
+	"debug.h"
+	"online_db_deal.h"
+
+1698751103 source:d:\project\btglass\jl700\sdk\cpu\br36\overlay_code.c
+	"asm/includes.h"
+	"media/includes.h"
+	"overlay_code.h"
+	"board_config.h"
+	"system/bank_switch.h"
+
+1698751105 source:d:\project\btglass\jl700\sdk\cpu\br36\plcnt.c
+	"includes.h"
+	"asm/plcnt.h"
+	"asm/gpio.h"
+
+1716532189 source:d:\project\btglass\jl700\sdk\cpu\br36\pwm_led.c
+	"generic/gpio.h"
+	"asm/includes.h"
+	"asm/pwm_led.h"
+	"asm/power/p11.h"
+	"asm/power/p33.h"
+	"system/timer.h"
+	"app_config.h"
+	"classic/tws_api.h"
+
+1716515817 source:d:\project\btglass\jl700\sdk\cpu\br36\setup.c
+	"asm/includes.h"
+	"asm/wdt.h"
+	"asm/debug.h"
+	"asm/efuse.h"
+	"asm/power/p33.h"
+	"asm/efuse.h"
+	"system/task.h"
+	"system/bank_switch.h"
+	"timer.h"
+	"app_config.h"
+	"gpio.h"
+	"debug.h"
+
+1698751107 source:d:\project\btglass\jl700\sdk\cpu\br36\spi.c
+	"system/debug.h"
+	"generic/gpio.h"
+	"asm/clock.h"
+	"asm/spi.h"
+
+1698751103 source:d:\project\btglass\jl700\sdk\cpu\br36\timer_pwm.c
+	"asm/includes.h"
+	"asm/gpio.h"
+
+1698751103 source:d:\project\btglass\jl700\sdk\cpu\br36\uart_dev.c
+	"asm/clock.h"
+	"asm/uart_dev.h"
+	"asm/cpu.h"
+	"generic/gpio.h"
+	"spinlock.h"
+
+1750470618 source:d:\project\btglass\jl700\sdk\apps\earphone\user_cfg.c
+	"app_config.h"
+	"user_cfg.h"
+	"fs.h"
+	"string.h"
+	"system/includes.h"
+	"vm.h"
+	"btcontroller_config.h"
+	"app_main.h"
+	"media/includes.h"
+	"audio_config.h"
+	"asm/pwm_led.h"
+	"aec_user.h"
+	"app_power_manage.h"
+	"asm/charge_calibration.h"
+	"debug.h"
+
