@@ -36,8 +36,10 @@ codeBlocks build,自动执行编译以及烧录,而后插拔烧录器即可(需�
     - sys_timer_add 非中断形式,检测IO电平pwr off
 7. 双io驱双LED处理
     - 无改动
-8. EQ调节
+8. EQ调节 未验证
 9. tws左右耳配置
     - CONFIG_TWS_CHANNEL_SELECT
-10. ble gatt server 
+10. NTC 未验证
+11. ble gatt server 
+
     

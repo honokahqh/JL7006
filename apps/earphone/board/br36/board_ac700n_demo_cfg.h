@@ -29,9 +29,9 @@
 //                                  NTC配置                                       //
 //*********************************************************************************//
 #define NTC_DET_EN      0
-#define NTC_POWER_IO    IO_PORTC_03
-#define NTC_DETECT_IO   IO_PORTC_04
-#define NTC_DET_AD_CH   (0x4)   //根据adc_api.h修改通道号
+#define NTC_POWER_IO    IO_PORTA_06
+#define NTC_DETECT_IO   IO_PORTA_05
+#define NTC_DET_AD_CH   (0x1)   //根据adc_api.h修改通道号
 
 #define NTC_DET_UPPER        235  //正常范围AD值上限，0度时
 #define NTC_DET_LOWER        34  //正常范围AD值下限，45度时
@@ -404,7 +404,7 @@
 #if TCFG_AUDIO_DUAL_MIC_ENABLE
 #define TCFG_AUDIO_ADC_MIC_CHA				(LADC_CH_MIC_L | LADC_CH_MIC_R)
 #else
-#define TCFG_AUDIO_ADC_MIC_CHA				LADC_CH_MIC_L
+#define TCFG_AUDIO_ADC_MIC_CHA				LADC_CH_MIC_R
 #endif/*TCFG_AUDIO_DUAL_MIC_ENABLE*/
 
 /*MIC模式配置:单端隔直电容模式/差分隔直电容模式/单端省电容模式*/
@@ -569,7 +569,7 @@
 //*********************************************************************************//
 #define TCFG_PWMLED_ENABLE					ENABLE_THIS_MOUDLE			//是否支持PMW LED推灯模块
 #define TCFG_PWMLED_IOMODE					LED_ONE_IO_MODE				//LED模式，单IO还是两个IO推灯
-#define TCFG_PWMLED_PIN						IO_PORTC_02					//LED使用的IO口
+#define TCFG_PWMLED_PIN						IO_PORTA_08					//LED使用的IO口
 //*********************************************************************************//
 //                                  时钟配置                                       //
 //*********************************************************************************//

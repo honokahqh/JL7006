@@ -532,7 +532,7 @@
 
 1698751108 d:\project\btglass\jl700\sdk\include_lib\media\audio_def.h
 
-1750472161 d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_demo_cfg.h
+1750645714 d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_demo_cfg.h
 	"board_ac700n_demo_global_build_cfg.h"
 	"usb_std_class_def.h"
 
@@ -2759,7 +2759,7 @@
 1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\device\anctool.h
 	"typedef.h"
 
-1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\trans_data_demo\le_trans_data.c
+1750475799 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\trans_data_demo\le_trans_data.c
 	"system/app_core.h"
 	"system/includes.h"
 	"app_config.h"
@@ -4098,7 +4098,7 @@
 	"audio_anc.h"
 	"debug.h"
 
-1750472730 source:d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_demo.c
+1750643960 source:d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_demo.c
 	"app_config.h"
 	"system/includes.h"
 	"media/includes.h"

@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "eq_config.h": "c"
+        "eq_config.h": "c",
+        "btstack_event.h": "c",
+        "smart_voice.h": "c"
     }
 }

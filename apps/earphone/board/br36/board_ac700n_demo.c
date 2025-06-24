@@ -42,9 +42,9 @@ extern void pa_enable_set(u8 enable);
 extern void pa_enable_init(void);
 
 void board_power_init(void);
-
+    
 // 添加PA使能脚定义
-#define PA_ENABLE_IO        IO_PORTC_04
+#define PA_ENABLE_IO        IO_PORTC_02
 
 // PA使能脚控制函数
 void pa_enable_set(u8 enable)
