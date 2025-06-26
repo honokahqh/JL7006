@@ -10,7 +10,7 @@
 #define CAT4(a,b,c,d) _CAT4(a,b,c,d)
 
 #ifndef CONFIG_DOWNLOAD_MODEL
-#define CONFIG_DOWNLOAD_MODEL                   SERIAL                   //下载模式选择，可选配置USB\SERIAL
+#define CONFIG_DOWNLOAD_MODEL                   USB                   //下载模式选择，可选配置USB\SERIAL
 #endif
 
 #ifndef CONFIG_DEVICE_NAME

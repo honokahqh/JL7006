@@ -1357,7 +1357,7 @@ static int rcsp_send_user_data_do(void *priv, u8 *data, u16 len)
         putchar('L');
     }
 #endif
-    return app_send_user_data(ATT_CHARACTERISTIC_ae02_02_VALUE_HANDLE, data, len, ATT_OP_AUTO_READ_CCC);
+    return app_send_use  r_data(ATT_CHARACTERISTIC_ae02_02_VALUE_HANDLE, data, len, ATT_OP_AUTO_READ_CCC);
 }
 #endif
 
@@ -1412,6 +1412,17 @@ void hangup_ans_call_handle(u8 en)
 
 }
 #endif
+
+void user_ble_send_data(uint8_t *data, uint16_t len)
+{
+    if (!len){
+        log_info("data len is 0\n");
+        return;
+    }
+    app_send_user_data(ATT_CHARACTERISTIC_ae05_01_VALUE_HANDLE, (void *)data, len, ATT_OP_INDICATE);
+    clr_wdt();
+}
+
 #endif
 
 

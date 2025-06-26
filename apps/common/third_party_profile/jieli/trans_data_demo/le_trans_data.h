@@ -186,4 +186,6 @@ static const uint8_t profile_data[] = {
 #define ATT_CHARACTERISTIC_ae3c_01_VALUE_HANDLE 0x0044
 #define ATT_CHARACTERISTIC_ae3c_01_CLIENT_CONFIGURATION_HANDLE 0x0045
 
+void user_ble_send_data(uint8_t *data, uint16_t len);
+
 #endif

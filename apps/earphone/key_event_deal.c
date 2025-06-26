@@ -34,6 +34,8 @@
 
 #define POWER_OFF_CNT       10
 
+#define OPEN_SIRI "{\"events\":[{\"type\":\"openSIRI\"}]}"
+
 static u8 goto_poweroff_cnt = 0;
 static u8 goto_poweroff_flag = 0;
 u8 goto_reset_flag = 0;
@@ -551,12 +553,6 @@ int app_earphone_key_event_handler(struct sys_event *event)
         } else {
             log_info("Vol up or Down");
             key_tws_lr_diff_deal(event, ONE_KEY_CTL_VOL_UP_DOWN);
-            // char channel = bt_tws_get_local_channel();
-            // if (channel == 'R' || channel == 'U') { 
-            //     volume_up(1);
-            // } else {
-            //     volume_down(1);
-            // }
             break;
         }
         break;
@@ -587,7 +583,8 @@ int app_earphone_key_event_handler(struct sys_event *event)
 
         break;
     case  KEY_OPEN_SIRI:
-        user_send_cmd_prepare(USER_CTRL_HFP_GET_SIRI_OPEN, 0, NULL);
+        user_ble_send_data(OPEN_SIRI, sizeof(OPEN_SIRI));
+        // user_send_cmd_prepare(USER_CTRL_HFP_GET_SIRI_OPEN, 0, NULL);
         break;
     case  KEY_EQ_MODE:
 #if(TCFG_EQ_ENABLE == 1)

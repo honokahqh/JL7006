@@ -201,7 +201,6 @@ int user_spp_state_specific(u8 packet_type)
     return 0;
 }
 
-
 int trans_data_earphone_state_init()
 {
     transport_spp_init();

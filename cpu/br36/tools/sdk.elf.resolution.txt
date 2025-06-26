@@ -1103,6 +1103,8 @@ obj/Release/apps/common/third_party_profile/jieli/trans_data_demo/le_trans_data.
 -r=obj/Release/apps/common/third_party_profile/jieli/trans_data_demo/le_trans_data.o,get_controlpoint_handle,l
 -r=obj/Release/apps/common/third_party_profile/jieli/trans_data_demo/le_trans_data.o,put_buf,l
 -r=obj/Release/apps/common/third_party_profile/jieli/trans_data_demo/le_trans_data.o,ble_user_cmd_prepare,l
+-r=obj/Release/apps/common/third_party_profile/jieli/trans_data_demo/le_trans_data.o,user_ble_send_data,pl
+-r=obj/Release/apps/common/third_party_profile/jieli/trans_data_demo/le_trans_data.o,clr_wdt,l
 -r=obj/Release/apps/common/third_party_profile/jieli/trans_data_demo/le_trans_data.o,sm_just_works_confirm,l
 -r=obj/Release/apps/common/third_party_profile/jieli/trans_data_demo/le_trans_data.o,printf_buf,l
 -r=obj/Release/apps/common/third_party_profile/jieli/trans_data_demo/le_trans_data.o,little_endian_read_16,l
@@ -2854,6 +2856,7 @@ obj/Release/apps/earphone/key_event_deal.o
 -r=obj/Release/apps/earphone/key_event_deal.o,a2dp_get_status,l
 -r=obj/Release/apps/earphone/key_event_deal.o,bt_tws_start_search_sibling,l
 -r=obj/Release/apps/earphone/key_event_deal.o,tone_play_index,l
+-r=obj/Release/apps/earphone/key_event_deal.o,user_ble_send_data,l
 -r=obj/Release/apps/earphone/key_event_deal.o,eq_mode_sw,l
 -r=obj/Release/apps/earphone/key_event_deal.o,bt_set_low_latency_mode,l
 -r=obj/Release/apps/earphone/key_event_deal.o,bt_get_low_latency_mode,l
