@@ -35,7 +35,11 @@
 void board_power_init(void);
 
 // 声明HALL IO
+#ifdef USER_BOARD
 #define HALL_IO IO_PORTB_03
+#else
+#define HALL_IO IO_PORTC_04
+#endif
 
 // 声明PA控制函数
 extern void pa_enable_set(u8 enable);
@@ -44,7 +48,11 @@ extern void pa_enable_init(void);
 void board_power_init(void);
     
 // 添加PA使能脚定义
+#ifdef USER_BOARD
 #define PA_ENABLE_IO        IO_PORTC_02
+#else
+#define PA_ENABLE_IO        IO_PORTC_03
+#endif
 
 // PA使能脚控制函数
 void pa_enable_set(u8 enable)
@@ -584,7 +592,7 @@ struct port_wakeup ldoin_port = {
 
 struct port_wakeup hall_port = {
     .pullup_down_enable = ENABLE,                            //配置I/O 内部上下拉使能
-    .edge               = RISING_EDGE,                      //唤醒方式选择上升沿
+    .edge               = FALLING_EDGE,                      //唤醒方式选择上升沿
     .both_edge          = 0,                                //不使能双边沿
     .filter             = PORT_FLT_16ms,                    //滤波时间
     .iomap              = HALL_IO,                          //唤醒IO为PB3
@@ -965,19 +973,32 @@ static void aport_wakeup_callback(u8 index, u8 gpio, u8 edge)
 
 /*
  * 霍尔开关检测任务,定期检测霍尔开关状态
- * 当检测到下降沿时执行关机
+ * 当检测到上升沿时执行关机
+ * 充电时屏蔽hall开关关机功能
  */
 static void hall_switch_detect(void *priv) 
 {
-    static u8 last_state = 1;  //默认上拉为高电平
+    static int32_t count = 0;
+    static u8 last_state = 0;  
     static u8 pwr_off_flag = 0;
+
+    if (count++ < 100){ // 前5秒不进行关机检测
+        return;
+    }
+
     u8 curr_state = gpio_read(HALL_IO);
 
-    if (curr_state == 0 && last_state == 0 && pwr_off_flag == 0){
+    // 检查充电状态，如果正在充电则屏蔽hall开关关机功能
+    if (get_charge_online_flag()) {
+        log_info("HALL SWITCH: charging mode, block power off\n");
+        return;
+    }
+
+    if (curr_state == 1 && last_state == 1 && pwr_off_flag == 0){
         log_info("HALL SWITCH OFF, pwr off\n");
         pwr_off_flag = 1;
         sys_enter_soft_poweroff(NULL);
-    } else if (curr_state == 0 && last_state == 1){
+    } else if (curr_state == 1 && last_state == 0){
         log_info("HALL SWITCH OFF, wait 50ms\n");
     }
     last_state = curr_state;

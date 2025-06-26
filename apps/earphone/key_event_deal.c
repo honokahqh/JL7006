@@ -528,12 +528,14 @@ int app_earphone_key_event_handler(struct sys_event *event)
             if (a2dp_get_status() != BT_MUSIC_STATUS_STARTING) {
                 user_send_cmd_prepare(USER_CTRL_AVCTP_OPID_PLAY, 0, NULL);
             } 
-            char channel = bt_tws_get_local_channel();
-            if (channel == 'R' || channel == 'U') {
-                user_send_cmd_prepare(USER_CTRL_AVCTP_OPID_NEXT, 0, NULL);
-            } else {
-                user_send_cmd_prepare(USER_CTRL_AVCTP_OPID_PREV, 0, NULL);
-            }
+            log_info("Music next or prev");
+            key_tws_lr_diff_deal(event, ONE_KEY_CTL_NEXT_PREV);
+            // char channel = bt_tws_get_local_channel();
+            // if (channel == 'R' || channel == 'U') {
+            //     user_send_cmd_prepare(USER_CTRL_AVCTP_OPID_NEXT, 0, NULL);
+            // } else {
+            //     user_send_cmd_prepare(USER_CTRL_AVCTP_OPID_PREV, 0, NULL);
+            // }
         }
         break;
     case  KEY_VOL_UP:
@@ -547,12 +549,14 @@ int app_earphone_key_event_handler(struct sys_event *event)
             user_send_cmd_prepare(USER_CTRL_HFP_CALL_HANGUP, 0, NULL);
             break;
         } else {
-            char channel = bt_tws_get_local_channel();
-            if (channel == 'R' || channel == 'U') { 
-                volume_up(1);
-            } else {
-                volume_down(1);
-            }
+            log_info("Vol up or Down");
+            key_tws_lr_diff_deal(event, ONE_KEY_CTL_VOL_UP_DOWN);
+            // char channel = bt_tws_get_local_channel();
+            // if (channel == 'R' || channel == 'U') { 
+            //     volume_up(1);
+            // } else {
+            //     volume_down(1);
+            // }
             break;
         }
         break;

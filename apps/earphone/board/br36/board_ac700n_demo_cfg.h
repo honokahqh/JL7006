@@ -3,6 +3,8 @@
 
 #include "board_ac700n_demo_global_build_cfg.h"
 
+// #define USER_BOARD
+
 #ifdef CONFIG_BOARD_AC700N_DEMO
 
 #define CONFIG_SDFILE_ENABLE
@@ -386,7 +388,7 @@
  * 的前提下，根据具体需求，选择对应的DMS模式
  */
 /*ENC(双mic降噪)使能*/
-#define TCFG_AUDIO_DUAL_MIC_ENABLE			ENABLE_THIS_MOUDLE
+#define TCFG_AUDIO_DUAL_MIC_ENABLE			DISABLE_THIS_MOUDLE
 
 /*DMS模式选择*/
 #define DMS_NORMAL		1	//普通双mic降噪(mic距离固定)
@@ -563,13 +565,17 @@
 #undef TCFG_CHARGE_CALIBRATION_ENABLE
 #define TCFG_CHARGE_CALIBRATION_ENABLE      DISABLE_THIS_MOUDLE
 #endif
-
+ 
 //*********************************************************************************//
 //                                  LED 配置                                       //
 //*********************************************************************************//
 #define TCFG_PWMLED_ENABLE					ENABLE_THIS_MOUDLE			//是否支持PMW LED推灯模块
 #define TCFG_PWMLED_IOMODE					LED_ONE_IO_MODE				//LED模式，单IO还是两个IO推灯
+#ifdef USER_BOARD
 #define TCFG_PWMLED_PIN						IO_PORTA_08					//LED使用的IO口
+#else
+#define TCFG_PWMLED_PIN						IO_PORTC_02					//LED使用的IO口
+#endif
 //*********************************************************************************//
 //                                  时钟配置                                       //
 //*********************************************************************************//
