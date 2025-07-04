@@ -237,7 +237,7 @@ _start
 
 tws_local_media_sync
 
-
+tws_ci_data
 
 tws_acl_data_sync
 tws_event_sync

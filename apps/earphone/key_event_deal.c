@@ -14,6 +14,7 @@
 #include "application/eq_config.h"
 #endif/*TCFG_EQ_ENABLE*/
 #include "earphone.h"
+#include "le_trans_data.h"
 
 
 #if TCFG_USER_TWS_ENABLE
@@ -34,7 +35,7 @@
 
 #define POWER_OFF_CNT       10
 
-#define OPEN_SIRI "{\"events\":[{\"type\":\"openSIRI\"}]}"
+#define OPEN_SIRI "{\"events\":[{\"openSIRI\":\"true\"}]}"
 
 static u8 goto_poweroff_cnt = 0;
 static u8 goto_poweroff_flag = 0;
@@ -46,6 +47,7 @@ extern void sys_enter_soft_poweroff(void *priv);
 extern bool get_tws_sibling_connect_state(void);
 extern int bt_get_low_latency_mode();
 extern void bt_set_low_latency_mode(int enable);
+extern u8 tone_isCN;
 
 u8 poweroff_sametime_flag = 0;
 
@@ -474,7 +476,7 @@ int app_earphone_key_event_handler(struct sys_event *event)
 
         }
         break;
-		
+
 	case KEY_RESET:
         if (get_tws_phone_connect_state()) {
             goto_reset_flag = 1;
@@ -490,7 +492,7 @@ int app_earphone_key_event_handler(struct sys_event *event)
             tone_play(TONE_NORMAL, 1);
         }
         break;
-		
+
     case  KEY_MUSIC_PREV:
         //user_send_cmd_prepare(USER_CTRL_AVCTP_OPID_PREV, 0, NULL);
         //============ for test ==============//
@@ -529,7 +531,7 @@ int app_earphone_key_event_handler(struct sys_event *event)
         } else { // 根据左右声道 上下首切换
             if (a2dp_get_status() != BT_MUSIC_STATUS_STARTING) {
                 user_send_cmd_prepare(USER_CTRL_AVCTP_OPID_PLAY, 0, NULL);
-            } 
+            }
             log_info("Music next or prev");
             key_tws_lr_diff_deal(event, ONE_KEY_CTL_NEXT_PREV);
             // char channel = bt_tws_get_local_channel();
@@ -546,7 +548,7 @@ int app_earphone_key_event_handler(struct sys_event *event)
         if (call_status == BT_CALL_INCOMING) { // 若呼入则接听
             user_send_cmd_prepare(USER_CTRL_HFP_CALL_ANSWER, 0, NULL);
             break;
-        } else if((call_status == BT_CALL_OUTGOING) || 
+        } else if((call_status == BT_CALL_OUTGOING) ||
                 (call_status == BT_CALL_ALERT)) { // 若打出或alert则挂断
             user_send_cmd_prepare(USER_CTRL_HFP_CALL_HANGUP, 0, NULL);
             break;
@@ -583,7 +585,7 @@ int app_earphone_key_event_handler(struct sys_event *event)
 
         break;
     case  KEY_OPEN_SIRI:
-        user_ble_send_data(OPEN_SIRI, sizeof(OPEN_SIRI));
+        USER_BLE_SEND_DATA(OPEN_SIRI, sizeof(OPEN_SIRI), true);
         // user_send_cmd_prepare(USER_CTRL_HFP_GET_SIRI_OPEN, 0, NULL);
         break;
     case  KEY_EQ_MODE:
@@ -689,6 +691,13 @@ int app_earphone_key_event_handler(struct sys_event *event)
         }
         break;
 #endif/*TCFG_MIC_EFFECT_ENABLE*/
+    case KEY_TONE_SWITCH:
+        tone_isCN = !tone_isCN;
+        printf("KEY_TONE_SWITCH:%d\n", tone_isCN);
+        syscfg_write(CFG_USER_TONE, &tone_isCN, 1);
+        tone_play_index(IDEX_TONE_TONE_SWITCH, 1);
+        tone_cn_sync_to_sibling();
+        break;
     }
     return ret;
 }

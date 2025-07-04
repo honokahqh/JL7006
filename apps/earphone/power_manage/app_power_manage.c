@@ -209,15 +209,33 @@ u16 get_vbat_level(void)
     return (adc_get_voltage(AD_CH_VBAT) * 4 / 10);
 }
 
-__attribute__((weak)) u8 remap_calculate_vbat_percent(u16 bat_val)
+const u16 user_tbl_bat_level[10] = {
+    340,   // 0
+    350,   // 1
+    355,   // 2
+    359,   // 3
+    363,   // 4
+    367,   // 5
+    370,   // 6
+    375,   // 7
+    395,   // 8
+    405,   // 9
+};
+
+u8 remap_calculate_vbat_percent(u16 bat_val)
 {
-    return 0;
+    uint bat_level = 0;
+    while ((bat_level < 10) && (user_tbl_bat_level[bat_level] < bat_val)) {
+        bat_level++;
+    }
+    return bat_level * 10;
 }
 
 u16 get_vbat_value(void)
 {
     return bat_val;
 }
+
 
 u8 get_vbat_percent(void)
 {
@@ -238,10 +256,11 @@ u8 get_vbat_percent(void)
     tmp_bat_val = remap_calculate_vbat_percent(bat_val);
     if (!tmp_bat_val) {
         tmp_bat_val = ((u32)bat_val - app_var.poweroff_tone_v) * 100 / (battery_full_value - app_var.poweroff_tone_v);
-        if (tmp_bat_val > 100) {
-            tmp_bat_val = 100;
-        }
     }
+    if (tmp_bat_val > 100) {
+        tmp_bat_val = 100;
+    }
+
     return (u8)tmp_bat_val;
 }
 

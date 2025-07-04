@@ -1,0 +1,5 @@
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_btnAvgCoeff_clicked()    0  
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_btnOpenUISettings_clicked()    0  
+Debug: "C:/Users/Administrator/AppData/Local/Temp/anc designer/anc_tool_alg.dll"
+Debug: Load anc_tool_alg.dll success
+

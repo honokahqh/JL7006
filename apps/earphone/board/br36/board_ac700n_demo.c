@@ -117,7 +117,7 @@ STATUS_CONFIG status_config = {
 /*各个按键的消息设置，如果USER_CFG中设置了USE_CONFIG_KEY_SETTING为1，则会从配置文件读取对应的配置来填充改结构体*/
 u8 key_table[KEY_NUM_MAX][KEY_EVENT_MAX] = {
     // SHORT           LONG              HOLD              UP              DOUBLE           TRIPLE
-    {KEY_VOL_UP, KEY_POWEROFF, KEY_POWEROFF_HOLD, KEY_MUSIC_NEXT, KEY_MUSIC_PP, KEY_OPEN_SIRI},
+    {KEY_VOL_UP, KEY_POWEROFF, KEY_POWEROFF_HOLD, KEY_MUSIC_NEXT, KEY_MUSIC_PP, KEY_OPEN_SIRI, KEY_TONE_SWITCH},
 };
 
 
@@ -710,10 +710,13 @@ static void board_devices_init(void)
 }
 
 extern void cfg_file_parse(u8 idx);
+extern u8 tone_isCN;
 void board_init()
 {
-
     board_power_init();
+
+    syscfg_read(CFG_USER_TONE, &tone_isCN, 1);
+
     adc_vbg_init();
     adc_init();
 #if TCFG_AUDIO_ANC_ENABLE

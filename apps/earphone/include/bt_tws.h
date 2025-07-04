@@ -189,4 +189,7 @@ bool get_tws_sibling_connect_state(void);
 
 void tws_cancle_all_noconn();
 void tws_cancel_state();
+
+void tone_cn_sync_to_sibling(void);
+
 #endif

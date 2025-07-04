@@ -30,6 +30,7 @@ codeBlocks build,自动执行编译以及烧录,而后插拔烧录器即可(需�
 5. speaker处理
     - TCFG_AUDIO_DAC_CONNECT_MODE 配置声道
     - audio_dac_power_state 覆写接口,配置PA IO
+    - hw_dig_vol_table 音量增益调节
 6. 霍尔开关处理
     - port_wakeup 注册
     - port_protect 注册
@@ -41,12 +42,20 @@ codeBlocks build,自动执行编译以及烧录,而后插拔烧录器即可(需�
     - TCFG_EFFECT_TOOL_ENABLE
     - TCFG_EQ_ONLINE_ENABLE
     - AUDIO_SPK_EQ_CONFIG
+    - download.c 取消文件复制，防止覆盖eq_cfg_hw.bin
 9. tws左右耳配置
     - CONFIG_TWS_CHANNEL_SELECT
 10. NTC 未验证
 11. ble gatt server 
     - CONFIG_APP_BT_ENABLE
     - TRANS_DATA_EN
+12. Tone中英文
+    - Tone资源  配置工具
+    - tone_table    配置资源索引
+    - key_event_deal 配置切换
+    - bt_tws    配置tws同步
+    - board_init 读取nvs数据
+
     
 
     

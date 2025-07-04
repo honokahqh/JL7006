@@ -2144,3 +2144,33 @@ void bt_tws_role_switch()
 
 
 #endif
+
+#define TWS_FUNC_ID_TONE_CN_SYNC    TWS_FUNC_ID('T', 'O', 'N', 'E')
+
+extern u8 tone_isCN;
+
+void tone_cn_sync_to_sibling(void)
+{
+#if TCFG_USER_TWS_ENABLE
+    if (get_bt_tws_connect_status()) {
+        tws_api_send_data_to_sibling(&tone_isCN, sizeof(tone_isCN), TWS_FUNC_ID_TONE_CN_SYNC);
+    }
+#endif
+}
+
+static void tone_cn_sync_from_sibling(void *data, u16 len, bool rx)
+{
+    if (rx && len >= sizeof(tone_isCN)) {
+        u8 *received_value = (u8 *)data;
+        tone_isCN = *received_value;
+        // 可选：写入VM以保持同步
+        syscfg_write(CFG_USER_TONE, &tone_isCN, 1);
+        printf("TWS同步接收到tone_isCN: %d\n", tone_isCN);
+    }
+}
+
+// 注册TWS回调函数
+REGISTER_TWS_FUNC_STUB(tone_cn_sync_stub) = {
+    .func_id = TWS_FUNC_ID_TONE_CN_SYNC,
+    .func    = tone_cn_sync_from_sibling,
+};

@@ -72,6 +72,7 @@ enum {
     KEY_HEARING_AID_TOGGLE,//辅听功能开关
     KEY_REVERB_SWITCH,
     KEY_REVERB_OPEN,
+    KEY_TONE_SWITCH, 
     KEY_NULL = 0xFF,
 };
 

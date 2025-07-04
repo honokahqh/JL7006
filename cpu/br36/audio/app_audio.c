@@ -426,39 +426,40 @@ static int audio_combined_fade_timer_add(u8 gain_l, u8 gain_r)
 
 #if (SYS_VOL_TYPE == VOL_TYPE_DIGITAL_HW)
 #define DVOL_HW_LEVEL_MAX	31	/*注意:总共是(DVOL_HW_LEVEL_MAX + 1)级*/
+#define USER_AUDIO_GAIN (0.2)
 const u16 hw_dig_vol_table[DVOL_HW_LEVEL_MAX + 1] = {
-    0	, //0
-    93	, //1
-    111	, //2
-    132	, //3
-    158	, //4
-    189	, //5
-    226	, //6
-    270	, //7
-    323	, //8
-    386	, //9
-    462	, //10
-    552	, //11
-    660	, //12
-    789	, //13
-    943	, //14
-    1127, //15
-    1347, //16
-    1610, //17
-    1925, //18
-    2301, //19
-    2751, //20
-    3288, //21
-    3930, //22
-    4698, //23
-    5616, //24
-    6713, //25
-    8025, //26
-    9592, //27
-    11466,//28
-    15200,//29
-    16000,//30
-    16384 //31
+    0	* USER_AUDIO_GAIN, //0
+    93	* USER_AUDIO_GAIN, //1
+    111	* USER_AUDIO_GAIN, //2
+    132	* USER_AUDIO_GAIN, //3
+    158	* USER_AUDIO_GAIN, //4
+    189	* USER_AUDIO_GAIN, //5
+    226	* USER_AUDIO_GAIN, //6
+    270	* USER_AUDIO_GAIN, //7
+    323	* USER_AUDIO_GAIN, //8
+    386	* USER_AUDIO_GAIN, //9
+    462	* USER_AUDIO_GAIN, //10
+    552	* USER_AUDIO_GAIN, //11
+    660	* USER_AUDIO_GAIN, //12
+    789	* USER_AUDIO_GAIN, //13
+    943	* USER_AUDIO_GAIN, //14
+    1127	* USER_AUDIO_GAIN, //15
+    1347	* USER_AUDIO_GAIN, //16
+    1610	* USER_AUDIO_GAIN, //17
+    1925	* USER_AUDIO_GAIN, //18
+    2301	* USER_AUDIO_GAIN, //19
+    2751	* USER_AUDIO_GAIN, //20
+    3288	* USER_AUDIO_GAIN, //21
+    3930	* USER_AUDIO_GAIN, //22
+    4698	* USER_AUDIO_GAIN, //23
+    5616	* USER_AUDIO_GAIN, //24
+    6713	* USER_AUDIO_GAIN, //25
+    8025	* USER_AUDIO_GAIN, //26
+    9592	* USER_AUDIO_GAIN, //27
+    11466	* USER_AUDIO_GAIN,//28
+    15200	* USER_AUDIO_GAIN,//29
+    16000	* USER_AUDIO_GAIN,//30
+    16384	* USER_AUDIO_GAIN //31
 };
 #endif/*SYS_VOL_TYPE == VOL_TYPE_DIGITAL_HW*/
 

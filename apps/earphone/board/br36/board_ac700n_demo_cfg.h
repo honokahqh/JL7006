@@ -3,7 +3,7 @@
 
 #include "board_ac700n_demo_global_build_cfg.h"
 
-// #define USER_BOARD
+#define USER_BOARD
 
 #ifdef CONFIG_BOARD_AC700N_DEMO
 
@@ -616,7 +616,7 @@
 //EQ配置，使用在线EQ时，EQ文件和EQ模式无效。有EQ文件时，使能TCFG_USE_EQ_FILE,默认不用EQ模式切换功能
 #define TCFG_EQ_ENABLE                            1     //支持EQ功能,EQ总使能
 // #if TCFG_EQ_ENABLE
-#define TCFG_EQ_ONLINE_ENABLE                     0     //支持在线EQ调试,如果使用蓝牙串口调试，需要打开宏 APP_ONLINE_DEBUG，否则，默认使用uart调试(二选一)
+#define TCFG_EQ_ONLINE_ENABLE                     1     //支持在线EQ调试,如果使用蓝牙串口调试，需要打开宏 APP_ONLINE_DEBUG，否则，默认使用uart调试(二选一)
 #define TCFG_BT_MUSIC_EQ_ENABLE                   1     //支持蓝牙音乐EQ
 #define TCFG_PHONE_EQ_ENABLE                      0     //支持通话近端EQ
 #define TCFG_AUDIO_OUT_EQ_ENABLE                  0     //mix out级，增加eq高低音接口
@@ -642,7 +642,7 @@
 // #endif//TCFG_EQ_ENABLE
 
 
-#define TCFG_DRC_ENABLE							  0	  /*DRC 总使能*/
+#define TCFG_DRC_ENABLE							  1	  /*DRC 总使能*/
 #define TCFG_BT_MUSIC_DRC_ENABLE            	  0     //支持蓝牙音乐DRC
 #define TCFG_MUSIC_MODE_DRC_ENABLE                0     //支持音乐模式DRC
 #define TCFG_PC_MODE_DRC_ENABLE                   0     //支持PC模式DRC
@@ -670,8 +670,8 @@
 //*********************************************************************************//
 //                          新配置工具 && 调音工具                             //
 //*********************************************************************************//
-#define TCFG_CFG_TOOL_ENABLE				DISABLE		  	//是否支持在线配置工具
-#define TCFG_EFFECT_TOOL_ENABLE				DISABLE		  	//是否支持在线音效调试,使能该项还需使能EQ总使能TCFG_EQ_ENABL,
+#define TCFG_CFG_TOOL_ENABLE				ENABLE		  	//是否支持在线配置工具
+#define TCFG_EFFECT_TOOL_ENABLE				ENABLE		  	//是否支持在线音效调试,使能该项还需使能EQ总使能TCFG_EQ_ENABL,
 #define TCFG_NULL_COMM						0				//不支持通信
 #define TCFG_UART_COMM						1				//串口通信
 #define TCFG_USB_COMM						2				//USB通信
@@ -866,7 +866,7 @@
 
 #define AUDIO_VBASS_CONFIG        0//虚拟低音,虚拟低音不支持四声道
 
-#define TCFG_AUDIO_BASS_BOOST  			DISABLE_THIS_MOUDLE//低音增强功能
+#define TCFG_AUDIO_BASS_BOOST  			ENABLE_THIS_MOUDLE//低音增强功能
 #define TCFG_AUDIO_BASS_BOOST_TEST  		DISABLE_THIS_MOUDLE//默认使用PP用于功能有效性测试,产品开发时，默认关闭
 #if TCFG_AUDIO_BASS_BOOST
 #if (!TCFG_DRC_ENABLE)
@@ -881,7 +881,7 @@
 
 
 
-#define AUDIO_SPK_EQ_CONFIG       0//SPK_EQ 使能
+#define AUDIO_SPK_EQ_CONFIG       1//SPK_EQ 使能
 #if AUDIO_SPK_EQ_CONFIG
 #if (EQ_SECTION_MAX < 10)
 #undef EQ_SECTION_MAX

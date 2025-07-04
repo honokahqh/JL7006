@@ -74,5 +74,4 @@ REM %OBJDUMP% -t %ELFFILE% > symbol_tbl.txt
 copy /b text.bin + data.bin + data_code.bin + bank.bin app.bin
 
 del !bankfiles! common.bin text.bin data.bin bank.bin
-copy eq_cfg_hw_less.bin eq_cfg_hw.bin
 call download/earphone/download.bat

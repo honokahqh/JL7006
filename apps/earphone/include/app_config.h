@@ -14,11 +14,14 @@
 //#define CONFIG_DEBUG_LITE_ENABLE  //轻量级打印开关, 默认关闭
 #endif
 
+#define BOARD_TYPE "sz-2504"
+#define HARD_WARE_VERSION "1.0.0"
+#define SOFT_WARE_VERSION "1.0.0"
 
 //*********************************************************************************//
 //                                  AI配置                                       //
 //*********************************************************************************//
-#define CONFIG_APP_BT_ENABLE
+// #define CONFIG_APP_BT_ENABLE
 
 #ifdef CONFIG_APP_BT_ENABLE
 #define    TRANS_DATA_EN             1
@@ -220,7 +223,7 @@
 //*********************************************************************************//
 #define CONFIG_TWS_CONNECT_SIBLING_TIMEOUT    4    /* 开机或超时断开后对耳互连超时时间，单位s */
 #define CONFIG_TWS_REMOVE_PAIR_ENABLE              /* 不连手机的情况下双击按键删除配对信息 */
-#define CONFIG_TWS_POWEROFF_SAME_TIME         0    /*按键关机时两个耳机同时关机*/
+#define CONFIG_TWS_POWEROFF_SAME_TIME         1    /*按键关机时两个耳机同时关机*/
 
 #define ONE_KEY_CTL_DIFF_FUNC                 1    /*通过左右耳实现一个按键控制两个功能*/
 #define CONFIG_TWS_SCO_ONLY_MASTER			  0	   /*通话的时候只有主机出声音*/

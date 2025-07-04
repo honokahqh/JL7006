@@ -115,7 +115,7 @@ copy eq_cfg_hw_wdrc.bin  eq_cfg_hw.bin
 #elif defined(AUDIO_VBASS_CONFIG)&&AUDIO_VBASS_CONFIG
 copy eq_cfg_hw_drc_vbass.bin  eq_cfg_hw.bin
 #else
-copy eq_cfg_hw_full.bin  eq_cfg_hw.bin
+// copy eq_cfg_hw_full.bin  eq_cfg_hw.bin
 #endif /*TCFG_AUDIO_HEARING_AID_ENABLE*/
 
 #else

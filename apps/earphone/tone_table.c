@@ -24,7 +24,7 @@ static const char *const tone_index[] = {
     TONE_TWS_DISCONN,
     TONE_LOW_POWER,
     TONE_POWER_OFF,
-    TONE_POWER_ON,
+    TONE_POWER_ON, 
     TONE_RING,
     TONE_MAX_VOL,
     TONE_NORMAL,
@@ -34,8 +34,40 @@ static const char *const tone_index[] = {
     TONE_HEARAID_ON,
     TONE_HEARAID_OFF,
     TONE_LINEIN,
-
+    TONE_TONE_SWITCH,
 };
+
+static const char *const tone_index_cn[] = {
+    TONE_NUM_0,
+    TONE_NUM_1,
+    TONE_NUM_2,
+    TONE_NUM_3,
+    TONE_NUM_4,
+    TONE_NUM_5,
+    TONE_NUM_6,
+    TONE_NUM_7,
+    TONE_NUM_8,
+    TONE_NUM_9,
+    TONE_BT_MODE,
+    TONE_BT_CONN_CN,
+    TONE_BT_DISCONN_CN,
+    TONE_TWS_CONN,
+    TONE_TWS_DISCONN,
+    TONE_LOW_POWER,
+    TONE_POWER_OFF_CN,
+    TONE_POWER_ON_CN, 
+    TONE_RING,
+    TONE_MAX_VOL,
+    TONE_NORMAL,
+    TONE_ANC_OFF,
+    TONE_ANC_ON,
+    TONE_TRANSPARENCY,
+    TONE_HEARAID_ON,
+    TONE_HEARAID_OFF,
+    TONE_LINEIN,
+    TONE_TONE_SWITCH_CN,
+};
+
 
 /*
  * 参数配置:
@@ -138,6 +170,7 @@ static const struct sin_param *get_sine_param_by_index(u8 index, u8 *num)
     return param_data;
 }
 
+u8 tone_isCN = 1;
 /*
  *index:提示音索引
  *preemption:抢断标志
@@ -149,7 +182,12 @@ int tone_play_index(u8 index, u8 preemption)
     if (index >= IDEX_TONE_NONE) {
         return 0;
     }
-    return tone_play(tone_index[index], preemption);
+
+    if (tone_isCN){
+        return tone_play(tone_index_cn[index], preemption);
+    } else {
+        return tone_play(tone_index[index], preemption);
+    }
 }
 /*
  *@brief:提示音比较，确认目标提示音和正在播放的提示音是否一致

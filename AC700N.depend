@@ -287,7 +287,7 @@
 1698751108 d:\project\btglass\jl700\sdk\include_lib\system\power_manage.h
 	"generic/typedef.h"
 
-1698751108 d:\project\btglass\jl700\sdk\include_lib\system\syscfg_id.h
+1751340766 d:\project\btglass\jl700\sdk\include_lib\system\syscfg_id.h
 	"typedef.h"
 
 1698751108 d:\project\btglass\jl700\sdk\include_lib\system\bank_switch.h
@@ -514,7 +514,7 @@
 1698751109 d:\project\btglass\jl700\sdk\include_lib\system\crypto_toolbox\rijndael.h
 	<stdint.h>
 
-1698751104 d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_config.h
+1751357964 d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_config.h
 	"generic/typedef.h"
 	"board_config.h"
 
@@ -532,7 +532,7 @@
 
 1698751108 d:\project\btglass\jl700\sdk\include_lib\media\audio_def.h
 
-1750927889 d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_demo_cfg.h
+1751592196 d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_demo_cfg.h
 	"board_ac700n_demo_global_build_cfg.h"
 	"usb_std_class_def.h"
 
@@ -577,7 +577,7 @@
 
 1698751101 d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_test_global_build_cfg.h
 
-1698751100 d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_hearing_aid_cfg.h
+1750992468 d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_hearing_aid_cfg.h
 	"board_ac700n_hearing_aid_global_build_cfg.h"
 	"usb_std_class_def.h"
 
@@ -602,7 +602,7 @@
 	"app_config.h"
 	"uartPcmSender.h"
 
-1750923224 d:\project\btglass\jl700\sdk\apps\earphone\include\app_config.h
+1751353549 d:\project\btglass\jl700\sdk\apps\earphone\include\app_config.h
 	"board_config.h"
 	"usb_std_class_def.h"
 	"usb_common_def.h"
@@ -777,7 +777,7 @@
 	"media/includes.h"
 	"system/includes.h"
 
-1698751100 d:\project\btglass\jl700\sdk\apps\earphone\include\tone_player.h
+1751340924 d:\project\btglass\jl700\sdk\apps\earphone\include\tone_player.h
 	"app_config.h"
 	"tone_player_api.h"
 
@@ -1068,7 +1068,7 @@
 	"bt_tws.h"
 	"debug.h"
 
-1715161594 d:\project\btglass\jl700\sdk\apps\earphone\include\key_event_deal.h
+1751339618 d:\project\btglass\jl700\sdk\apps\earphone\include\key_event_deal.h
 	"typedef.h"
 	"bt_profile_cfg.h"
 	"system/event.h"
@@ -1084,7 +1084,7 @@
 	"typedef.h"
 	"app_config.h"
 
-1698751096 d:\project\btglass\jl700\sdk\apps\earphone\include\bt_tws.h
+1751342027 d:\project\btglass\jl700\sdk\apps\earphone\include\bt_tws.h
 	"classic/tws_api.h"
 	"classic/tws_event.h"
 	"system/includes.h"
@@ -2759,30 +2759,31 @@
 1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\device\anctool.h
 	"typedef.h"
 
-1750927879 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\trans_data_demo\le_trans_data.c
-	"system/app_core.h"
-	"system/includes.h"
-	"app_config.h"
-	"app_action.h"
-	"btstack/btstack_task.h"
-	"btstack/bluetooth.h"
-	"user_cfg.h"
-	"vm.h"
-	"btcontroller_modules.h"
-	"bt_common.h"
-	"3th_profile_api.h"
+1750989630 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\trans_data_demo\le_trans_data.c
 	"le_trans_data.h"
+	"3th_profile_api.h"
+	"JL_rcsp_api.h"
+	"app_action.h"
+	"app_config.h"
+	"app_power_manage.h"
+	"bt_common.h"
+	"btcontroller_modules.h"
+	"btstack/bluetooth.h"
+	"btstack/btstack_task.h"
+	"custom_cfg.h"
 	"le_common.h"
 	"rcsp_bluetooth.h"
-	"JL_rcsp_api.h"
-	"custom_cfg.h"
+	"system/app_core.h"
+	"system/includes.h"
+	"user_cfg.h"
+	"vm.h"
 	"btstack/btstack_event.h"
 
-1750925717 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\trans_data_demo\le_trans_data.h
+1750989974 d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\trans_data_demo\le_trans_data.h
 	<stdint.h>
 	"app_config.h"
 
-1698751102 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\trans_data_demo\spp_trans_data.c
+1751534227 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\trans_data_demo\spp_trans_data.c
 	"app_config.h"
 	"app_action.h"
 	"system/includes.h"
@@ -3852,7 +3853,7 @@
 	"commproc.h"
 	"debug.h"
 
-1698751100 d:\project\btglass\jl700\sdk\apps\earphone\include\aec_user.h
+1750990734 d:\project\btglass\jl700\sdk\apps\earphone\include\aec_user.h
 	"generic/typedef.h"
 	"user_cfg.h"
 	"cvp/cvp_common.h"
@@ -3904,7 +3905,7 @@
 	"audio_config.h"
 	"debug.h"
 
-1698751092 source:d:\project\btglass\jl700\sdk\apps\earphone\aec\br36\audio_aec_dms.c
+1750990949 source:d:\project\btglass\jl700\sdk\apps\earphone\aec\br36\audio_aec_dms.c
 	"aec_user.h"
 	"system/includes.h"
 	"media/includes.h"
@@ -4098,7 +4099,7 @@
 	"audio_anc.h"
 	"debug.h"
 
-1750903722 source:d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_demo.c
+1751341161 source:d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_demo.c
 	"app_config.h"
 	"system/includes.h"
 	"media/includes.h"
@@ -4284,7 +4285,7 @@
 	"bt_tws.h"
 	"debug.h"
 
-1716533108 source:d:\project\btglass\jl700\sdk\apps\earphone\bt_tws.c
+1751342067 source:d:\project\btglass\jl700\sdk\apps\earphone\bt_tws.c
 	"system/includes.h"
 	"media/includes.h"
 	"device/vm.h"
@@ -4440,7 +4441,7 @@
 	"key_event_deal.h"
 	"btstack/btstack_typedef.h"
 
-1750928507 source:d:\project\btglass\jl700\sdk\apps\earphone\key_event_deal.c
+1751342087 source:d:\project\btglass\jl700\sdk\apps\earphone\key_event_deal.c
 	"key_event_deal.h"
 	"btstack/avctp_user.h"
 	"event.h"
@@ -4455,6 +4456,7 @@
 	"pbg_user.h"
 	"application/eq_config.h"
 	"earphone.h"
+	"le_trans_data.h"
 	"bt_tws.h"
 	"audio_anc.h"
 	"debug.h"
@@ -4665,7 +4667,7 @@
 	"app_charge_calibration.h"
 	"debug.h"
 
-1698751093 source:d:\project\btglass\jl700\sdk\apps\earphone\power_manage\app_power_manage.c
+1751533572 source:d:\project\btglass\jl700\sdk\apps\earphone\power_manage\app_power_manage.c
 	"system/includes.h"
 	"app_power_manage.h"
 	"app_main.h"
@@ -4707,7 +4709,7 @@
 
 1698751093 source:d:\project\btglass\jl700\sdk\apps\earphone\sdk_version.z.s
 
-1698751099 source:d:\project\btglass\jl700\sdk\apps\earphone\tone_table.c
+1751340930 source:d:\project\btglass\jl700\sdk\apps\earphone\tone_table.c
 	"tone_player.h"
 	"system/includes.h"
 
@@ -5108,7 +5110,7 @@
 	"aec_user.h"
 	"debug.h"
 
-1698751105 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\app_audio.c
+1751420769 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\app_audio.c
 	"system/includes.h"
 	"media/includes.h"
 	"user_cfg.h"
@@ -5222,7 +5224,7 @@
 	"audio_dec_eff.h"
 	"asm/dac.h"
 
-1698751105 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_dac_digital_volume.c
+1751360622 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_dac_digital_volume.c
 	"media/includes.h"
 
 1716531301 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\audio_dec.c

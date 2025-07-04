@@ -1,0 +1,12 @@
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_btnAvgCoeff_clicked()    0  
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_btnOpenUISettings_clicked()    0  
+Debug: "C:/Users/Administrator/AppData/Local/Temp/anc designer/anc_tool_alg.dll"
+Debug: Load anc_tool_alg.dll success
+
+Debug: "打开串口成功"
+Debug: cmd->getTimeout() :  5000
+Debug: on write buffer:  "\xAAU\x01\x00\x04\x00\xFD\x90J\x00\x94O"
+Debug: "command timeout"
+Debug: "打开串口成功"
+Debug: cmd->getTimeout() :  5000
+Debug: on write buffer:  "\xAAU\x02\x00\x04\x00\xFD\x90J\x00\xE1\x87"
