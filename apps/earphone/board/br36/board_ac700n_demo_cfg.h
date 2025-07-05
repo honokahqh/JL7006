@@ -96,7 +96,7 @@
 
 #define MULT_KEY_ENABLE						DISABLE 		//是否使能组合按键消息, 使能后需要配置组合按键映射表
 
-#define TCFG_KEY_TONE_EN					0		        // 按键提示音。建议音频输出使用固定采样率
+#define TCFG_KEY_TONE_EN					1		        // 按键提示音。建议音频输出使用固定采样率
 
 //*********************************************************************************//
 //                                 iokey 配置                                      //
@@ -404,7 +404,7 @@
 #define DMS_MASTER_MIC1		1 //mic1是主mic
 #define TCFG_AUDIO_DMS_MIC_MANAGE			DMS_MASTER_MIC0
 /*双mic降噪/单麦mic降噪 DUT测试模式，配合设备测试mic频响和(双mic)降噪量*/
-#define TCFG_AUDIO_DMS_DUT_ENABLE			DISABLE_THIS_MOUDLE
+#define TCFG_AUDIO_DMS_DUT_ENABLE			ENABLE_THIS_MOUDLE
 
 //MIC通道配置
 #if TCFG_AUDIO_DUAL_MIC_ENABLE
@@ -642,7 +642,7 @@
 // #endif//TCFG_EQ_ENABLE
 
 
-#define TCFG_DRC_ENABLE							  1	  /*DRC 总使能*/
+#define TCFG_DRC_ENABLE							  0	  /*DRC 总使能*/
 #define TCFG_BT_MUSIC_DRC_ENABLE            	  0     //支持蓝牙音乐DRC
 #define TCFG_MUSIC_MODE_DRC_ENABLE                0     //支持音乐模式DRC
 #define TCFG_PC_MODE_DRC_ENABLE                   0     //支持PC模式DRC
@@ -866,7 +866,7 @@
 
 #define AUDIO_VBASS_CONFIG        0//虚拟低音,虚拟低音不支持四声道
 
-#define TCFG_AUDIO_BASS_BOOST  			ENABLE_THIS_MOUDLE//低音增强功能
+#define TCFG_AUDIO_BASS_BOOST  			DISABLE_THIS_MOUDLE//低音增强功能
 #define TCFG_AUDIO_BASS_BOOST_TEST  		DISABLE_THIS_MOUDLE//默认使用PP用于功能有效性测试,产品开发时，默认关闭
 #if TCFG_AUDIO_BASS_BOOST
 #if (!TCFG_DRC_ENABLE)

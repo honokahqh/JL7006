@@ -303,6 +303,27 @@ void key_tws_lr_diff_deal(struct sys_event *event, u8 opt)
 void audio_aec_pitch_change_ctrl();
 void audio_surround_voice_ctrl();
 extern void start_streamer_test(void);
+
+// KEY_RESET音频播放完成回调函数
+static void key_reset_tone_play_end_callback(void *priv)
+{
+    if (get_tws_phone_connect_state()) {
+        goto_reset_flag = 1;
+        user_send_cmd_prepare(USER_CTRL_DISCONNECTION_HCI, 0, NULL);
+    } else {
+        user_send_cmd_prepare(USER_CTRL_DEL_ALL_REMOTE_INFO, 0, NULL);
+
+        if (get_tws_sibling_connect_state()) {
+            extern void tws_conn_remove_pairs(void);
+            tws_conn_remove_pairs();
+        } else {
+            bt_tws_remove_pairs();
+        }
+        extern u8 goto_reboot_flag;
+        goto_reboot_flag = 1;
+    }
+    
+}
 int app_earphone_key_event_handler(struct sys_event *event)
 {
     int ret = false;
@@ -432,30 +453,14 @@ int app_earphone_key_event_handler(struct sys_event *event)
             }
         }
 
-#if (TCFG_USER_TWS_ENABLE && CONFIG_TWS_POWEROFF_SAME_TIME == 0)
-        if ((u32)event->arg == KEY_EVENT_FROM_TWS) {
-            break;
-        }
-#endif
-#if TCFG_WIRELESS_MIC_ENABLE
-        extern void wireless_mic_change_mode(u8 mode);
-        wireless_mic_change_mode(0);
-#endif
         goto_poweroff_flag = 1;
         user_send_cmd_prepare(USER_CTRL_ALL_SNIFF_EXIT, 0, NULL);
         break;
     case  KEY_POWEROFF_HOLD:
-#if (TCFG_USER_TWS_ENABLE && CONFIG_TWS_POWEROFF_SAME_TIME == 0)
-        if ((u32)event->arg == KEY_EVENT_FROM_TWS) {
-            break;
-        }
-#endif
         log_info("poweroff flag:%d cnt:%d\n", goto_poweroff_flag, goto_poweroff_cnt);
 
         if (goto_poweroff_flag) {
             goto_poweroff_cnt++;
-
-#if CONFIG_TWS_POWEROFF_SAME_TIME
             if (goto_poweroff_cnt == POWER_OFF_CNT) {
                 if (get_tws_sibling_connect_state()) {
                     if ((u32)event->arg != KEY_EVENT_FROM_TWS) {
@@ -467,30 +472,13 @@ int app_earphone_key_event_handler(struct sys_event *event)
                     sys_enter_soft_poweroff(NULL);
                 }
             }
-#else
-            if (goto_poweroff_cnt >= POWER_OFF_CNT) {
-                goto_poweroff_cnt = 0;
-                sys_enter_soft_poweroff(NULL);
-            }
-#endif //CONFIG_TWS_POWEROFF_SAME_TIME
-
         }
         break;
 
 	case KEY_RESET:
-        if (get_tws_phone_connect_state()) {
-            goto_reset_flag = 1;
-            user_send_cmd_prepare(USER_CTRL_DISCONNECTION_HCI, 0, NULL);
-        } else {
-            user_send_cmd_prepare(USER_CTRL_DEL_ALL_REMOTE_INFO, 0, NULL);
-            if (get_tws_sibling_connect_state()){
-                extern void tws_conn_remove_pairs(void);
-                tws_conn_remove_pairs();
-            } else {
-                bt_tws_remove_pairs();
-            }
-            tone_play(TONE_NORMAL, 1);
-        }
+        tone_play_index(IDEX_TONE_CLEAR_ALL, 1);
+        sys_timeout_add(NULL, key_reset_tone_play_end_callback, 2000);
+        //tone_play_index_with_callback(IDEX_TONE_CLEAR_ALL, 1, key_reset_tone_play_end_callback, NULL);
         break;
 
     case  KEY_MUSIC_PREV:

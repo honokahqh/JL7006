@@ -35,6 +35,7 @@ static const char *const tone_index[] = {
     TONE_HEARAID_OFF,
     TONE_LINEIN,
     TONE_TONE_SWITCH,
+    TONE_CLEAR_ALL, 
 };
 
 static const char *const tone_index_cn[] = {
@@ -66,6 +67,7 @@ static const char *const tone_index_cn[] = {
     TONE_HEARAID_OFF,
     TONE_LINEIN,
     TONE_TONE_SWITCH_CN,
+    TONE_CLEAR_ALL_CN,
 };
 
 

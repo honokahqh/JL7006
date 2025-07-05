@@ -1554,7 +1554,8 @@ static int bt_connction_status_event_handler(struct bt_event *bt)
             } else {
                 bt_tws_remove_pairs();
             }
-            tone_play(TONE_NORMAL, 1);
+            extern u8 goto_reboot_flag;
+            goto_reboot_flag = 1;
             break;
         }
         if (app_var.goto_poweroff_flag) {

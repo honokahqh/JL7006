@@ -117,7 +117,7 @@ STATUS_CONFIG status_config = {
 /*各个按键的消息设置，如果USER_CFG中设置了USE_CONFIG_KEY_SETTING为1，则会从配置文件读取对应的配置来填充改结构体*/
 u8 key_table[KEY_NUM_MAX][KEY_EVENT_MAX] = {
     // SHORT           LONG              HOLD              UP              DOUBLE           TRIPLE
-    {KEY_VOL_UP, KEY_POWEROFF, KEY_POWEROFF_HOLD, KEY_MUSIC_NEXT, KEY_MUSIC_PP, KEY_OPEN_SIRI, KEY_TONE_SWITCH},
+    {KEY_VOL_UP, KEY_POWEROFF, KEY_POWEROFF_HOLD, KEY_MUSIC_NEXT, KEY_MUSIC_PP, KEY_OPEN_SIRI, KEY_RESET, KEY_TONE_SWITCH},
 };
 
 
@@ -979,12 +979,22 @@ static void aport_wakeup_callback(u8 index, u8 gpio, u8 edge)
  * 当检测到上升沿时执行关机
  * 充电时屏蔽hall开关关机功能
  */
+u8 goto_reboot_flag;
 static void hall_switch_detect(void *priv) 
 {
-    static int32_t count = 0;
+    static int32_t count = 0, reboot_cnt = 0;
     static u8 last_state = 0;  
     static u8 pwr_off_flag = 0;
 
+    if (goto_reboot_flag) {
+        reboot_cnt++;
+        if (reboot_cnt > 20) {
+            goto_reboot_flag = 0;
+            reboot_cnt = 0;
+            cpu_reset();
+        }
+        return;
+    }
     if (count++ < 100){ // 前5秒不进行关机检测
         return;
     }

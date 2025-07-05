@@ -42,7 +42,7 @@ codeBlocks build,自动执行编译以及烧录,而后插拔烧录器即可(需�
     - TCFG_EFFECT_TOOL_ENABLE
     - TCFG_EQ_ONLINE_ENABLE
     - AUDIO_SPK_EQ_CONFIG
-    - download.c 取消文件复制，防止覆盖eq_cfg_hw.bin
+    - download.c 取消文件复制,防止覆盖eq_cfg_hw.bin
 9. tws左右耳配置
     - CONFIG_TWS_CHANNEL_SELECT
 10. NTC 未验证

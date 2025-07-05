@@ -178,7 +178,6 @@ void check_power_on_key(void)
     }
 }
 
-
 extern int cpu_reset_by_soft();
 extern int audio_dec_init();
 extern int audio_enc_init();

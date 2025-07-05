@@ -426,7 +426,7 @@ static int audio_combined_fade_timer_add(u8 gain_l, u8 gain_r)
 
 #if (SYS_VOL_TYPE == VOL_TYPE_DIGITAL_HW)
 #define DVOL_HW_LEVEL_MAX	31	/*注意:总共是(DVOL_HW_LEVEL_MAX + 1)级*/
-#define USER_AUDIO_GAIN (0.2)
+#define USER_AUDIO_GAIN (0.3)
 const u16 hw_dig_vol_table[DVOL_HW_LEVEL_MAX + 1] = {
     0	* USER_AUDIO_GAIN, //0
     93	* USER_AUDIO_GAIN, //1

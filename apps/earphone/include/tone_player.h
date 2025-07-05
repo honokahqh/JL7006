@@ -34,12 +34,14 @@
 #define TONE_HEARAID_OFF  		SDFILE_RES_ROOT_PATH"tone/hearing_off.*"
 #define TONE_LINEIN				SDFILE_RES_ROOT_PATH"tone/linein.*"
 #define TONE_TONE_SWITCH		SDFILE_RES_ROOT_PATH"tone/ToneEN.*"
+#define TONE_CLEAR_ALL			SDFILE_RES_ROOT_PATH"tone/unpairEN.*"
 
 #define TONE_BT_CONN_CN       	SDFILE_RES_ROOT_PATH"tone/btconnCN.*"
 #define TONE_BT_DISCONN_CN    	SDFILE_RES_ROOT_PATH"tone/btdconnCN.*"
 #define TONE_POWER_OFF_CN		SDFILE_RES_ROOT_PATH"tone/poweroffCN.*"
 #define TONE_POWER_ON_CN		SDFILE_RES_ROOT_PATH"tone/poweronCN.*"
 #define TONE_TONE_SWITCH_CN		SDFILE_RES_ROOT_PATH"tone/ToneCN.*"
+#define TONE_CLEAR_ALL_CN		SDFILE_RES_ROOT_PATH"tone/unpairCN.*"
 
 
 #define SINE_WTONE_NORAML           0
@@ -109,7 +111,7 @@ enum {
     IDEX_TONE_HEARAID_OFF,
     IDEX_TONE_LINEIN,
     IDEX_TONE_TONE_SWITCH,
-
+    IDEX_TONE_CLEAR_ALL,
     IDEX_TONE_NONE = 0xFF,
 };
 
