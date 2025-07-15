@@ -122,7 +122,7 @@ copy eq_cfg_hw_drc_vbass.bin  eq_cfg_hw.bin
 #if defined(AUDIO_VBASS_CONFIG)&&AUDIO_VBASS_CONFIG
 copy eq_cfg_hw_vbass.bin  eq_cfg_hw.bin
 #else
-copy eq_cfg_hw_less.bin  eq_cfg_hw.bin
+// copy eq_cfg_hw_less.bin  eq_cfg_hw.bin
 #endif
 #endif
 

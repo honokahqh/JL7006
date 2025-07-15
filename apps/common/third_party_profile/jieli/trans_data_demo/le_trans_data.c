@@ -1385,7 +1385,7 @@ static void user_ble_data_send_packet(void) {
                            "\"bat\":%d,"
                            "\"softVer\":\"%s\","
                            "\"hardVer\":\"%s\","
-                           "\"boardType\":\"BOARD_TYPE\""
+                           "\"boardType\":\"%s\""
                            "}}"
                            "]}",
                            battery_percent, SOFT_WARE_VERSION, HARD_WARE_VERSION, BOARD_TYPE);

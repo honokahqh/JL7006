@@ -11,11 +11,11 @@ copy ..\..\br36loader.bin .
 copy ..\..\br36loader.uart .
 copy ..\..\ota.bin .
 
-..\..\isd_download.exe ..\..\isd_config.ini -tonorflash -dev br36 -boot 0x20000 -div8 -wait 300 -uboot ..\..\uboot.boot -app ..\..\app.bin -res ..\..\cfg_tool.bin tone.cfg p11_code.bin ..\..\eq_cfg_hw.bin -uboot_compress
+..\..\isd_download.exe ..\..\isd_config.ini -tonorflash -dev br36 -boot 0x20000 -div8 -wait 300 -uboot ..\..\uboot.boot -app ..\..\app.bin -res ..\..\cfg_tool.bin tone.cfg p11_code.bin ..\..\eq_cfg_hw.bin -uboot_compress -key AC690X.key
 :: -format all
 ::-reboot 2500
 
-@rem É¾³ýÁÙÊ±ÎÄ¼þ-format all
+@rem É¾ï¿½ï¿½ï¿½ï¿½Ê±ï¿½Ä¼ï¿½-format all
 if exist *.mp3 del *.mp3 
 if exist *.PIX del *.PIX
 if exist *.TAB del *.TAB
@@ -26,15 +26,15 @@ if exist *.sty del *.sty
 copy jl_isd.ufw update.ufw
 del jl_isd.ufw
 
-@REM Éú³ÉÅäÖÃÎÄ¼þÉý¼¶ÎÄ¼þ
+@REM ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½
 ::ufw_maker.exe -chip AC800X %ADD_KEY% -output config.ufw -res bt_cfg.cfg
 
 ::IF EXIST jl_696x.bin del jl_696x.bin 
 
-@rem ³£ÓÃÃüÁîËµÃ÷
-@rem -format vm        //²Á³ýVM ÇøÓò
-@rem -format cfg       //²Á³ýBT CFG ÇøÓò
-@rem -format 0x3f0-2   //±íÊ¾´ÓµÚ 0x3f0 ¸ö sector ¿ªÊ¼Á¬Ðø²Á³ý 2 ¸ö sector(µÚÒ»¸ö²ÎÊýÎª16½øÖÆ»ò10½øÖÆ¶¼¿É£¬µÚ¶þ¸ö²ÎÊý±ØÐëÊÇ10½øÖÆ)
+@rem ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½
+@rem -format vm        //ï¿½ï¿½ï¿½ï¿½VM ï¿½ï¿½ï¿½ï¿½
+@rem -format cfg       //ï¿½ï¿½ï¿½ï¿½BT CFG ï¿½ï¿½ï¿½ï¿½
+@rem -format 0x3f0-2   //ï¿½ï¿½Ê¾ï¿½Óµï¿½ 0x3f0 ï¿½ï¿½ sector ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 2 ï¿½ï¿½ sector(ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îª16ï¿½ï¿½ï¿½Æ»ï¿½10ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½É£ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½10ï¿½ï¿½ï¿½ï¿½)
 
 ping /n 2 127.1>null
 IF EXIST null del null

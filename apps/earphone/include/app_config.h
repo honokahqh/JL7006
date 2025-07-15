@@ -241,7 +241,7 @@
 #define  CONFIG_DEVELOPER_MODE                0 //开发者模式debug ,开启后可以进行按键双击配对
 
 #define ESCO_AUTO_POWER_BALANCE_ROLE_SWITCH_ENABLE    0  /*通话过程根据电量主从切换，电量平衡*/
-#define A2DP_PLAY_AUTO_ROLE_SWITCH_ENABLE             1  /*播歌根据主从信号质量自动主从切换*/
+#define A2DP_PLAY_AUTO_ROLE_SWITCH_ENABLE             0  /*播歌根据主从信号质量自动主从切换*/
 
 #define  CONFIG_TWS_PAIR_BY_BOTH_SIDES                0//同时按下按键才配对 CONFIG_DEVELOPER_MOD=1 CONFIG_TWS_PAIR_MODE=CONFIG_TWS_PAIR_BY_CLICK
 /* 声道确定方式选择 */

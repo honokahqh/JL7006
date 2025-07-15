@@ -22,6 +22,7 @@
 #if TCFG_AUDIO_ANC_ENABLE
 #include "audio_anc.h"
 #endif/*TCFG_AUDIO_ANC_ENABLE*/
+#include "dual_pwm_driver.h"
 
 #define LOG_TAG_CONST       BOARD
 #define LOG_TAG             "[BOARD]"
@@ -38,7 +39,7 @@ void board_power_init(void);
 #ifdef USER_BOARD
 #define HALL_IO IO_PORTB_03
 #else
-#define HALL_IO IO_PORTC_04
+#define HALL_IO IO_PORTC_05
 #endif
 
 // 声明PA控制函数

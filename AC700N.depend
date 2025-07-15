@@ -532,7 +532,7 @@
 
 1698751108 d:\project\btglass\jl700\sdk\include_lib\media\audio_def.h
 
-1751704212 d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_demo_cfg.h
+1752472479 d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_demo_cfg.h
 	"board_ac700n_demo_global_build_cfg.h"
 	"usb_std_class_def.h"
 
@@ -2759,7 +2759,7 @@
 1698751110 d:\project\btglass\jl700\sdk\include_lib\driver\device\anctool.h
 	"typedef.h"
 
-1750989630 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\trans_data_demo\le_trans_data.c
+1751870640 source:d:\project\btglass\jl700\sdk\apps\common\third_party_profile\jieli\trans_data_demo\le_trans_data.c
 	"le_trans_data.h"
 	"3th_profile_api.h"
 	"JL_rcsp_api.h"
@@ -4099,7 +4099,7 @@
 	"audio_anc.h"
 	"debug.h"
 
-1751685177 source:d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_demo.c
+1752543289 source:d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_demo.c
 	"app_config.h"
 	"system/includes.h"
 	"media/includes.h"
@@ -4119,6 +4119,7 @@
 	"audio_link.h"
 	"asm/math_fast_function.h"
 	"audio_anc.h"
+	"dual_pwm_driver.h"
 	"debug.h"
 
 1698751101 source:d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_dms.c
@@ -4441,7 +4442,7 @@
 	"key_event_deal.h"
 	"btstack/btstack_typedef.h"
 
-1751685936 source:d:\project\btglass\jl700\sdk\apps\earphone\key_event_deal.c
+1752545341 source:d:\project\btglass\jl700\sdk\apps\earphone\key_event_deal.c
 	"key_event_deal.h"
 	"btstack/avctp_user.h"
 	"event.h"
@@ -4457,6 +4458,7 @@
 	"application/eq_config.h"
 	"earphone.h"
 	"le_trans_data.h"
+	"dual_pwm_driver.h"
 	"bt_tws.h"
 	"audio_anc.h"
 	"debug.h"
@@ -5110,7 +5112,7 @@
 	"aec_user.h"
 	"debug.h"
 
-1751681467 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\app_audio.c
+1751945422 source:d:\project\btglass\jl700\sdk\cpu\br36\audio\app_audio.c
 	"system/includes.h"
 	"media/includes.h"
 	"user_cfg.h"
@@ -5971,5 +5973,14 @@
 	"aec_user.h"
 	"app_power_manage.h"
 	"asm/charge_calibration.h"
+	"debug.h"
+
+1752545127 d:\project\btglass\jl700\sdk\apps\earphone\board\br36\dual_pwm_driver.h
+	"asm/includes.h"
+	"asm/gpio.h"
+
+1752545582 source:d:\project\btglass\jl700\sdk\apps\earphone\board\br36\dual_pwm_driver.c
+	"dual_pwm_driver.h"
+	"system/includes.h"
 	"debug.h"
 

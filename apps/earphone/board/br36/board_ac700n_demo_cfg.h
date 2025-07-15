@@ -3,7 +3,7 @@
 
 #include "board_ac700n_demo_global_build_cfg.h"
 
-#define USER_BOARD
+// #define USER_BOARD
 
 #ifdef CONFIG_BOARD_AC700N_DEMO
 
@@ -392,7 +392,7 @@
  * 的前提下，根据具体需求，选择对应的DMS模式
  */
 /*ENC(双mic降噪)使能*/
-#define TCFG_AUDIO_DUAL_MIC_ENABLE			DISABLE_THIS_MOUDLE
+#define TCFG_AUDIO_DUAL_MIC_ENABLE			ENABLE_THIS_MOUDLE
 
 /*DMS模式选择*/
 #define DMS_NORMAL		1	//普通双mic降噪(mic距离固定)
