@@ -23,6 +23,7 @@
 #include "audio_anc.h"
 #endif/*TCFG_AUDIO_ANC_ENABLE*/
 #include "dual_pwm_driver.h"
+#include "classic/tws_api.h"
 
 #define LOG_TAG_CONST       BOARD
 #define LOG_TAG             "[BOARD]"
@@ -975,6 +976,20 @@ static void aport_wakeup_callback(u8 index, u8 gpio, u8 edge)
 #endif
 }
 
+void smart_role_management(void){
+    if (!get_tws_sibling_connect_state()) {
+        log_info("tws not connected, do nothing\n");
+        return;
+    }
+
+    if (tws_api_get_local_channel() == 'R' && tws_api_get_role() == TWS_ROLE_MASTER) {
+        log_info("try to switch to master role\n");
+        tws_conn_switch_role();
+        tws_api_auto_role_switch_disable();
+    }
+    log_info("current role: %d\n", tws_api_get_role());
+}
+
 /*
  * 霍尔开关检测任务,定期检测霍尔开关状态
  * 当检测到上升沿时执行关机
@@ -996,6 +1011,10 @@ static void hall_switch_detect(void *priv)
         }
         return;
     }
+    if (count % 100 == 20) {
+        smart_role_management();
+    }
+
     if (count++ < 100){ // 前5秒不进行关机检测
         return;
     }

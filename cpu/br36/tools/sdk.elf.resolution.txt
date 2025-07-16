@@ -2362,6 +2362,12 @@ obj/Release/apps/earphone/board/br36/board_ac700n_demo.o
 -r=obj/Release/apps/earphone/board/br36/board_ac700n_demo.o,sleep_exit_callback,pl
 -r=obj/Release/apps/earphone/board/br36/board_ac700n_demo.o,putchar,l
 -r=obj/Release/apps/earphone/board/br36/board_ac700n_demo.o,sleep_enter_callback,pl
+-r=obj/Release/apps/earphone/board/br36/board_ac700n_demo.o,smart_role_management,pl
+-r=obj/Release/apps/earphone/board/br36/board_ac700n_demo.o,get_tws_sibling_connect_state,l
+-r=obj/Release/apps/earphone/board/br36/board_ac700n_demo.o,tws_api_get_local_channel,l
+-r=obj/Release/apps/earphone/board/br36/board_ac700n_demo.o,tws_api_get_role,l
+-r=obj/Release/apps/earphone/board/br36/board_ac700n_demo.o,tws_conn_switch_role,l
+-r=obj/Release/apps/earphone/board/br36/board_ac700n_demo.o,tws_api_auto_role_switch_disable,l
 -r=obj/Release/apps/earphone/board/br36/board_ac700n_demo.o,gpio_set_dieh,l
 -r=obj/Release/apps/earphone/board/br36/board_ac700n_demo.o,gpio_set_direction,l
 -r=obj/Release/apps/earphone/board/br36/board_ac700n_demo.o,gpio_set_pull_up,l
@@ -2519,7 +2525,7 @@ obj/Release/apps/earphone/bt_tws.o
 -r=obj/Release/apps/earphone/bt_tws.o,log_print,l
 -r=obj/Release/apps/earphone/bt_tws.o,user_send_cmd_prepare,l
 -r=obj/Release/apps/earphone/bt_tws.o,lmp_hci_write_page_timeout,l
--r=obj/Release/apps/earphone/bt_tws.o,tws_api_auto_role_switch_enable,l
+-r=obj/Release/apps/earphone/bt_tws.o,tws_api_auto_role_switch_disable,l
 -r=obj/Release/apps/earphone/bt_tws.o,printf,l
 -r=obj/Release/apps/earphone/bt_tws.o,tws_api_set_sibling_addr,l
 -r=obj/Release/apps/earphone/bt_tws.o,tws_api_set_local_channel,l
@@ -2884,7 +2890,6 @@ obj/Release/apps/earphone/key_event_deal.o
 -r=obj/Release/apps/earphone/key_event_deal.o,sys_enter_soft_poweroff,l
 -r=obj/Release/apps/earphone/key_event_deal.o,tone_play_index,l
 -r=obj/Release/apps/earphone/key_event_deal.o,a2dp_get_status,l
--r=obj/Release/apps/earphone/key_event_deal.o,set_elecGlass_lightTransmittrance,l
 -r=obj/Release/apps/earphone/key_event_deal.o,bt_tws_start_search_sibling,l
 -r=obj/Release/apps/earphone/key_event_deal.o,eq_mode_sw,l
 -r=obj/Release/apps/earphone/key_event_deal.o,bt_set_low_latency_mode,l
@@ -4292,7 +4297,6 @@ obj/Release/cpu/br36/audio/audio_dec.o
 -r=obj/Release/cpu/br36/audio/audio_dec.o,phy_free,l
 -r=obj/Release/cpu/br36/audio/audio_dec.o,a2dp_audio_timestamp_close,l
 -r=obj/Release/cpu/br36/audio/audio_dec.o,audio_syncts_close,l
--r=obj/Release/cpu/br36/audio/audio_dec.o,tws_api_auto_role_switch_enable,l
 -r=obj/Release/cpu/br36/audio/audio_dec.o,lmp_private_free_esco_packet,l
 -r=obj/Release/cpu/br36/audio/audio_dec.o,lmp_private_get_esco_packet,l
 -r=obj/Release/cpu/br36/audio/audio_dec.o,esco_audio_timestamp_update,l

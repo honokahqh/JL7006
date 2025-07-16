@@ -533,27 +533,27 @@ int app_earphone_key_event_handler(struct sys_event *event)
         }
         break;
     case  KEY_VOL_UP:
-        VolUp_count++;
-        if (VolUp_count > 10) {
-            VolUp_count = 0;
-        }
-        set_elecGlass_lightTransmittrance(GLASS_AC, VolUp_count * 10);
-        log_info("VolUp_count: %d", VolUp_count);
-        break;
-        // u8 call_status = get_call_status();
-        // log_info("KEY_VOL_UP: call_status = %d\n", call_status);
-        // if (call_status == BT_CALL_INCOMING) { // 若呼入则接听
-        //     user_send_cmd_prepare(USER_CTRL_HFP_CALL_ANSWER, 0, NULL);
-        //     break;
-        // } else if((call_status == BT_CALL_OUTGOING) ||
-        //         (call_status == BT_CALL_ALERT)) { // 若打出或alert则挂断
-        //     user_send_cmd_prepare(USER_CTRL_HFP_CALL_HANGUP, 0, NULL);
-        //     break;
-        // } else {
-        //     log_info("Vol up or Down");
-        //     key_tws_lr_diff_deal(event, ONE_KEY_CTL_VOL_UP_DOWN);
-        //     break;
+        // VolUp_count++;
+        // if (VolUp_count > 10) {
+        //     VolUp_count = 0;
         // }
+        // set_elecGlass_lightTransmittrance(GLASS_AC, VolUp_count * 10);
+        // log_info("VolUp_count: %d", VolUp_count);
+        // break;
+        u8 call_status = get_call_status();
+        log_info("KEY_VOL_UP: call_status = %d\n", call_status);
+        if (call_status == BT_CALL_INCOMING) { // 若呼入则接听
+            user_send_cmd_prepare(USER_CTRL_HFP_CALL_ANSWER, 0, NULL);
+            break;
+        } else if((call_status == BT_CALL_OUTGOING) ||
+                (call_status == BT_CALL_ALERT)) { // 若打出或alert则挂断
+            user_send_cmd_prepare(USER_CTRL_HFP_CALL_HANGUP, 0, NULL);
+            break;
+        } else {
+            log_info("Vol up or Down");
+            key_tws_lr_diff_deal(event, ONE_KEY_CTL_VOL_UP_DOWN);
+            break;
+        }
         break;
     case  KEY_VOL_DOWN:
         volume_down(1);

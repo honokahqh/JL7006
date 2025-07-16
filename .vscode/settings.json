@@ -11,6 +11,8 @@
         "math_fast_function.h": "c",
         "key_event_deal.h": "c",
         "p11.h": "c",
-        "tone_player.h": "c"
+        "tone_player.h": "c",
+        "audio_anc.h": "c",
+        "dual_pwm_driver.h": "c"
     }
 }

@@ -3,7 +3,7 @@
 
 #include "board_ac700n_demo_global_build_cfg.h"
 
-// #define USER_BOARD
+#define USER_BOARD
 
 #ifdef CONFIG_BOARD_AC700N_DEMO
 
@@ -402,7 +402,7 @@
 /*ENC双mic配置主mic副mic对应的mic port*/
 #define DMS_MASTER_MIC0		0 //mic0是主mic
 #define DMS_MASTER_MIC1		1 //mic1是主mic
-#define TCFG_AUDIO_DMS_MIC_MANAGE			DMS_MASTER_MIC0
+#define TCFG_AUDIO_DMS_MIC_MANAGE			DMS_MASTER_MIC1
 /*双mic降噪/单麦mic降噪 DUT测试模式，配合设备测试mic频响和(双mic)降噪量*/
 #define TCFG_AUDIO_DMS_DUT_ENABLE			ENABLE_THIS_MOUDLE
 
