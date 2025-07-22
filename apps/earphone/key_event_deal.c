@@ -537,7 +537,7 @@ int app_earphone_key_event_handler(struct sys_event *event)
         // if (VolUp_count > 10) {
         //     VolUp_count = 0;
         // }
-        // set_elecGlass_lightTransmittrance(GLASS_AC, VolUp_count * 10);
+        // set_elecGlass_lightTransmittrance(VolUp_count * 10);
         // log_info("VolUp_count: %d", VolUp_count);
         // break;
         u8 call_status = get_call_status();

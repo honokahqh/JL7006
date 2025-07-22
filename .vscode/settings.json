@@ -13,6 +13,7 @@
         "p11.h": "c",
         "tone_player.h": "c",
         "audio_anc.h": "c",
-        "dual_pwm_driver.h": "c"
+        "dual_pwm_driver.h": "c",
+        "avctp_user.h": "c"
     }
 }

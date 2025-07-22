@@ -1,6 +1,8 @@
 #include "dual_pwm_driver.h"
+#include "board_ac700n_demo_cfg.h"
 #include "system/includes.h"
 #include "debug.h"
+#include "asm/power/power_api.h"
 
 #define LOG_TAG_CONST       BOARD
 #define LOG_TAG             "[BOARD]"
@@ -24,10 +26,12 @@ static dual_pwm_driver_t g_pwm_driver = {0};
 static int get_channel_index(pwm_channel_t channel)
 {
     switch (channel) {
-        case PWM_CHANNEL_4:
+        case PWM_CHANNEL_0:
             return 0;
-        case PWM_CHANNEL_5:
+        case PWM_CHANNEL_4:
             return 1;
+        case PWM_CHANNEL_5:
+            return 2;
         default:
             return -1;
     }
@@ -41,6 +45,8 @@ static int get_channel_index(pwm_channel_t channel)
 static JL_TIMER_TypeDef* get_timer(pwm_channel_t channel)
 {
     switch (channel) {
+        case PWM_CHANNEL_0:
+            return JL_TIMER0;
         case PWM_CHANNEL_4:
             return JL_TIMER4;
         case PWM_CHANNEL_5:
@@ -58,6 +64,8 @@ static JL_TIMER_TypeDef* get_timer(pwm_channel_t channel)
 static u32 get_gpio_pin(pwm_channel_t channel)
 {
     switch (channel) {
+        case PWM_CHANNEL_0:
+            return IO_PORTA_01;
         case PWM_CHANNEL_4:
             return IO_PORTC_04;  // PC4
         case PWM_CHANNEL_5:
@@ -82,18 +90,20 @@ static void configure_pwm_gpio(pwm_channel_t channel)
     }
     
     // 根据通道选择定时器功能
-    if (channel == PWM_CHANNEL_4) {
+    if(channel == PWM_CHANNEL_0){
+        timer_func = FO_TMR0_PWM;  // TIMER0 PWM功能
+    }else if(channel == PWM_CHANNEL_4){
         timer_func = FO_TMR4_PWM;  // TIMER4 PWM功能
     } else {
         timer_func = FO_TMR5_PWM;  // TIMER5 PWM功能
     }
     
     // 配置GPIO为PWM输出
-    gpio_set_fun_output_port(pin, timer_func, 0, 1, LOW_POWER_FREE);
+    gpio_set_fun_output_port(pin, timer_func, 0, 1, LOW_POWER_KEEP);
     gpio_set_die(pin, 1);
     gpio_set_pull_up(pin, 0);
     gpio_set_pull_down(pin, 0);
-    gpio_set_direction(pin, 0);  // 输出方向
+    gpio_set_direction(pin, 0);  
     
     log_info("PWM%d GPIO configured: pin=0x%x, timer_func=%d\n", channel, pin, timer_func);
 }
@@ -123,11 +133,6 @@ static int init_single_pwm(pwm_channel_t channel, u32 frequency, u32 duty_cycle)
     if (pin == 0) {
         log_info("Cannot get GPIO pin for channel %d\n", channel);
         return -1;
-    }
-    
-    // 清除中断
-    if (channel == PWM_CHANNEL_5) {
-        bit_clr_ie(IRQ_TIME3_IDX);  // TIMER3中断，根据现有代码逻辑
     }
     
     // 配置GPIO
@@ -235,40 +240,6 @@ int dual_pwm_sync_start_with_phase(u32 pwm_freq, u32 pwm_duty,
     local_irq_enable();
     
     return 0;
-}
-
-void set_elecGlass_lightTransmittrance(elecGlass_type_t type, u32 lightTransmittrance){
-    disable_pwm_hardware(PWM_CHANNEL_4);
-    disable_pwm_hardware(PWM_CHANNEL_5);
-
-    if(lightTransmittrance > 100){
-        lightTransmittrance = 100;
-    }
-    if(lightTransmittrance < 0){
-        lightTransmittrance = 0;
-    }
-
-    if(type == GLASS_DC){
-        // 高频降纹波 2.8->-1.5v~1.5v
-        lightTransmittrance = lightTransmittrance * 50;
-        init_single_pwm(PWM_CHANNEL_4, 100 * 1000, lightTransmittrance);
-        init_single_pwm(PWM_CHANNEL_5, 100 * 1000, 5000 - lightTransmittrance);
-        JL_TIMER_TypeDef *timer4 = get_timer(PWM_CHANNEL_4);
-        JL_TIMER_TypeDef *timer5 = get_timer(PWM_CHANNEL_5);
-        JL_TIMER4->CON |= BIT(8) | (0b01 << 0);
-        JL_TIMER5->CON |= BIT(8) | (0b01 << 0);
-    }else if(type == GLASS_AC){
-        // 100Hz,固定180°相位差,占空比不超过50%
-        lightTransmittrance = lightTransmittrance * 100;
-        init_single_pwm(PWM_CHANNEL_4, 100, lightTransmittrance / 2);
-        init_single_pwm(PWM_CHANNEL_5, 100, lightTransmittrance / 2);
-        JL_TIMER_TypeDef *timer4 = get_timer(PWM_CHANNEL_4);
-        JL_TIMER_TypeDef *timer5 = get_timer(PWM_CHANNEL_5);
-        u32 period = EFFECTIVE_CLK / 100;
-        timer5->CNT =  period / 2; // 相位偏移180°
-        timer4->CON |= BIT(8) | (0b01 << 0);
-        timer5->CON |= BIT(8) | (0b01 << 0);
-    }
 }
 
 // 公共函数实现
@@ -579,3 +550,98 @@ void dual_pwm_test(void)
     
     log_info("Dual PWM test completed\n");
 } 
+
+u8 lightTransmittrance_data;
+void set_elecGlass_lightTransmittrance(u32 lightTransmittrance){
+    if(lightTransmittrance > 100){
+        lightTransmittrance = 100;
+    }
+    if(lightTransmittrance < 0){
+        lightTransmittrance = 0;
+    }
+
+#ifdef USE_DC_GLASS
+    // 高频降纹波 2.8->-1.5v~1.5v
+    disable_pwm_hardware(PWM_CHANNEL_4);
+    disable_pwm_hardware(PWM_CHANNEL_5);
+    lightTransmittrance = lightTransmittrance * 50;
+    init_single_pwm(PWM_CHANNEL_4, 100 * 1000, lightTransmittrance);
+    init_single_pwm(PWM_CHANNEL_5, 100 * 1000, 5000 - lightTransmittrance);
+    JL_TIMER_TypeDef *timer4 = get_timer(PWM_CHANNEL_4);
+    JL_TIMER_TypeDef *timer5 = get_timer(PWM_CHANNEL_5);
+    JL_TIMER4->CON |= BIT(8) | (0b01 << 0);
+    JL_TIMER5->CON |= BIT(8) | (0b01 << 0);
+#endif
+
+#ifdef USE_AC_GLASS_BY_PWM
+    #define AC_GLASS_FREQ 128
+    // 100Hz,固定180°相位差,占空比不超过50%
+    disable_pwm_hardware(PWM_CHANNEL_0);
+    disable_pwm_hardware(PWM_CHANNEL_4);
+    disable_pwm_hardware(PWM_CHANNEL_5);
+    lightTransmittrance = lightTransmittrance * 100;
+    init_single_pwm(PWM_CHANNEL_0, AC_GLASS_FREQ, 5000); // 公共GND
+    if (lightTransmittrance == 0){
+        disable_pwm_hardware(PWM_CHANNEL_4);
+        disable_pwm_hardware(PWM_CHANNEL_5);
+    } else {
+        init_single_pwm(PWM_CHANNEL_4, AC_GLASS_FREQ, lightTransmittrance / 2); // 镜片A 阳极
+        init_single_pwm(PWM_CHANNEL_5, AC_GLASS_FREQ, lightTransmittrance / 2); // 镜片B 阳极
+        JL_TIMER_TypeDef *timer4 = get_timer(PWM_CHANNEL_4);
+        JL_TIMER_TypeDef *timer5 = get_timer(PWM_CHANNEL_5);
+        timer4->CON |= BIT(8) | (0b01 << 0);
+        timer5->CON |= BIT(8) | (0b01 << 0);
+    }   
+    JL_TIMER_TypeDef *timer0 = get_timer(PWM_CHANNEL_0);
+    u32 period = EFFECTIVE_CLK / AC_GLASS_FREQ;
+    timer0->CNT =  period / 2; // 相位偏移180°
+    timer0->CON |= BIT(8) | (0b01 << 0);
+#endif
+
+#ifdef USE_AC_GLASS_BY_GPIO
+    static bool init_flag = false;
+    if(!init_flag){
+        init_flag = true;
+        gpio_direction_output(IO_PORTA_01, 0);
+        gpio_direction_output(IO_PORTC_04, 0);
+        gpio_direction_output(IO_PORTA_05, 0);  
+    }
+    lightTransmittrance_data = lightTransmittrance / 10;
+#endif
+}
+
+void elecGlass_timer_callback(void *priv)
+{
+    static u32 count = 0;
+
+    if(count < lightTransmittrance_data){
+        gpio_write(IO_PORTA_01, 0);
+        gpio_write(IO_PORTC_04, 0);
+        gpio_write(IO_PORTA_05, 0);
+    } else {
+        gpio_write(IO_PORTA_01, 1);
+        gpio_write(IO_PORTC_04, 1);
+        gpio_write(IO_PORTA_05, 1);
+    }
+
+    count++;
+    if (count >= 10){
+        count = 0;
+    }
+}
+
+static u8 pwm_is_dile(void)
+{
+    return 0;
+}
+
+static enum LOW_POWER_LEVEL pwm_level_query(void)
+{   
+    return LOW_POWER_MODE_LIGHT_SLEEP;
+}
+
+REGISTER_LP_TARGET(pwm_lp_target) = {
+    .name = "user_pwm",
+    .level = pwm_level_query,
+    .is_idle = pwm_is_dile,
+};

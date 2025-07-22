@@ -3,7 +3,10 @@
 
 #include "board_ac700n_demo_global_build_cfg.h"
 
-#define USER_BOARD
+// #define USER_BOARD
+// #define USE_DC_GLASS
+// #define USE_AC_GLASS_BY_PWM
+// #define USE_AC_GLASS_BY_GPIO
 
 #ifdef CONFIG_BOARD_AC700N_DEMO
 
@@ -392,7 +395,7 @@
  * 的前提下，根据具体需求，选择对应的DMS模式
  */
 /*ENC(双mic降噪)使能*/
-#define TCFG_AUDIO_DUAL_MIC_ENABLE			ENABLE_THIS_MOUDLE
+#define TCFG_AUDIO_DUAL_MIC_ENABLE			DISABLE_THIS_MOUDLE
 
 /*DMS模式选择*/
 #define DMS_NORMAL		1	//普通双mic降噪(mic距离固定)
@@ -404,7 +407,7 @@
 #define DMS_MASTER_MIC1		1 //mic1是主mic
 #define TCFG_AUDIO_DMS_MIC_MANAGE			DMS_MASTER_MIC1
 /*双mic降噪/单麦mic降噪 DUT测试模式，配合设备测试mic频响和(双mic)降噪量*/
-#define TCFG_AUDIO_DMS_DUT_ENABLE			ENABLE_THIS_MOUDLE
+#define TCFG_AUDIO_DMS_DUT_ENABLE			DISABLE_THIS_MOUDLE
 
 //MIC通道配置
 #if TCFG_AUDIO_DUAL_MIC_ENABLE
@@ -598,15 +601,15 @@
 //                                  低功耗配置                                     //
 //*********************************************************************************//
 #define TCFG_LOWPOWER_POWER_SEL				PWR_DCDC15//PWR_LDO15                    //电源模式设置，可选DCDC和LDO
-#define TCFG_LOWPOWER_BTOSC_DISABLE			0                            //低功耗模式下BTOSC是否保持
-#define TCFG_LOWPOWER_LOWPOWER_SEL			1   //芯片是否进入powerdown
+#define TCFG_LOWPOWER_BTOSC_DISABLE			1                            //低功耗模式下BTOSC是否保持
+#define TCFG_LOWPOWER_LOWPOWER_SEL			1   //芯片是否进入powerdownED_VDDIO_KEEP
 /*强VDDIO等级配置,可选：
     VDDIOM_VOL_20V    VDDIOM_VOL_22V    VDDIOM_VOL_24V    VDDIOM_VOL_26V
     VDDIOM_VOL_30V    VDDIOM_VOL_30V    VDDIOM_VOL_32V    VDDIOM_VOL_36V*/
-#define TCFG_LOWPOWER_VDDIOM_LEVEL			VDDIOM_VOL_28V
+#define TCFG_LOWPOWER_VDDIOM_LEVEL			VDDIOW_VOL_28V
 /*弱VDDIO等级配置，可选：
     VDDIOW_VOL_21V    VDDIOW_VOL_24V    VDDIOW_VOL_28V    VDDIOW_VOL_32V*/
-#define TCFG_LOWPOWER_VDDIOW_LEVEL			VDDIOW_VOL_26V               //弱VDDIO等级配置
+#define TCFG_LOWPOWER_VDDIOW_LEVEL			VDDIOW_VOL_28V               //弱VDDIO等级配置
 #define TCFG_LOWPOWER_OSC_TYPE              OSC_TYPE_LRC
 #define TCFG_LOWPOWER_LIGHT_SLEEP_ATTRIBUTE 	LOWPOWER_LIGHT_SLEEP_ATTRIBUTE_KEEP_CLOCK 		//低功耗LIGHT模式属性, 可以选择是否保持住一些电源和时钟
 
@@ -616,7 +619,7 @@
 //EQ配置，使用在线EQ时，EQ文件和EQ模式无效。有EQ文件时，使能TCFG_USE_EQ_FILE,默认不用EQ模式切换功能
 #define TCFG_EQ_ENABLE                            1     //支持EQ功能,EQ总使能
 // #if TCFG_EQ_ENABLE
-#define TCFG_EQ_ONLINE_ENABLE                     1     //支持在线EQ调试,如果使用蓝牙串口调试，需要打开宏 APP_ONLINE_DEBUG，否则，默认使用uart调试(二选一)
+#define TCFG_EQ_ONLINE_ENABLE                     0     //支持在线EQ调试,如果使用蓝牙串口调试，需要打开宏 APP_ONLINE_DEBUG，否则，默认使用uart调试(二选一)
 #define TCFG_BT_MUSIC_EQ_ENABLE                   1     //支持蓝牙音乐EQ
 #define TCFG_PHONE_EQ_ENABLE                      0     //支持通话近端EQ
 #define TCFG_AUDIO_OUT_EQ_ENABLE                  0     //mix out级，增加eq高低音接口
@@ -670,8 +673,8 @@
 //*********************************************************************************//
 //                          新配置工具 && 调音工具                             //
 //*********************************************************************************//
-#define TCFG_CFG_TOOL_ENABLE				ENABLE		  	//是否支持在线配置工具
-#define TCFG_EFFECT_TOOL_ENABLE				ENABLE		  	//是否支持在线音效调试,使能该项还需使能EQ总使能TCFG_EQ_ENABL,
+#define TCFG_CFG_TOOL_ENABLE				DISABLE		  	//是否支持在线配置工具
+#define TCFG_EFFECT_TOOL_ENABLE				DISABLE		  	//是否支持在线音效调试,使能该项还需使能EQ总使能TCFG_EQ_ENABL,
 #define TCFG_NULL_COMM						0				//不支持通信
 #define TCFG_UART_COMM						1				//串口通信
 #define TCFG_USB_COMM						2				//USB通信

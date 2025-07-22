@@ -24,6 +24,7 @@
 #endif/*TCFG_AUDIO_ANC_ENABLE*/
 #include "dual_pwm_driver.h"
 #include "classic/tws_api.h"
+#include "btstack/avctp_user.h"
 
 #define LOG_TAG_CONST       BOARD
 #define LOG_TAG             "[BOARD]"
@@ -541,6 +542,7 @@ const struct low_power_param power_param = {
 #else
 	.lpctmu_en 		= 0,
 #endif
+    .vddio_keep     = 1,
 	.light_sleep_attribute = TCFG_LOWPOWER_LIGHT_SLEEP_ATTRIBUTE,
 };
 
@@ -803,6 +805,12 @@ static void close_gpio(u8 is_softoff)
 
     port_protect(port_group, HALL_IO);
 
+#if defined(USE_AC_GLASS_BY_PWM) || defined(USE_AC_GLASS_BY_GPIO)
+    port_protect(port_group, IO_PORTA_01);
+    port_protect(port_group, IO_PORTA_05);
+    port_protect(port_group, IO_PORTC_04);
+#endif
+
 #if TCFG_PWMLED_ENABLE
 	if(!is_softoff){
 		port_protect(port_group,TCFG_PWMLED_PIN);
@@ -990,6 +998,25 @@ void smart_role_management(void){
     log_info("current role: %d\n", tws_api_get_role());
 }
 
+void smart_sniff_management(void){
+    // 获取蓝牙连接状态
+    static u32 count;
+    u8 state = get_bt_connect_status();
+    log_info("bt connect status: %d\n", state); 
+    if (state == BT_STATUS_WAITINT_CONN) {
+        count++;
+        if (count > 10) {
+            log_info("bt is waiting for conn, enter sniff\n");
+            // low_power_sys_request(NULL);
+            user_send_cmd_prepare(USER_CTRL_WRITE_SCAN_DISABLE, 0, NULL);
+            user_send_cmd_prepare(USER_CTRL_WRITE_CONN_DISABLE, 0, NULL);
+            count = 0;
+        }   
+    } else {
+        count = 0;
+    }
+}
+
 /*
  * 霍尔开关检测任务,定期检测霍尔开关状态
  * 当检测到上升沿时执行关机
@@ -1004,18 +1031,21 @@ static void hall_switch_detect(void *priv)
 
     if (goto_reboot_flag) {
         reboot_cnt++;
-        if (reboot_cnt > 20) {
+        if (reboot_cnt > 2) {
             goto_reboot_flag = 0;
             reboot_cnt = 0;
             cpu_reset();
         }
         return;
     }
-    if (count % 100 == 20) {
-        smart_role_management();
-    }
+    // if (count % 20 == 0){
+    //     smart_sniff_management();
+    // }
+    // if (count % 100 == 20) {
+    //     smart_role_management();
+    // }
 
-    if (count++ < 100){ // 前5秒不进行关机检测
+    if (count++ < 10){ // 前5秒不进行关机检测
         return;
     }
 
@@ -1072,8 +1102,13 @@ void board_power_init(void)
     charge_check_and_set_pinr(1);
 #endif
 
-    //创建霍尔开关检测任务,20ms检测一次
-    sys_timer_add(NULL, hall_switch_detect, 50);
+    //创建霍尔开关检测任务,500ms检测一次
+    sys_timer_add(NULL, hall_switch_detect, 500);
+
+#ifdef USE_AC_GLASS_BY_GPIO
+    extern void elecGlass_timer_callback(void *priv);
+    sys_timer_add(NULL, elecGlass_timer_callback, 1);
+#endif
 }
 
 // 重定义DAC功率状态回调函数来控制PA使能脚

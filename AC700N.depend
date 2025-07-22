@@ -532,7 +532,7 @@
 
 1698751108 d:\project\btglass\jl700\sdk\include_lib\media\audio_def.h
 
-1752657085 d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_demo_cfg.h
+1753154655 d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_demo_cfg.h
 	"board_ac700n_demo_global_build_cfg.h"
 	"usb_std_class_def.h"
 
@@ -559,7 +559,7 @@
 
 1698751099 d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac7003f_demo_global_build_cfg.h
 
-1698751099 d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_anc_cfg.h
+1753060070 d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_anc_cfg.h
 	"board_ac700n_anc_global_build_cfg.h"
 	"usb_std_class_def.h"
 
@@ -602,7 +602,7 @@
 	"app_config.h"
 	"uartPcmSender.h"
 
-1752569732 d:\project\btglass\jl700\sdk\apps\earphone\include\app_config.h
+1753154794 d:\project\btglass\jl700\sdk\apps\earphone\include\app_config.h
 	"board_config.h"
 	"usb_std_class_def.h"
 	"usb_common_def.h"
@@ -1089,7 +1089,7 @@
 	"classic/tws_event.h"
 	"system/includes.h"
 
-1752628697 d:\project\btglass\jl700\sdk\include_lib\btctrler\classic\tws_api.h
+1752722171 d:\project\btglass\jl700\sdk\include_lib\btctrler\classic\tws_api.h
 	"typedef.h"
 	"classic/tws_event.h"
 	"classic/tws_local_media_sync.h"
@@ -4099,7 +4099,7 @@
 	"audio_anc.h"
 	"debug.h"
 
-1752655805 source:d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_demo.c
+1753153972 source:d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_demo.c
 	"app_config.h"
 	"system/includes.h"
 	"media/includes.h"
@@ -4121,6 +4121,7 @@
 	"audio_anc.h"
 	"dual_pwm_driver.h"
 	"classic/tws_api.h"
+	"btstack/avctp_user.h"
 	"debug.h"
 
 1698751101 source:d:\project\btglass\jl700\sdk\apps\earphone\board\br36\board_ac700n_dms.c
@@ -4343,7 +4344,7 @@
 
 1698751096 d:\project\btglass\jl700\sdk\apps\earphone\include\app_sd_music.h
 
-1751684645 source:d:\project\btglass\jl700\sdk\apps\earphone\earphone.c
+1752809523 source:d:\project\btglass\jl700\sdk\apps\earphone\earphone.c
 	"system/includes.h"
 	"media/includes.h"
 	"tone_player.h"
@@ -4443,7 +4444,7 @@
 	"key_event_deal.h"
 	"btstack/btstack_typedef.h"
 
-1752636833 source:d:\project\btglass\jl700\sdk\apps\earphone\key_event_deal.c
+1753059955 source:d:\project\btglass\jl700\sdk\apps\earphone\key_event_deal.c
 	"key_event_deal.h"
 	"btstack/avctp_user.h"
 	"event.h"
@@ -5976,12 +5977,14 @@
 	"asm/charge_calibration.h"
 	"debug.h"
 
-1752545127 d:\project\btglass\jl700\sdk\apps\earphone\board\br36\dual_pwm_driver.h
+1752806280 d:\project\btglass\jl700\sdk\apps\earphone\board\br36\dual_pwm_driver.h
 	"asm/includes.h"
 	"asm/gpio.h"
 
-1752545582 source:d:\project\btglass\jl700\sdk\apps\earphone\board\br36\dual_pwm_driver.c
+1752810807 source:d:\project\btglass\jl700\sdk\apps\earphone\board\br36\dual_pwm_driver.c
 	"dual_pwm_driver.h"
+	"board_ac700n_demo_cfg.h"
 	"system/includes.h"
 	"debug.h"
+	"asm/power/power_api.h"
 

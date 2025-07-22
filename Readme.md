@@ -35,7 +35,7 @@ codeBlocks build,自动执行编译以及烧录,而后插拔烧录器即可(需�
     - port_wakeup 注册
     - port_protect 注册
     - sys_timer_add 非中断形式,检测IO电平pwr off
-7. 双io驱双LED处理
+7. 单io驱双LED处理
     - 无改动
 8. EQ调节 
     - TCFG_CFG_TOOL_ENABLE

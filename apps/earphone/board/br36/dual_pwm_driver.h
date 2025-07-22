@@ -6,6 +6,7 @@
 
 // PWM通道定义
 typedef enum {
+    PWM_CHANNEL_0 = 0,  // PA1对应PWM0，使用TIMER0
     PWM_CHANNEL_4 = 4,  // PC4对应PWM4，使用TIMER4
     PWM_CHANNEL_5 = 5,  // PA5对应PWM5，使用TIMER5
 } pwm_channel_t;
@@ -27,7 +28,7 @@ typedef struct {
 
 // PWM驱动结构体
 typedef struct {
-    pwm_config_t channels[2];  // 两个PWM通道
+    pwm_config_t channels[3];  // 两个PWM通道
     u8 initialized;           // 初始化标志
 } dual_pwm_driver_t;
 
@@ -106,11 +107,6 @@ void dual_pwm_test(void);
 
 int dual_pwm_sync_start_with_phase(u32 pwm_freq, u32 pwm_duty, u32 phase_diff_degrees);
 
-typedef enum{
-    GLASS_DC = 0,
-    GLASS_AC = 1,
-}elecGlass_type_t;
-
-void set_elecGlass_lightTransmittrance(elecGlass_type_t type, u32 lightTransmittrance);
+void set_elecGlass_lightTransmittrance(u32 lightTransmittrance);
 
 #endif /* _DUAL_PWM_DRIVER_H_ */ 
